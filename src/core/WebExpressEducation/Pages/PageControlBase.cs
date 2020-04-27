@@ -4,12 +4,12 @@ using WebExpress.UI.Controls;
 
 namespace Education.Pages
 {
-    public class PageControl : PageBase, IPageControl
+    public abstract class PageControlBase : PageBaseItem, IPageControl
     {
         /// <summary>
         /// Konstruktor
         /// </summary>
-        public PageControl()
+        public PageControlBase()
             : base("Controls")
         {
         }
@@ -18,7 +18,7 @@ namespace Education.Pages
         /// Konstruktor
         /// </summary>
         /// <param name="name">Der Seitenname</param>
-        public PageControl(string name)
+        public PageControlBase(string name)
             : base(name)
         {
         }
@@ -31,31 +31,6 @@ namespace Education.Pages
             base.Init();
 
             var pages = Context.SiteMap.Pages.Values.Distinct();
-            var grid = new ControlGrid(this)
-            {
-                Margin = new PropertySpacingMargin(PropertySpacing.Space.Null)
-            };
-
-            var content = new ControlPanel(this);
-
-            content.Content.Add(new ControlText(this)
-            {
-                Text = "Allgemein",
-                Format = TypesTextFormat.H1
-            });
-
-            content.Content.Add(new ControlText(this)
-            {
-                Text = "Steuerelemente sind komplexe HTML-Objekte.",
-                Format = TypesTextFormat.Paragraph
-            });
-
-
-            var tab = new ControlTab(this)
-            {
-                Layout = TypesLayoutTab.Pill,
-                Orientation = TypesNavOrientation.Vertical
-            };
 
             foreach (var v in pages.Where(x=> x.ID != new UriSegmentID("Controls")))
             {
@@ -64,7 +39,7 @@ namespace Education.Pages
 
                 if (uri.Contains("Controls"))
                 {
-                    tab.Items.Add(new ControlLink(this)
+                    Menu.Items.Add(new ControlLink(this)
                     {
                         Text = v.Display,
                         Uri = uri,
@@ -72,10 +47,6 @@ namespace Education.Pages
                     });
                 }
             }
-
-            grid.Add(0, 2, tab);
-            grid.Add(0, 10, content);
-            Main.Content.Add(grid);
         }
 
         /// <summary>

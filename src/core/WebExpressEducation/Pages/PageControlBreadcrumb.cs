@@ -2,7 +2,7 @@
 
 namespace Education.Pages
 {
-    public class PageControlBreadcrumb : PageControl
+    public class PageControlBreadcrumb : PageControlBase
     {
         /// <summary>
         /// Konstruktor

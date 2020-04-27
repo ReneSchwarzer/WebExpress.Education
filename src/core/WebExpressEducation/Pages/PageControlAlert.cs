@@ -3,7 +3,7 @@ using WebExpress.UI.Controls;
 
 namespace Education.Pages
 {
-    public class PageControlAlert : PageControl
+    public class PageControlAlert : PageControlBase
     {
         /// <summary>
         /// Konstruktor

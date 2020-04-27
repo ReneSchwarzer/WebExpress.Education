@@ -30,56 +30,54 @@ namespace Education
             ViewModel.Instance.Init();
             Context.Log.Info(MethodBase.GetCurrentMethod(), "Education Plugin initialisierung");
 
-            var siteMap = new SiteMap(Context);
-
             // Ressourcen
-            siteMap.AddPage("Assets", "Assets", (x) => new WorkerFile(x, Context.AssetBaseFolder));
-            siteMap.AddPath("Assets", true);
+            SiteMap.AddPage("Assets", "Assets", (x) => new WorkerFile(x, Context.AssetBaseFolder));
+            SiteMap.AddPath("Assets", true);
             
             // Seiten
-            siteMap.AddPage("Home", "", (x) => new WorkerPage<PageHome>(x));
-            siteMap.AddPage("Tutorials", "tutorial", (x) => new WorkerPage<PageTutorial>(x));
-            siteMap.AddPage("Controls", "control", (x) => new WorkerPage<PageControlAlert>(x));
-            siteMap.AddPage("Alert", "alert", (x) => new WorkerPage<PageControlAlert>(x));
-            siteMap.AddPage("Badge", "badge", (x) => new WorkerPage<PageControlBadge>(x));
-            siteMap.AddPage("Breadcrumb", "breadcrumb", (x) => new WorkerPage<PageControlBreadcrumb>(x));
-            siteMap.AddPage("Html", "html", (x) => new WorkerPage<PageHtml>(x));
-            siteMap.AddPage("Hilfe", "help", (x) => new WorkerPage<PageHelp>(x));
+            SiteMap.AddPage("Home", "", (x) => new WorkerPage<PageHome>(x));
+            SiteMap.AddPage("Tutorials", "tutorial", (x) => new WorkerPage<PageTutorial>(x));
+            SiteMap.AddPage("Controls", "control", (x) => new WorkerPage<PageControl>(x));
+            SiteMap.AddPage("Alert", "alert", (x) => new WorkerPage<PageControlAlert>(x));
+            SiteMap.AddPage("Badge", "badge", (x) => new WorkerPage<PageControlBadge>(x));
+            SiteMap.AddPage("Breadcrumb", "breadcrumb", (x) => new WorkerPage<PageControlBreadcrumb>(x));
+            SiteMap.AddPage("Callout", "Callout", (x) => new WorkerPage<PageControlPanelCallout>(x));
+            SiteMap.AddPage("Html", "html", (x) => new WorkerPage<PageHtml>(x));
+            SiteMap.AddPage("Hilfe", "help", (x) => new WorkerPage<PageHelp>(x));
 
-            siteMap.AddPath("Home");
-            siteMap.AddPath("Home/Tutorials");
-            siteMap.AddPath("Home/Controls");
-            siteMap.AddPath("Home/Controls/Alert");
-            siteMap.AddPath("Home/Controls/Badge");
-            siteMap.AddPath("Home/Controls/Breadcrumb");
-            siteMap.AddPath("Home/Html");
-            siteMap.AddPath("Home/Hilfe");
-
-
-            Register(siteMap);
-
-            Task.Run(() => { Run(); });
+            SiteMap.AddPath("Home");
+            SiteMap.AddPath("Home/Tutorials");
+            SiteMap.AddPath("Home/Controls");
+            SiteMap.AddPath("Home/Controls/Alert");
+            SiteMap.AddPath("Home/Controls/Badge");
+            SiteMap.AddPath("Home/Controls/Breadcrumb");
+            SiteMap.AddPath("Home/Controls/Callout");
+            SiteMap.AddPath("Home/Html");
+            SiteMap.AddPath("Home/Hilfe");
         }
 
         /// <summary>
-        /// Diese Methode wird aufgerufen, nachdem das Fenster aktiv ist.
+        /// Wird aufgerufen, wenn das Plugin mit der Arbeit beginnt
         /// </summary>
-        private void Run()
+        public override void Run()
         {
-            Thread.CurrentThread.Priority = ThreadPriority.Highest;
+            base.Run();
 
-            // Loop
-            while (true)
+            Task.Run(() => 
             {
-                try
+                // Loop
+                while (true)
                 {
-                    Update();
+                    try
+                    {
+                        Update();
+                    }
+                    finally
+                    {
+                        Thread.Sleep(60000);
+                    }
                 }
-                finally
-                {
-                    Thread.Sleep(60000);
-                }
-            }
+            });
         }
 
         /// <summary>

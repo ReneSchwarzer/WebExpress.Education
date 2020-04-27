@@ -2,7 +2,7 @@
 
 namespace Education.Pages
 {
-    public class PageControlBadge : PageControl
+    public class PageControlBadge : PageControlBase
     {
         /// <summary>
         /// Konstruktor
