@@ -104,7 +104,7 @@ namespace Education.Pages
                 {
                     Title = "Erfolgreich",
                     Layout = TypesLayoutCallout.Success,
-                    Color = new PropertyColorText(TypesTextColor.Success),
+                    Color = new PropertyColorText(TypeColorText.Success),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 }
             );
@@ -116,7 +116,7 @@ namespace Education.Pages
                 {
                     Title = "Erfolgreich",
                     Layout = TypesLayoutCallout.Success,
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Warning),
+                    BackgroundColor = new PropertyColorBackground(TypeColorBackground.Warning),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 }
             );

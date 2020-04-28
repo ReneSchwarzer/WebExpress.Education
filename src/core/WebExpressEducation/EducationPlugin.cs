@@ -41,7 +41,8 @@ namespace Education
             SiteMap.AddPage("Alert", "alert", (x) => new WorkerPage<PageControlAlert>(x));
             SiteMap.AddPage("Badge", "badge", (x) => new WorkerPage<PageControlBadge>(x));
             SiteMap.AddPage("Breadcrumb", "breadcrumb", (x) => new WorkerPage<PageControlBreadcrumb>(x));
-            SiteMap.AddPage("Callout", "Callout", (x) => new WorkerPage<PageControlPanelCallout>(x));
+            SiteMap.AddPage("Callout", "callout", (x) => new WorkerPage<PageControlPanelCallout>(x));
+            SiteMap.AddPage("Icon", "icon", (x) => new WorkerPage<PageControlIcon>(x));
             SiteMap.AddPage("Html", "html", (x) => new WorkerPage<PageHtml>(x));
             SiteMap.AddPage("Hilfe", "help", (x) => new WorkerPage<PageHelp>(x));
 
@@ -52,6 +53,7 @@ namespace Education
             SiteMap.AddPath("Home/Controls/Badge");
             SiteMap.AddPath("Home/Controls/Breadcrumb");
             SiteMap.AddPath("Home/Controls/Callout");
+            SiteMap.AddPath("Home/Controls/Icon");
             SiteMap.AddPath("Home/Html");
             SiteMap.AddPath("Home/Hilfe");
         }

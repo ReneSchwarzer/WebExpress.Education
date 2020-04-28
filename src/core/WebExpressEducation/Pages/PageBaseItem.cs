@@ -47,7 +47,7 @@ namespace Education.Pages
             Name = name;
             Examples = new ControlPanelCard(this)
             {
-                BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Light),
+                BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light),
                 Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.None, PropertySpacing.Space.None, PropertySpacing.Space.Two)
             };
             Menu = new ControlTab(this)
@@ -116,7 +116,7 @@ namespace Education.Pages
 
                     content.Content.Add(new ControlPanelCard(this, item.Value.ToArray())
                     {
-                        BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Light),
+                        BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light),
                         Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.None, PropertySpacing.Space.None, PropertySpacing.Space.Two)
                     });
                 }
@@ -134,7 +134,7 @@ namespace Education.Pages
                 Format = TypesTextFormat.Code,
             })
             {
-                BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Light),
+                BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light),
                 Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.None, PropertySpacing.Space.None, PropertySpacing.Space.Two)
             });
 

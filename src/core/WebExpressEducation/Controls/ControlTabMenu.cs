@@ -31,7 +31,7 @@ namespace Education.Controls
                 Text = "Home",
                 Uri = root,
                 Active = (Page is PageHome) ? TypesActive.Active : TypesActive.None,
-                Icon = Icon.Home
+                Icon = TypeIcon.Home
             });
 
             Items.Add(new ControlLink(Page)
@@ -39,7 +39,7 @@ namespace Education.Controls
                 Text = "Tutorials",
                 Uri = root.Append("tutorial"),
                 Active = Page is IPageTutorial ? TypesActive.Active : TypesActive.None,
-                Icon = Icon.GraduationCap
+                Icon = TypeIcon.GraduationCap
             });
 
             Items.Add(new ControlLink(Page)
@@ -47,7 +47,7 @@ namespace Education.Controls
                 Text = "Controls",
                 Uri = root.Append("control"),
                 Active = Page is IPageControl ? TypesActive.Active : TypesActive.None,
-                Icon = Icon.Clone
+                Icon = TypeIcon.Clone
             });
 
             Items.Add(new ControlLink(Page)
@@ -55,7 +55,7 @@ namespace Education.Controls
                 Text = "Html",
                 Uri = root.Append("html"),
                 Active = Page is IPageHtml  ? TypesActive.Active : TypesActive.None,
-                Icon = Icon.Code
+                Icon = TypeIcon.Code
             });
 
             Items.Add(new ControlLink(Page)
@@ -63,7 +63,7 @@ namespace Education.Controls
                 Text = "Hilfe",
                 Uri = Page.Uri.Root.Append("help"),
                 Active = Page is PageHelp ? TypesActive.Active : TypesActive.None,
-                Icon = Icon.InfoCircle
+                Icon = TypeIcon.InfoCircle
             });
         }
     }

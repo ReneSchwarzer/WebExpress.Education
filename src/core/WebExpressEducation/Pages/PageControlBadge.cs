@@ -31,58 +31,58 @@ namespace Education.Pages
                 new ControlBadge(this)
                 {
                     Value = "Primär",
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Primary)
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Primary)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Sekundär",
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Secondary)
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Secondary)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Info",
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Info)
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Info)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Erfolg",
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Success)
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Success)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Warnung",
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Warning)
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Warning)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Fehler",
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Danger)
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Danger)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Dunkel",
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Dark)
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Dark)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Hell",
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Light)
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Light)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Weiß",
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.White)
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.White)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Transparent",
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Transparent)
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Transparent)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Benutzerdefiniert",
                     Color = new PropertyColorText("red"),
-                    BackgroundColor = new PropertyColorBackground("gold")
+                    BackgroundColor = new PropertyColorBackgroundBadge("gold")
                 }
             );
 
@@ -99,68 +99,68 @@ namespace Education.Pages
                 {
                     Value = "Primär",
                     Pill = TypesBadgePill.Pill,
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Primary)
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Primary)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Sekundär",
                     Pill = TypesBadgePill.Pill,
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Secondary)
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Secondary)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Info",
                     Pill = TypesBadgePill.Pill,
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Info)
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Info)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Erfolg",
                     Pill = TypesBadgePill.Pill,
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Success)
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Success)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Warnung",
                     Pill = TypesBadgePill.Pill,
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Warning)
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Warning)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Fehler",
                     Pill = TypesBadgePill.Pill,
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Danger)
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Danger)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Dunkel",
                     Pill = TypesBadgePill.Pill,
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Dark)
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Dark)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Hell",
                     Pill = TypesBadgePill.Pill,
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Light)
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Light)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Weiß",
                     Pill = TypesBadgePill.Pill,
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.White)
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.White)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Transparent",
                     Pill = TypesBadgePill.Pill,
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Transparent)
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Transparent)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Benutzerdefiniert",
                     Pill = TypesBadgePill.Pill,
                     Color = new PropertyColorText("red"),
-                    BackgroundColor = new PropertyColorBackground("gold")
+                    BackgroundColor = new PropertyColorBackgroundBadge("gold")
                 }
             );
 
@@ -176,68 +176,68 @@ namespace Education.Pages
                 {
                     Value = "Primär",
                     Uri = Uri,
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Primary)
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Primary)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Sekundär",
                     Uri = Uri,
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Secondary)
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Secondary)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Info",
                     Uri = Uri,
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Info)
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Info)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Erfolg",
                     Uri = Uri,
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Success)
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Success)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Warnung",
                     Uri = Uri,
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Warning)
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Warning)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Fehler",
                     Uri = Uri,
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Danger)
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Danger)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Dunkel",
                     Uri = Uri,
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Dark)
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Dark)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Hell",
                     Uri = Uri,
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Light)
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Light)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Weiß",
                     Uri = Uri,
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.White)
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.White)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Transparent",
                     Uri = Uri,
-                    BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Transparent)
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Transparent)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Benutzerdefiniert",
                     Uri = Uri,
                     Color = new PropertyColorText("red"),
-                    BackgroundColor = new PropertyColorBackground("gold")
+                    BackgroundColor = new PropertyColorBackgroundBadge("gold")
                 }
             );
         }

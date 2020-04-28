@@ -93,17 +93,17 @@ namespace Education.Pages
                     new ControlText(this)
                     {
                         Text = string.Format("Version"),
-                        Color = new PropertyColorText(TypesTextColor.Primary)
+                        Color = new PropertyColorText(TypeColorText.Primary)
                     },
                     new ControlText(this)
                     {
                         Text = string.Format("{0}", Context.Version),
-                        Color = new PropertyColorText(TypesTextColor.Dark)
+                        Color = new PropertyColorText(TypeColorText.Dark)
                     },
                     new ControlText(this)
                     {
                         Text = string.Format("Kontakt"),
-                        Color = new PropertyColorText(TypesTextColor.Primary)
+                        Color = new PropertyColorText(TypeColorText.Primary)
                     },
                     new ControlLink(this)
                     {
@@ -113,7 +113,7 @@ namespace Education.Pages
                             Scheme = UriScheme.Mailto,
                             Authority = new UriAuthority("rene_schwarzer@hotmail.de")
                         },
-                        Color = TypesTextColor.Dark
+                        Color = TypeColorText.Dark
                     }
                 )
             );
