@@ -81,7 +81,7 @@ namespace Education.Pages
                 new ControlBadge(this)
                 {
                     Value = "Benutzerdefiniert",
-                    Color = new PropertyColorText("red"),
+                    TextColor = new PropertyColorText("red"),
                     BackgroundColor = new PropertyColorBackgroundBadge("gold")
                 }
             );
@@ -159,7 +159,7 @@ namespace Education.Pages
                 {
                     Value = "Benutzerdefiniert",
                     Pill = TypesBadgePill.Pill,
-                    Color = new PropertyColorText("red"),
+                    TextColor = new PropertyColorText("red"),
                     BackgroundColor = new PropertyColorBackgroundBadge("gold")
                 }
             );
@@ -236,7 +236,7 @@ namespace Education.Pages
                 {
                     Value = "Benutzerdefiniert",
                     Uri = Uri,
-                    Color = new PropertyColorText("red"),
+                    TextColor = new PropertyColorText("red"),
                     BackgroundColor = new PropertyColorBackgroundBadge("gold")
                 }
             );

@@ -33,7 +33,7 @@ namespace Education.Pages
                 {
                     Icon = new PropertyIcon(x),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two),
-                    Color = new PropertyColorText(TypeColorText.Dark)
+                    TextColor = new PropertyColorText(TypeColorText.Dark)
                 }).ToArray()
             );
 
@@ -46,7 +46,7 @@ namespace Education.Pages
                    Icon = new PropertyIcon(x),
                    Title = Enum.GetName(typeof(TypeIcon), x),
                    Margin = new PropertySpacingMargin(PropertySpacing.Space.Two),
-                   Color = new PropertyColorText(TypeColorText.Warning)
+                   TextColor = new PropertyColorText(TypeColorText.Warning)
                }).ToArray()
             );
             
@@ -58,7 +58,7 @@ namespace Education.Pages
                    Icon = new PropertyIcon(Uri.Root.Append("/Assets/img/Rocket.png")),
                    Title = "Rakete",
                    Margin = new PropertySpacingMargin(PropertySpacing.Space.Two),
-                   Color = new PropertyColorText(TypeColorText.Primary)
+                   TextColor = new PropertyColorText(TypeColorText.Primary)
                }
             );
 
@@ -69,7 +69,7 @@ namespace Education.Pages
                 {
                     Icon = new PropertyIcon(x),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two),
-                    Color = new PropertyColorText(TypeColorText.Primary)
+                    TextColor = new PropertyColorText(TypeColorText.Primary)
                 }).ToArray()
             );
 
@@ -81,7 +81,7 @@ namespace Education.Pages
                     Icon = new PropertyIcon(x),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two),
                     Padding = new PropertySpacingPadding(PropertySpacing.Space.Three),
-                    Color = new PropertyColorText(TypeColorText.White),
+                    TextColor = new PropertyColorText(TypeColorText.White),
                     BackgroundColor = new PropertyColorBackground(TypeColorBackground.Success)
                 }).ToArray()
             );
@@ -94,7 +94,7 @@ namespace Education.Pages
                     Icon = new PropertyIcon(x),
                     Title = Enum.GetName(typeof(TypeIcon), x),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two),
-                    Color = new PropertyColorText(TypeColorText.Danger),
+                    TextColor = new PropertyColorText(TypeColorText.Danger),
                 }).ToArray()
             );
         }

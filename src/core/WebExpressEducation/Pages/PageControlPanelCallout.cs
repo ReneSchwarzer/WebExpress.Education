@@ -19,7 +19,7 @@ namespace Education.Pages
         {
             base.Init();
 
-            Description = "Das ControlPanelCallout stellt eine wihtige Information dar.";
+            Description = "Das ControlPanelCallout stellt eine wichtige Information dar.";
             Code = "new ControlPanelCallout(Page) { Title = \"Fehler\", Layout = TypesLayoutCallout.Warning }";
 
             AddExample
@@ -99,12 +99,12 @@ namespace Education.Pages
 
             AddProperty
             (
-                "Color",
+                "TextColor",
                 new ControlPanelCallout(this, new ControlText(this) { Text = "Mit einer Erfolgs-Textfarbe" })
                 {
                     Title = "Erfolgreich",
                     Layout = TypesLayoutCallout.Success,
-                    Color = new PropertyColorText(TypeColorText.Success),
+                    TextColor = new PropertyColorText(TypeColorText.Success),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 }
             );

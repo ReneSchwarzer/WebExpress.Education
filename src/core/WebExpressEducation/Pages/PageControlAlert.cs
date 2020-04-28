@@ -30,13 +30,13 @@ namespace Education.Pages
                 BackgroundColor = new PropertyColorBackgroundAlert(TypeColorBackground.Info)
             });
 
-            AddProperty("Color", new ControlAlert(this)
+            AddProperty("TextColor", new ControlAlert(this)
             {
                 Text = "Dies ist ein Alarm mit Warn-Textfarbe!",
                 Dismissible = TypesDismissibleAlert.Dismissible,
                 Fade = TypesFade.FadeShow,
                 BackgroundColor = new PropertyColorBackgroundAlert(TypeColorBackground.Success),
-                Color = new PropertyColorText(TypeColorText.Warning)
+                TextColor = new PropertyColorText(TypeColorText.Warning)
             });
 
             AddProperty("BackgroundColor", new ControlAlert(this)
@@ -120,7 +120,7 @@ namespace Education.Pages
                 Text = "Dies ist ein benutzerdefinierter Alarm!",
                 Dismissible = TypesDismissibleAlert.Dismissible,
                 Fade = TypesFade.FadeShow,
-                Color = new PropertyColorText("red"),
+                TextColor = new PropertyColorText("red"),
                 BackgroundColor = new PropertyColorBackgroundAlert("gold")
             });
 

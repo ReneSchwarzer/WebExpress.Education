@@ -54,7 +54,7 @@ namespace Education.Pages
             Head.Content.Add(new ControlPanelCenter(this, new ControlText(this)
             {
                 Text = Title,
-                Color = new PropertyColorText(TypeColorText.White),
+                TextColor = new PropertyColorText(TypeColorText.White),
                 Format = TypesTextFormat.H1,
                 Size = TypesSize.Default,
                 Padding = new PropertySpacingPadding(PropertySpacing.Space.One),
@@ -72,7 +72,7 @@ namespace Education.Pages
             Foot.Content.Add(new ControlText(this, "now")
             {
                 Text = string.Format("{0}", ViewModel.Instance.Now),
-                Color = new PropertyColorText(TypeColorText.Muted),
+                TextColor = new PropertyColorText(TypeColorText.Muted),
                 Format = TypesTextFormat.Center,
                 Size = TypesSize.Small
             });

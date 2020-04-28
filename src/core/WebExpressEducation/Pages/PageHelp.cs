@@ -93,17 +93,17 @@ namespace Education.Pages
                     new ControlText(this)
                     {
                         Text = string.Format("Version"),
-                        Color = new PropertyColorText(TypeColorText.Primary)
+                        TextColor = new PropertyColorText(TypeColorText.Primary)
                     },
                     new ControlText(this)
                     {
                         Text = string.Format("{0}", Context.Version),
-                        Color = new PropertyColorText(TypeColorText.Dark)
+                        TextColor = new PropertyColorText(TypeColorText.Dark)
                     },
                     new ControlText(this)
                     {
                         Text = string.Format("Kontakt"),
-                        Color = new PropertyColorText(TypeColorText.Primary)
+                        TextColor = new PropertyColorText(TypeColorText.Primary)
                     },
                     new ControlLink(this)
                     {

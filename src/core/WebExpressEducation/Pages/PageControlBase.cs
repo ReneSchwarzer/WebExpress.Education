@@ -32,7 +32,7 @@ namespace Education.Pages
 
             var pages = Context.SiteMap.Pages.Values.Distinct();
 
-            foreach (var v in pages.Where(x=> x.ID != new UriSegmentID("Controls")))
+            foreach (var v in pages.Where(x=> x.ID != new UriSegmentID("Controls")).OrderBy(x => x.Display))
             {
                 var uri = Context.SiteMap.GetUri(v.ID) as UriPage;
                 var last = Uri.Path.LastOrDefault() as UriPathSegmentPage;
