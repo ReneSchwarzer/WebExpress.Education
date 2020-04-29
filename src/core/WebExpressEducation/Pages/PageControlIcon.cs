@@ -64,7 +64,7 @@ namespace Education.Pages
 
             AddProperty
             (
-                "Color",
+                "TextColor",
                 enums.Select(x => new ControlIcon(this)
                 {
                     Icon = new PropertyIcon(x),

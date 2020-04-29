@@ -23,7 +23,7 @@ namespace Education.Pages
             base.Init();
 
             Description = "Das ControlProgressBar stellt eine Fortschrittsanzeige bereit.";
-            Code = "new ControlProgressBar(Page) { Color = new PropertyColorText(TypeColorText.Primary) }";
+            Code = "new ControlProgressBar(Page) { Color = new PropertyColorProgress(TypeColorProgress.Success) }";
 
             var enums = new List<TypeIcon>((TypeIcon[])Enum.GetValues(typeof(TypeIcon))).Where(x => x != TypeIcon.None && x != TypeIcon.UserIcon);
 
