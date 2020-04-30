@@ -23,7 +23,7 @@ namespace Education.Pages
                 Title += " - " + title;
             }
 
-            Favicons.Add(new Favicon("/Assets/img/Favicon.png", TypesFavicon.PNG));
+            Favicons.Add(new Favicon("/Assets/img/Favicon.png", TypeFavicon.PNG));
         }
 
         /// <summary>
@@ -34,20 +34,20 @@ namespace Education.Pages
             base.Init();
             Head.Styles = new List<string>(new[] { "position: sticky; top: 0; z-index: 99;" });
             Head.Content.Add(HamburgerMenu);
-            HamburgerMenu.HorizontalAlignment = TypesHorizontalAlignment.Left;
+            HamburgerMenu.HorizontalAlignment = TypeHorizontalAlignment.Left;
             HamburgerMenu.Image = Uri?.Root.Append("Assets/img/Logo.png");
-            HamburgerMenu.Add(new ControlLink(this) { Text = "Home", Icon = TypeIcon.Home, Uri = Uri.Root });
-            HamburgerMenu.Add(new ControlLink(this) { Text = "Tutorials", Icon = TypeIcon.GraduationCap, Uri = Uri.Root.Append("tutorials") });
-            HamburgerMenu.Add(new ControlLink(this) { Text = "Controls", Icon = TypeIcon.Clone, Uri = Uri.Root.Append("controls") });
-            HamburgerMenu.Add(new ControlLink(this) { Text = "Html", Icon = TypeIcon.Code, Uri = Uri.Root.Append("html") });
+            HamburgerMenu.Add(new ControlLink(this) { Text = "Home", Icon = new PropertyIcon(TypeIcon.Home), Uri = Uri.Root });
+            HamburgerMenu.Add(new ControlLink(this) { Text = "Tutorials", Icon = new PropertyIcon(TypeIcon.GraduationCap), Uri = Uri.Root.Append("tutorials") });
+            HamburgerMenu.Add(new ControlLink(this) { Text = "Controls", Icon = new PropertyIcon(TypeIcon.Clone), Uri = Uri.Root.Append("controls") });
+            HamburgerMenu.Add(new ControlLink(this) { Text = "Html", Icon = new PropertyIcon(TypeIcon.Code), Uri = Uri.Root.Append("html") });
             HamburgerMenu.AddSeperator();
-            HamburgerMenu.Add(new ControlLink(this) { Text = "Hilfe", Icon = TypeIcon.InfoCircle, Uri = Uri.Root.Append("help") });
+            HamburgerMenu.Add(new ControlLink(this) { Text = "Hilfe", Icon = new PropertyIcon(TypeIcon.InfoCircle), Uri = Uri.Root.Append("help") });
 
             // SideBar
             ToolBar = new ControlToolBar(this)
             {
                 BackgroundColor = new PropertyColorBackground(TypeColorBackground.Dark),
-                HorizontalAlignment = TypesHorizontalAlignment.Left
+                HorizontalAlignment = TypeHorizontalAlignment.Left
             };
             ToolBar.Classes.Add("sidebar");
 
@@ -56,7 +56,7 @@ namespace Education.Pages
                 Text = Title,
                 TextColor = new PropertyColorText(TypeColorText.White),
                 Format = TypesTextFormat.H1,
-                Size = TypesSize.Default,
+                Size = TypeSizeButton.Default,
                 Padding = new PropertySpacingPadding(PropertySpacing.Space.One),
                 Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.None, PropertySpacing.Space.None, PropertySpacing.Space.Null),
                 Styles = new List<string>(new[] { "font-size:190%; height: 50px;" })
@@ -74,7 +74,7 @@ namespace Education.Pages
                 Text = string.Format("{0}", ViewModel.Instance.Now),
                 TextColor = new PropertyColorText(TypeColorText.Muted),
                 Format = TypesTextFormat.Center,
-                Size = TypesSize.Small
+                Size = TypeSizeButton.Small
             });
         }
 

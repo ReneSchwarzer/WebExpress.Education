@@ -104,6 +104,9 @@
     <None Update="Assets\img\Education.svg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="Assets\img\Icon16.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Assets\img\Rocket.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

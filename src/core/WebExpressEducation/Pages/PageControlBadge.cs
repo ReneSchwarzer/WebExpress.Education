@@ -240,6 +240,53 @@ namespace Education.Pages
                     BackgroundColor = new PropertyColorBackgroundBadge("gold")
                 }
             );
+
+            AddProperty
+            (
+                "Size",
+                new ControlBadge(this)
+                {
+                    Value = "Extra Small",
+                    Size = new PropertySizeText(TypeSizeText.ExtraSmall),
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Dark),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
+                },
+                new ControlBadge(this)
+                {
+                    Value = "Small",
+                    Size = new PropertySizeText(TypeSizeText.Small),
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Dark),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
+                },
+                new ControlBadge(this)
+                {
+                    Value = "Standard",
+                    Size = new PropertySizeText(TypeSizeText.Default),
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Dark),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
+                },
+                new ControlBadge(this)
+                {
+                    Value = "Large",
+                    Size = new PropertySizeText(TypeSizeText.Large),
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Dark),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
+                },
+                new ControlBadge(this)
+                {
+                    Value = "Extra Large",
+                    Size = new PropertySizeText(TypeSizeText.ExtraLarge),
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Dark),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
+                },
+                new ControlBadge(this)
+                {
+                    Value = "Benutzerdefiniert",
+                    Size = new PropertySizeText(3.1f),
+                    BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Dark),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
+                }
+            );
         }
 
         /// <summary>

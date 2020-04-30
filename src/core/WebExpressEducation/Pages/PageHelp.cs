@@ -33,7 +33,7 @@ namespace Education.Pages
                 Source = Uri.Root.Append("Assets/StoreLogo.png"),
                 Width = 200,
                 Height = 200,
-                HorizontalAlignment = TypesHorizontalAlignment.Right
+                HorizontalAlignment = TypeHorizontalAlignment.Right
             });
             
             Main.Content.Add(new ControlText(this)
@@ -113,7 +113,7 @@ namespace Education.Pages
                             Scheme = UriScheme.Mailto,
                             Authority = new UriAuthority("rene_schwarzer@hotmail.de")
                         },
-                        Color = TypeColorText.Dark
+                        TextColor = new PropertyColorText(TypeColorText.Dark)
                     }
                 )
             );

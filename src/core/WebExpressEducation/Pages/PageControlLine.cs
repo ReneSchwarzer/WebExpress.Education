@@ -8,7 +8,7 @@ namespace Education.Pages
         /// Konstruktor
         /// </summary>
         public PageControlLine()
-            : base("PageControlLine")
+            : base("ControlLine")
         {
         }
 
@@ -19,8 +19,8 @@ namespace Education.Pages
         {
             base.Init();
 
-            Description = "Das PageControlLine zerlegt den Uri-Pfad, so dass diese seperat aufgerufen werden können.";
-            Code = "new PageControlLine(Page) { }";
+            Description = "Das ControlLine stellt eine Abgrenzung (horizontale Linie) bereit.";
+            Code = "new ControlLine(Page) { }";
 
             AddExample
             (

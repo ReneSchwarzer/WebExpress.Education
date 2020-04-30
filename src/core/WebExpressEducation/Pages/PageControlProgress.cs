@@ -25,7 +25,7 @@ namespace Education.Pages
             Description = "Das ControlProgressBar stellt eine Fortschrittsanzeige bereit.";
             Code = "new ControlProgressBar(Page) { Color = new PropertyColorProgress(TypeColorProgress.Success) }";
 
-            var enums = new List<TypeIcon>((TypeIcon[])Enum.GetValues(typeof(TypeIcon))).Where(x => x != TypeIcon.None && x != TypeIcon.UserIcon);
+            var enums = new List<TypeIcon>((TypeIcon[])Enum.GetValues(typeof(TypeIcon))).Where(x => x != TypeIcon.None);
 
             AddExample
             (
@@ -208,7 +208,7 @@ namespace Education.Pages
                 {
                     Value = 25,
                     Text = "ExtraSmall",
-                    Size = TypesSizeProgress.ExtraSmall,
+                    Size = TypeSizeProgress.ExtraSmall,
                     Color = new PropertyColorProgress(TypeColorProgress.Primary),
                     Format = TypeFormatProgress.Striped,
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
@@ -217,7 +217,7 @@ namespace Education.Pages
                 {
                     Value = 50,
                     Text = "Small",
-                    Size = TypesSizeProgress.Small,
+                    Size = TypeSizeProgress.Small,
                     Color = new PropertyColorProgress(TypeColorProgress.Secondary),
                     Format = TypeFormatProgress.Striped,
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
@@ -226,7 +226,7 @@ namespace Education.Pages
                  {
                      Value = 75,
                      Text = "Standard",
-                     Size = TypesSizeProgress.Default,
+                     Size = TypeSizeProgress.Default,
                      Color = new PropertyColorProgress(TypeColorProgress.Info),
                      Format = TypeFormatProgress.Striped,
                      Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
@@ -235,7 +235,7 @@ namespace Education.Pages
                  {
                      Value = 75,
                      Text = "Large",
-                     Size = TypesSizeProgress.Large,
+                     Size = TypeSizeProgress.Large,
                      Color = new PropertyColorProgress(TypeColorProgress.Success),
                      Format = TypeFormatProgress.Striped,
                      Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
@@ -244,7 +244,7 @@ namespace Education.Pages
                  {
                      Value = 100,
                      Text = "ExtraLarge",
-                     Size = TypesSizeProgress.ExtraLarge,
+                     Size = TypeSizeProgress.ExtraLarge,
                      Color = new PropertyColorProgress(TypeColorProgress.Warning),
                      Format = TypeFormatProgress.Striped,
                      Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
