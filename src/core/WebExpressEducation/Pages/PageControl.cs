@@ -41,13 +41,13 @@ namespace Education.Pages
             content.Content.Add(new ControlText(this)
             {
                 Text = "Allgemein",
-                Format = TypesTextFormat.H1
+                Format = TypeTextFormat.H1
             });
 
             content.Content.Add(new ControlText(this)
             {
                 Text = "Steuerelemente sind komplexe HTML-Objekte.",
-                Format = TypesTextFormat.Paragraph
+                Format = TypeTextFormat.Paragraph
             });
 
 

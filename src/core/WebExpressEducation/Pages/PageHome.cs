@@ -32,7 +32,7 @@ namespace Education.Pages
             Main.Content.Add(new ControlText(this)
             {
                 Text = "Willkommen",
-                Format = TypesTextFormat.H1,
+                Format = TypeTextFormat.H1,
                 Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.None, PropertySpacing.Space.None, PropertySpacing.Space.Five)
             });
         }

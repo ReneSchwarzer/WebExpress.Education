@@ -61,7 +61,7 @@ namespace Education.Pages
                 "Layout",
                 "Setzt das Layout des Tabs.",
                 "Layout = TypesLayoutTab.Tab",
-                new ControlText(this) { Text = "Default" },
+                new ControlText(this) { Text = "Default", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlTab
                 (
                     this,
@@ -72,7 +72,7 @@ namespace Education.Pages
                 {
                     Layout = TypeLayoutTab.Default
                 },
-                new ControlText(this) { Text = "Menu" },
+                new ControlText(this) { Text = "Menu", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlTab
                 (
                     this,
@@ -83,7 +83,7 @@ namespace Education.Pages
                 {
                     Layout = TypeLayoutTab.Menu
                 },
-                new ControlText(this) { Text = "Tab" },
+                new ControlText(this) { Text = "Tab", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlTab
                 (
                     this,
@@ -94,7 +94,7 @@ namespace Education.Pages
                 {
                     Layout = TypeLayoutTab.Tab
                 },
-                new ControlText(this) { Text = "Pill" },
+                new ControlText(this) { Text = "Pill", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlTab
                 (
                     this,
@@ -112,7 +112,7 @@ namespace Education.Pages
                 "HorizontalAlignment",
                 "Setzt die horizontale Ausrichtung des Tabs.",
                 "Active = TypeActive.Active",
-                new ControlText(this) { Text = "Default"},
+                new ControlText(this) { Text = "Default", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlTab
                 (
                     this,
@@ -125,7 +125,7 @@ namespace Education.Pages
                     Layout = TypeLayoutTab.Pill,
                     HorizontalAlignment = TypeHorizontalAlignmentTab.Default
                 },
-                new ControlText(this) { Text = "Left"},
+                new ControlText(this) { Text = "Left", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlTab
                 (
                     this,
@@ -138,7 +138,7 @@ namespace Education.Pages
                     Layout = TypeLayoutTab.Pill,
                     HorizontalAlignment = TypeHorizontalAlignmentTab.Left
                 },
-                new ControlText(this) { Text = "Center" },
+                new ControlText(this) { Text = "Center", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlTab
                 (
                     this,
@@ -151,7 +151,7 @@ namespace Education.Pages
                     Layout = TypeLayoutTab.Pill,
                     HorizontalAlignment = TypeHorizontalAlignmentTab.Center
                 },
-                new ControlText(this) { Text = "Right" },
+                new ControlText(this) { Text = "Right", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlTab
                 (
                     this,
@@ -171,7 +171,7 @@ namespace Education.Pages
                 "Orientation",
                 "Setzt die Orientierung des Tabs.",
                 "Orientation = TypeNavOrientation.Vertical",
-                new ControlText(this) { Text = "Default"},
+                new ControlText(this) { Text = "Default", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlTab
                 (
                     this,
@@ -184,7 +184,7 @@ namespace Education.Pages
                     Layout = TypeLayoutTab.Pill,
                     Orientation = TypeOrientationTab.Default 
                 },
-                new ControlText(this) { Text = "Horizontal"},
+                new ControlText(this) { Text = "Horizontal", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlTab
                 (
                     this,
@@ -197,7 +197,7 @@ namespace Education.Pages
                     Layout = TypeLayoutTab.Pill,
                     Orientation = TypeOrientationTab.Horizontal
                 },
-                new ControlText(this) { Text = "Vertical" },
+                new ControlText(this) { Text = "Vertical", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlTab
                 (
                     this,
@@ -217,7 +217,7 @@ namespace Education.Pages
                 "Justified",
                 "Bestimmt, ob die Tab-Register die gleiche Größe besitzen sollen.",
                 "Justified = TypeNavJustified.Justified",
-                new ControlText(this) { Text = "Default"},
+                new ControlText(this) { Text = "Default", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlTab
                 (
                     this,
@@ -230,7 +230,7 @@ namespace Education.Pages
                     Layout = TypeLayoutTab.Pill,
                     Justified = TypeJustifiedTab.Default
                 },
-                new ControlText(this) { Text = "Justified" },
+                new ControlText(this) { Text = "Justified", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlTab
                 (
                     this,

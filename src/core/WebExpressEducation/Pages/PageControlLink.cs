@@ -60,7 +60,7 @@ namespace Education.Pages
                 "Content",
                 "Setzt den Inhalt des Links",
                 "new ControlLink(this, new ControlText(this) { Text = \"Hallo Welt!\", Format = TypesTextFormat.Italic }, new ControlBadge(this) { Value = \"1\", BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Danger) })",
-                new ControlLink(this, new ControlText(this) { Text = "Hallo Welt!", Format = TypesTextFormat.Italic }, new ControlBadge(this) { Value = "1", BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Danger) })
+                new ControlLink(this, new ControlText(this) { Text = "Hallo Welt!", Format = TypeTextFormat.Italic }, new ControlBadge(this) { Value = "1", BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Danger) })
                 {
                     Uri = Uri,
                     TextColor = new PropertyColorText(TypeColorText.Default),
