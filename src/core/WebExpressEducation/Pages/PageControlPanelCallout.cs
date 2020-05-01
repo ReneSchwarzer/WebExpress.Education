@@ -20,7 +20,7 @@ namespace Education.Pages
             base.Init();
 
             Description = "Das ControlPanelCallout stellt eine wichtige Information dar.";
-            Code = "new ControlPanelCallout(Page) { Title = \"Fehler\", Layout = TypesLayoutCallout.Warning }";
+            Code = "new ControlPanelCallout(Page) { Title = \"Fehler\", Color = new PropertyColorCallout(TypeColorCallout.Info) }";
 
             AddExample
             (
@@ -32,49 +32,55 @@ namespace Education.Pages
                 new ControlPanelCallout(this, new ControlText(this) { Text = "Hallo Welt!" })
                 {
                     Title = "Info",
-                    Layout = TypesLayoutCallout.Info,
+                    Color = new PropertyColorCallout(TypeColorCallout.Info),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
                 new ControlPanelCallout(this, new ControlText(this) { Text = "Hallo Welt!" })
                 {
                     Title = "Primär",
-                    Layout = TypesLayoutCallout.Primary,
+                    Color = new PropertyColorCallout(TypeColorCallout.Primary),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
                 new ControlPanelCallout(this, new ControlText(this) { Text = "Hallo Welt!" })
                 {
                     Title = "Sekundär",
-                    Layout = TypesLayoutCallout.Secondary,
+                    Color = new PropertyColorCallout(TypeColorCallout.Secondary),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
                 new ControlPanelCallout(this, new ControlText(this) { Text = "Hallo Welt!"})
                 {
                     Title = "Erfolgreich",
-                    Layout = TypesLayoutCallout.Success,
+                    Color = new PropertyColorCallout(TypeColorCallout.Success),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
                 new ControlPanelCallout(this, new ControlText(this) { Text = "Hallo Welt!" })
                 {
                     Title = "Warnung",
-                    Layout = TypesLayoutCallout.Warning,
+                    Color = new PropertyColorCallout(TypeColorCallout.Warning),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
                 new ControlPanelCallout(this, new ControlText(this) { Text = "Hallo Welt!" })
                 {
                     Title = "Fehler",
-                    Layout = TypesLayoutCallout.Danger,
+                    Color = new PropertyColorCallout(TypeColorCallout.Danger),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
                 new ControlPanelCallout(this, new ControlText(this) { Text = "Hallo Welt!" })
                 {
                     Title = "Dunkel",
-                    Layout = TypesLayoutCallout.Dark,
+                    Color = new PropertyColorCallout(TypeColorCallout.Dark),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
                 new ControlPanelCallout(this, new ControlText(this) { Text = "Hallo Welt!" })
                 {
                     Title = "Hell",
-                    Layout = TypesLayoutCallout.Light,
+                    Color = new PropertyColorCallout(TypeColorCallout.Light),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
+                },
+                new ControlPanelCallout(this, new ControlText(this) { Text = "Hallo Welt!" })
+                {
+                    Title = "Benutzerdefiniert",
+                    Color = new PropertyColorCallout("gold"),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 }
 
@@ -87,12 +93,12 @@ namespace Education.Pages
                 new ControlPanelCallout(this, new ControlText(this) { Text = "Mit einem Titel" })
                 {
                     Title = "Erfolgreich",
-                    Layout = TypesLayoutCallout.Success,
+                    Color = new PropertyColorCallout(TypeColorCallout.Success),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
                 new ControlPanelCallout(this, new ControlText(this) { Text = "Ohne einen Titel" })
                 {
-                    Layout = TypesLayoutCallout.Success,
+                    Color = new PropertyColorCallout(TypeColorCallout.Success),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 }
             );
@@ -103,7 +109,7 @@ namespace Education.Pages
                 new ControlPanelCallout(this, new ControlText(this) { Text = "Mit einer Erfolgs-Textfarbe" })
                 {
                     Title = "Erfolgreich",
-                    Layout = TypesLayoutCallout.Success,
+                    Color = new PropertyColorCallout(TypeColorCallout.Success),
                     TextColor = new PropertyColorText(TypeColorText.Success),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 }
@@ -115,7 +121,7 @@ namespace Education.Pages
                 new ControlPanelCallout(this, new ControlText(this) { Text = "Mit einem Warn-Hintergrund" })
                 {
                     Title = "Erfolgreich",
-                    Layout = TypesLayoutCallout.Success,
+                    Color = new PropertyColorCallout(TypeColorCallout.Success),
                     BackgroundColor = new PropertyColorBackground(TypeColorBackground.Warning),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 }

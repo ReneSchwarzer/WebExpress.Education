@@ -23,14 +23,14 @@ namespace Education.Controls
         {
             var root = Page.Uri.Root;
 
-            Layout = TypesLayoutTab.Pill;
-            HorizontalAlignment = TypesTabHorizontalAlignment.Center;
+            Layout = TypeLayoutTab.Pill;
+            HorizontalAlignment = TypeHorizontalAlignmentTab.Center;
 
             Items.Add(new ControlLink(Page)
             {
                 Text = "Home",
                 Uri = root,
-                Active = (Page is PageHome) ? TypesActive.Active : TypesActive.None,
+                Active = (Page is PageHome) ? TypeActive.Active : TypeActive.None,
                 Icon = new PropertyIcon(TypeIcon.Home)
             });
 
@@ -38,7 +38,7 @@ namespace Education.Controls
             {
                 Text = "Tutorials",
                 Uri = root.Append("tutorial"),
-                Active = Page is IPageTutorial ? TypesActive.Active : TypesActive.None,
+                Active = Page is IPageTutorial ? TypeActive.Active : TypeActive.None,
                 Icon = new PropertyIcon(TypeIcon.GraduationCap)
             });
 
@@ -46,7 +46,7 @@ namespace Education.Controls
             {
                 Text = "Controls",
                 Uri = root.Append("control"),
-                Active = Page is IPageControl ? TypesActive.Active : TypesActive.None,
+                Active = Page is IPageControl ? TypeActive.Active : TypeActive.None,
                 Icon = new PropertyIcon(TypeIcon.Clone)
             });
 
@@ -54,7 +54,7 @@ namespace Education.Controls
             {
                 Text = "Html",
                 Uri = root.Append("html"),
-                Active = Page is IPageHtml  ? TypesActive.Active : TypesActive.None,
+                Active = Page is IPageHtml  ? TypeActive.Active : TypeActive.None,
                 Icon = new PropertyIcon(TypeIcon.Code)
             });
 
@@ -62,7 +62,7 @@ namespace Education.Controls
             {
                 Text = "Hilfe",
                 Uri = Page.Uri.Root.Append("help"),
-                Active = Page is PageHelp ? TypesActive.Active : TypesActive.None,
+                Active = Page is PageHelp ? TypeActive.Active : TypeActive.None,
                 Icon = new PropertyIcon(TypeIcon.InfoCircle)
             });
         }

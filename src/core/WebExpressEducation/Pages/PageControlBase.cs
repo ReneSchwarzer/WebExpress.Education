@@ -43,7 +43,7 @@ namespace Education.Pages
                     {
                         Text = v.Display,
                         Uri = uri,
-                        Active = last.SegmentID == v.ID ? TypesActive.Active : TypesActive.None
+                        Active = last.SegmentID == v.ID ? TypeActive.Active : TypeActive.None
                     });
                 }
             }

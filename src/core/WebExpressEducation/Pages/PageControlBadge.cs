@@ -93,72 +93,72 @@ namespace Education.Pages
                 new ControlBadge(this)
                 {
                     Value = "Standard",
-                    Pill = TypesBadgePill.Pill
+                    Pill = TypePillBadge.Pill
                 },
                 new ControlBadge(this)
                 {
                     Value = "Primär",
-                    Pill = TypesBadgePill.Pill,
+                    Pill = TypePillBadge.Pill,
                     BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Primary)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Sekundär",
-                    Pill = TypesBadgePill.Pill,
+                    Pill = TypePillBadge.Pill,
                     BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Secondary)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Info",
-                    Pill = TypesBadgePill.Pill,
+                    Pill = TypePillBadge.Pill,
                     BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Info)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Erfolg",
-                    Pill = TypesBadgePill.Pill,
+                    Pill = TypePillBadge.Pill,
                     BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Success)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Warnung",
-                    Pill = TypesBadgePill.Pill,
+                    Pill = TypePillBadge.Pill,
                     BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Warning)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Fehler",
-                    Pill = TypesBadgePill.Pill,
+                    Pill = TypePillBadge.Pill,
                     BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Danger)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Dunkel",
-                    Pill = TypesBadgePill.Pill,
+                    Pill = TypePillBadge.Pill,
                     BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Dark)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Hell",
-                    Pill = TypesBadgePill.Pill,
+                    Pill = TypePillBadge.Pill,
                     BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Light)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Weiß",
-                    Pill = TypesBadgePill.Pill,
+                    Pill = TypePillBadge.Pill,
                     BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.White)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Transparent",
-                    Pill = TypesBadgePill.Pill,
+                    Pill = TypePillBadge.Pill,
                     BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Transparent)
                 },
                 new ControlBadge(this)
                 {
                     Value = "Benutzerdefiniert",
-                    Pill = TypesBadgePill.Pill,
+                    Pill = TypePillBadge.Pill,
                     TextColor = new PropertyColorText("red"),
                     BackgroundColor = new PropertyColorBackgroundBadge("gold")
                 }

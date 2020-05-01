@@ -1,4 +1,5 @@
 ﻿using WebExpress.Html;
+using WebExpress.Messages;
 using WebExpress.UI.Controls;
 
 namespace Education.Pages
@@ -43,9 +44,24 @@ namespace Education.Pages
             AddProperty
             (
                 "Text",
+                "Setzt den Text des Links",
+                "Text = \"Hallo Welt!\"",
                 new ControlLink(this)
                 {
                     Text = "Hallo Welt!",
+                    Uri = Uri,
+                    TextColor = new PropertyColorText(TypeColorText.Default),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
+                }
+            );
+
+            AddProperty
+            (
+                "Content",
+                "Setzt den Inhalt des Links",
+                "new ControlLink(this, new ControlText(this) { Text = \"Hallo Welt!\", Format = TypesTextFormat.Italic }, new ControlBadge(this) { Value = \"1\", BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Danger) })",
+                new ControlLink(this, new ControlText(this) { Text = "Hallo Welt!", Format = TypesTextFormat.Italic }, new ControlBadge(this) { Value = "1", BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Danger) })
+                {
                     Uri = Uri,
                     TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
@@ -146,10 +162,13 @@ namespace Education.Pages
             AddProperty
             (
                 "Active",
+                "Setzt die Aktivitätseigenschaft des Links.",
+                "Diese Eigenschaft wirkt sich nicht in allen Kontexten aus.",
+                "Active = TypesActive.Active",
                 new ControlLink(this)
                 {
                     Text = "None",
-                    Active = TypesActive.None,
+                    Active = TypeActive.None,
                     Uri = Uri,
                     TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
@@ -157,7 +176,7 @@ namespace Education.Pages
                 new ControlLink(this)
                 {
                     Text = "Active",
-                    Active = TypesActive.Active,
+                    Active = TypeActive.Active,
                     Uri = Uri,
                     TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
@@ -165,7 +184,7 @@ namespace Education.Pages
                 new ControlLink(this)
                 {
                     Text = "Disable",
-                    Active = TypesActive.Disabled,
+                    Active = TypeActive.Disabled,
                     Uri = Uri,
                     TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
@@ -420,6 +439,23 @@ namespace Education.Pages
                 }
             );
 
+            var linkParam = new ControlLink(this)
+            {
+                Text = "Mit Parameter",
+                Uri = Uri,
+                Active = TypeActive.Active
+            };
+            linkParam.Params.Add(new Parameter("param1", 1));
+            linkParam.Params.Add(new Parameter("param2", "zwei"));
+
+            AddProperty
+            (
+                "Param",
+                "Link mit Parametern",
+                "Params.Add(new Parameter(\"param1\", 1))",
+                linkParam
+            );
+
             AddProperty
             (
                 "Modal",
@@ -427,7 +463,7 @@ namespace Education.Pages
                 {
                     Text = "Klick mich!",
                     Uri = Uri,
-                    Modal = new ControlModal(this, "Dialog", new ControlText(this) { Text = "Hallo Welt!" }),
+                    Modal = new ControlModal(this, null, "Dialog", new ControlText(this) { Text = "Hallo Welt!" }),
                     TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 }

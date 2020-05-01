@@ -53,8 +53,8 @@ namespace Education.Pages
 
             var tab = new ControlTab(this)
             {
-                Layout = TypesLayoutTab.Pill,
-                Orientation = TypesNavOrientation.Vertical
+                Layout = TypeLayoutTab.Pill,
+                Orientation = TypeOrientationTab.Vertical
             };
 
             foreach (var v in pages.Where(x=> x.ID != new UriSegmentID("Controls")).OrderBy(x => x.Display))
@@ -68,7 +68,7 @@ namespace Education.Pages
                     {
                         Text = v.Display,
                         Uri = uri,
-                        Active = last.SegmentID == v.ID ? TypesActive.Active : TypesActive.None
+                        Active = last.SegmentID == v.ID ? TypeActive.Active : TypeActive.None
                     });
                 }
             }
