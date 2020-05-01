@@ -90,6 +90,8 @@ namespace Education.Pages
             AddProperty
             (
                 "Pill",
+                "Ändert das Design und fügt stärker abgerundete Ecken ein.",
+                "Pill = TypePillBadge.Pill",
                 new ControlBadge(this)
                 {
                     Value = "Standard",
@@ -166,7 +168,9 @@ namespace Education.Pages
 
             AddProperty
             (
-                "Link",
+                "Uri",
+                "Fügt eine Uri hinzu, so das das Abzeichen wie ein Link funktioniert.",
+                "Uri = Page.Uri",
                 new ControlBadge(this)
                 {
                     Value = "Standard",
@@ -244,6 +248,8 @@ namespace Education.Pages
             AddProperty
             (
                 "Size",
+                "Legt die Größe fest",
+                "Size = new PropertySizeText(TypeSizeText.Small)",
                 new ControlBadge(this)
                 {
                     Value = "Extra Small",

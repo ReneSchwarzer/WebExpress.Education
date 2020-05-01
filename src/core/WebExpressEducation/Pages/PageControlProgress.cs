@@ -66,6 +66,8 @@ namespace Education.Pages
             AddProperty
             (
                "Text",
+               "Legt den Text fest, welcher auf dem Fortschrittsbalken angezeigt wird.",
+               "Text = \"75%\"",
                new ControlProgressBar(this)
                {
                    Value = 75,
@@ -78,6 +80,8 @@ namespace Education.Pages
             AddProperty
             (
                 "Color",
+                "Setzt die Farbe des Fortschrittsbalkens.",
+                "Color = new PropertyColorProgress(TypeColorProgress.Secondary)",
                 new ControlProgressBar(this)
                 {
                     Value = 10,
@@ -93,80 +97,81 @@ namespace Education.Pages
                     Color = new PropertyColorProgress(TypeColorProgress.Secondary),
                     Format = TypeFormatProgress.Colored,
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
+                },
+                new ControlProgressBar(this)
+                {
+                    Value = 30,
+                    Text = "Info",
+                    Color = new PropertyColorProgress(TypeColorProgress.Info),
+                    Format = TypeFormatProgress.Colored,
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
+                },
+                new ControlProgressBar(this)
+                {
+                    Value = 40,
+                    Text = "Erfolg",
+                    Color = new PropertyColorProgress(TypeColorProgress.Success),
+                    Format = TypeFormatProgress.Colored,
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
+                },
+                new ControlProgressBar(this)
+                {
+                    Value = 50,
+                    Text = "Warnung",
+                    Color = new PropertyColorProgress(TypeColorProgress.Warning),
+                    Format = TypeFormatProgress.Colored,
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
+                },
+                new ControlProgressBar(this)
+                {
+                    Value = 60,
+                    Text = "Fehler",
+                    Color = new PropertyColorProgress(TypeColorProgress.Danger),
+                    Format = TypeFormatProgress.Colored,
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
+                },
+                new ControlProgressBar(this)
+                {
+                    Value = 70,
+                    Text = "Dunkel",
+                    Color = new PropertyColorProgress(TypeColorProgress.Dark),
+                    Format = TypeFormatProgress.Colored,
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
+                },
+                new ControlProgressBar(this)
+                {
+                    Value = 80,
+                    Text = "Hell",
+                    Color = new PropertyColorProgress(TypeColorProgress.Light),
+                    TextColor = new PropertyColorText(TypeColorText.Dark),
+                    Format = TypeFormatProgress.Colored,
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
+                },
+                new ControlProgressBar(this)
+                {
+                    Value = 90,
+                    Text = "Weiß",
+                    Color = new PropertyColorProgress(TypeColorProgress.White),
+                    TextColor = new PropertyColorText(TypeColorText.Dark),
+                    Format = TypeFormatProgress.Colored,
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
+                },
+                new ControlProgressBar(this)
+                {
+                    Value = 100,
+                    Text = "Benutzerdefiniert",
+                    Color = new PropertyColorProgress("gold"),
+                    TextColor = new PropertyColorText("red"),
+                    Format = TypeFormatProgress.Colored,
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
                 }
-                 ,
-                 new ControlProgressBar(this)
-                 {
-                     Value = 30,
-                     Text = "Info",
-                     Color = new PropertyColorProgress(TypeColorProgress.Info),
-                     Format = TypeFormatProgress.Colored,
-                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
-                 },
-                 new ControlProgressBar(this)
-                 {
-                     Value = 40,
-                     Text = "Erfolg",
-                     Color = new PropertyColorProgress(TypeColorProgress.Success),
-                     Format = TypeFormatProgress.Colored,
-                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
-                 },
-                 new ControlProgressBar(this)
-                 {
-                     Value = 50,
-                     Text = "Warnung",
-                     Color = new PropertyColorProgress(TypeColorProgress.Warning),
-                     Format = TypeFormatProgress.Colored,
-                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
-                 },
-                 new ControlProgressBar(this)
-                 {
-                     Value = 60,
-                     Text = "Fehler",
-                     Color = new PropertyColorProgress(TypeColorProgress.Danger),
-                     Format = TypeFormatProgress.Colored,
-                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
-                 },
-                 new ControlProgressBar(this)
-                 {
-                     Value = 70,
-                     Text = "Dunkel",
-                     Color = new PropertyColorProgress(TypeColorProgress.Dark),
-                     Format = TypeFormatProgress.Colored,
-                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
-                 },
-                 new ControlProgressBar(this)
-                 {
-                     Value = 80,
-                     Text = "Hell",
-                     Color = new PropertyColorProgress(TypeColorProgress.Light),
-                     TextColor = new PropertyColorText(TypeColorText.Dark),
-                     Format = TypeFormatProgress.Colored,
-                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
-                 },
-                 new ControlProgressBar(this)
-                 {
-                     Value = 90,
-                     Text = "Weiß",
-                     Color = new PropertyColorProgress(TypeColorProgress.White),
-                     TextColor = new PropertyColorText(TypeColorText.Dark),
-                     Format = TypeFormatProgress.Colored,
-                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
-                 },
-                 new ControlProgressBar(this)
-                 {
-                     Value = 100,
-                     Text = "Benutzerdefiniert",
-                     Color = new PropertyColorProgress("gold"),
-                     TextColor = new PropertyColorText("red"),
-                     Format = TypeFormatProgress.Colored,
-                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
-                 }
             );
 
             AddProperty
             (
                 "Format",
+                "Setzt das Format des Fortschrittsbalkens",
+                "Format = TypeFormatProgress.Colored",
                 new ControlProgressBar(this)
                 {
                     Value = 25,
@@ -204,6 +209,8 @@ namespace Education.Pages
             AddProperty
             (
                 "Size",
+                "Bestimmt die Höhe des Fortschrittbalkens.",
+                "Size = TypeSizeProgress.Small",
                 new ControlProgressBar(this)
                 {
                     Value = 25,
@@ -254,6 +261,8 @@ namespace Education.Pages
             AddProperty
             (
                 "TextColor",
+                "Legt die Textfarbe fest.",
+                "TextColor = new PropertyColorText(TypeColorText.Warning)",
                 new ControlProgressBar(this)
                 {
                     Value = 50,
@@ -268,6 +277,8 @@ namespace Education.Pages
             AddProperty
             (
                 "BackgroundColor",
+                "Legt die Hintergrundfarbe fest.",
+                "BackgroundColor = new PropertyColorBackground(TypeColorBackground.Warning)",
                 new ControlProgressBar(this)
                 {
                     Value = 50,

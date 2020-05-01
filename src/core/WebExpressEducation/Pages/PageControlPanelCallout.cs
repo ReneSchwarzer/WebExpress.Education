@@ -26,6 +26,38 @@ namespace Education.Pages
             (
                 new ControlPanelCallout(this, new ControlText(this) { Text = "Hallo Welt!" })
                 {
+                    Title = "Info",
+                    Color = new PropertyColorCallout(TypeColorCallout.Info),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
+                }
+            );
+            
+            // Eigenschaften
+            AddProperty
+            (
+                "Title",
+                "Legt ein Titel fest.",
+                "Title = \"Erfolgreich\"",
+                new ControlPanelCallout(this, new ControlText(this) { Text = "Mit einem Titel" })
+                {
+                    Title = "Erfolgreich",
+                    Color = new PropertyColorCallout(TypeColorCallout.Success),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
+                },
+                new ControlPanelCallout(this, new ControlText(this) { Text = "Ohne einen Titel" })
+                {
+                    Color = new PropertyColorCallout(TypeColorCallout.Success),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
+                }
+            );
+
+            AddProperty
+            (
+                "Color",
+                "Legt die Farbe fest.",
+                "Color = new PropertyColorCallout(TypeColorCallout.Primary)",
+                new ControlPanelCallout(this, new ControlText(this) { Text = "Hallo Welt!" })
+                {
                     Title = "Standard",
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
@@ -47,7 +79,7 @@ namespace Education.Pages
                     Color = new PropertyColorCallout(TypeColorCallout.Secondary),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
-                new ControlPanelCallout(this, new ControlText(this) { Text = "Hallo Welt!"})
+                new ControlPanelCallout(this, new ControlText(this) { Text = "Hallo Welt!" })
                 {
                     Title = "Erfolgreich",
                     Color = new PropertyColorCallout(TypeColorCallout.Success),
@@ -83,29 +115,13 @@ namespace Education.Pages
                     Color = new PropertyColorCallout("gold"),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 }
-
-            );
-
-            // Eigenschaften
-            AddProperty
-            (
-                "Title",
-                new ControlPanelCallout(this, new ControlText(this) { Text = "Mit einem Titel" })
-                {
-                    Title = "Erfolgreich",
-                    Color = new PropertyColorCallout(TypeColorCallout.Success),
-                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
-                },
-                new ControlPanelCallout(this, new ControlText(this) { Text = "Ohne einen Titel" })
-                {
-                    Color = new PropertyColorCallout(TypeColorCallout.Success),
-                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
-                }
             );
 
             AddProperty
             (
                 "TextColor",
+                "Legt die Textfarbe fest",
+                "TextColor = new PropertyColorText(TypeColorText.Success)",
                 new ControlPanelCallout(this, new ControlText(this) { Text = "Mit einer Erfolgs-Textfarbe" })
                 {
                     Title = "Erfolgreich",
@@ -118,6 +134,8 @@ namespace Education.Pages
             AddProperty
             (
                 "BackgroundColor",
+                "Legt die Hintergrundfarbe fest",
+                "BackgroundColor = new PropertyColorBackground(TypeColorBackground.Warning)",
                 new ControlPanelCallout(this, new ControlText(this) { Text = "Mit einem Warn-Hintergrund" })
                 {
                     Title = "Erfolgreich",

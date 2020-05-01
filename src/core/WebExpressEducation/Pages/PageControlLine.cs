@@ -33,6 +33,8 @@ namespace Education.Pages
             AddProperty
             (
                 "Color",
+                "Legt die Farbe fest.",
+                "Color = new PropertyColorLine(TypeColorLine.Primary)",
                 new ControlLine(this)
                 {
                     Color = new PropertyColorLine(TypeColorLine.Default)

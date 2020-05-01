@@ -41,6 +41,8 @@ namespace Education.Pages
             AddProperty
             (
                "Icon (System)",
+               "Fügt ein Systemeicon ein.",
+               "Icon = new PropertyIcon(TypeIcon.Home)",
                enums.Select(x => new ControlIcon(this)
                {
                    Icon = new PropertyIcon(x),
@@ -49,10 +51,12 @@ namespace Education.Pages
                    TextColor = new PropertyColorText(TypeColorText.Warning)
                }).ToArray()
             );
-            
+
             AddProperty
             (
                "Icon (Benutzerdefiniert)",
+               "Fügt ein benutzerdefiniertes Icon ein.",
+               "Icon = new PropertyIcon(Uri.Root.Append(\"/Assets/img/Icon16.png\")",
                new ControlIcon(this)
                {
                    Icon = new PropertyIcon(Uri.Root.Append("/Assets/img/Icon16.png")),
@@ -65,6 +69,9 @@ namespace Education.Pages
             AddProperty
             (
                 "Size",
+                "Legt die Größe des Icons fest",
+                "Size = new PropertySizeText(TypeSizeText.Small)",
+                new ControlText(this) { Text = "Extra Small", Format = TypesTextFormat.Span },
                 new ControlIcon(this)
                 {
                     Title = "Extra Small",
@@ -73,6 +80,7 @@ namespace Education.Pages
                     TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 },
+                new ControlText(this) { Text = "Small", Format = TypesTextFormat.Span },
                 new ControlIcon(this)
                 {
                     Title = "Small",
@@ -81,6 +89,7 @@ namespace Education.Pages
                     TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 },
+                new ControlText(this) { Text = "Standard", Format = TypesTextFormat.Span },
                 new ControlIcon(this)
                 {
                     Title = "Standard",
@@ -89,6 +98,7 @@ namespace Education.Pages
                     TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 },
+                new ControlText(this) { Text = "Large", Format = TypesTextFormat.Span },
                 new ControlIcon(this)
                 {
                     Title = "Large",
@@ -97,6 +107,7 @@ namespace Education.Pages
                     TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 },
+                new ControlText(this) { Text = "Extra Large", Format = TypesTextFormat.Span },
                 new ControlIcon(this)
                 {
                     Title = "Extra Large",
@@ -105,6 +116,7 @@ namespace Education.Pages
                     TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 },
+                new ControlText(this) { Text = "Benutzerdefiniert", Format = TypesTextFormat.Span },
                 new ControlIcon(this)
                 {
                     Title = "Benutzerdefiniert",
@@ -118,6 +130,8 @@ namespace Education.Pages
             AddProperty
             (
                 "TextColor",
+                "Legt die Textfarbe fest.",
+                "TextColor = new PropertyColorText(TypeColorText.Primary)",
                 enums.Select(x => new ControlIcon(this)
                 {
                     Icon = new PropertyIcon(x),
@@ -129,6 +143,8 @@ namespace Education.Pages
             AddProperty
             (
                 "BackgroundColor",
+                "Legt die Hintergrundfarbe fest.",
+                "BackgroundColor = new PropertyColorBackground(TypeColorBackground.Success)",
                 enums.Select(x => new ControlIcon(this)
                 {
                     Icon = new PropertyIcon(x),
@@ -142,6 +158,8 @@ namespace Education.Pages
             AddProperty
             (
                 "Title",
+                "Gibt ein Text an, der als ToolTip angezeigt wird.",
+                "Title = \"Hallo Welt!\"",
                 enums.Select(x => new ControlIcon(this)
                 {
                     Icon = new PropertyIcon(x),

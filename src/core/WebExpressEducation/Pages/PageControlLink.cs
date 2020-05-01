@@ -71,6 +71,8 @@ namespace Education.Pages
             AddProperty
             (
                 "Title",
+                "Legt ein ToolTip fest.",
+                "Title = \"Hallo Welt!\"",
                 new ControlLink(this)
                 {
                     Text = "Probier es aus",
@@ -84,6 +86,8 @@ namespace Education.Pages
             AddProperty
             (
                 "Target",
+                "Legt das Aufrufsziel des Links fest.",
+                "Target = TypeTarget.Blank",
                 new ControlLink(this)
                 {
                     Text = "Probier es aus",
@@ -97,6 +101,8 @@ namespace Education.Pages
             AddProperty
             (
                 "Uri",
+                "Legt die Aufrufsadresse des Links fest.",
+                "Uri = Page.Uri",
                 new ControlLink(this)
                 {
                     Text = "Mit Uri",
@@ -115,6 +121,8 @@ namespace Education.Pages
             AddProperty
             (
                 "Icon",
+                "Fügt ein Icon dem Link hinzu.",
+                "Icon = new PropertyIcon(TypeIcon.Home)",
                 new ControlLink(this)
                 { 
                     Text = "Home", 
@@ -163,7 +171,7 @@ namespace Education.Pages
             (
                 "Active",
                 "Setzt die Aktivitätseigenschaft des Links.",
-                "Diese Eigenschaft wirkt sich nicht in allen Kontexten aus.",
+                "Diese Eigenschaft wirkt sich nicht in allen Kontexten aus. Siehe ControlTab",
                 "Active = TypesActive.Active",
                 new ControlLink(this)
                 {
@@ -194,6 +202,8 @@ namespace Education.Pages
             AddProperty
             (
                 "Size",
+                "Bestimmt die Größe des Links.",
+                "Size = TypeSizeButton.Small",
                 new ControlLink(this)
                 {
                     Text = "Extra Small",
@@ -247,6 +257,8 @@ namespace Education.Pages
             AddProperty
             (
                 "TextColor",
+                "Legt die Textfarbe fest.",
+                "TextColor = new PropertyColorText(TypeColorText.Primary)",
                 new ControlLink(this)
                 {
                     Text = "Standard",
@@ -330,6 +342,8 @@ namespace Education.Pages
             AddProperty
             (
                 "BackgroundColor",
+                "Legt die Hintergrundfarbe fest.",
+                "BackgroundColor = new PropertyColorBackground(TypeColorBackground.Primary)",
                 new ControlLink(this)
                 {
                     Text = "Standard",
@@ -459,6 +473,8 @@ namespace Education.Pages
             AddProperty
             (
                 "Modal",
+                "Blendet ein Dialog ein.",
+                "Modal = new ControlModal(...)",
                 new ControlLink(this)
                 {
                     Text = "Klick mich!",
