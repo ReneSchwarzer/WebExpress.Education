@@ -48,145 +48,145 @@ namespace Education.Pages
                 new ControlText(this)
                 {
                     Text = "Überschrift Ebene 1",
-                    Format = TypeTextFormat.H1
+                    Format = TypeFormatText.H1
                 },
                 new ControlText(this) { Text = "H2", Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two), TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlText(this)
                 {
                     Text = "Überschrift Ebene 2",
-                    Format = TypeTextFormat.H2
+                    Format = TypeFormatText.H2
                 },
                 new ControlText(this) { Text = "H3", Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two), TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlText(this)
                 {
                     Text = "Überschrift Ebene 3",
-                    Format = TypeTextFormat.H3
+                    Format = TypeFormatText.H3
                 },
                 new ControlText(this) { Text = "H4", Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two), TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlText(this)
                 {
                     Text = "Überschrift Ebene 4",
-                    Format = TypeTextFormat.H4
+                    Format = TypeFormatText.H4
                 },
                 new ControlText(this) { Text = "H5", Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two), TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlText(this)
                 {
                     Text = "Überschrift Ebene 5",
-                    Format = TypeTextFormat.H5
+                    Format = TypeFormatText.H5
                 },
                 new ControlText(this) { Text = "H6", Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two), TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlText(this)
                 {
                     Text = "Überschrift Ebene 6",
-                    Format = TypeTextFormat.H6
+                    Format = TypeFormatText.H6
                 },
                 new ControlText(this) { Text = "Paragraph", Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.One), TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlText(this)
                 {
                     Text = text,
-                    Format = TypeTextFormat.Paragraph
+                    Format = TypeFormatText.Paragraph
                 },
                 new ControlText(this) { Text = "Bold", Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two), TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlText(this)
                 {
                     Text = text,
-                    Format = TypeTextFormat.Bold
+                    Format = TypeFormatText.Bold
                 },
                 new ControlText(this) { Text = "Italic", Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two), TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlText(this)
                 {
                     Text = text,
-                    Format = TypeTextFormat.Italic
+                    Format = TypeFormatText.Italic
                 },
                 new ControlText(this) { Text = "Underline", Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two), TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlText(this)
                 {
                     Text = text,
-                    Format = TypeTextFormat.Underline
+                    Format = TypeFormatText.Underline
                 },
                 new ControlText(this) { Text = "StruckOut", Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two), TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlText(this)
                 {
                     Text = text,
-                    Format = TypeTextFormat.StruckOut
+                    Format = TypeFormatText.StruckOut
                 },
                 new ControlText(this) { Text = "Cite", Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two), TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlText(this)
                 {
                     Text = text,
-                    Format = TypeTextFormat.Cite
+                    Format = TypeFormatText.Cite
                 },
                 new ControlText(this) { Text = "Small", Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two), TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlText(this)
                 {
                     Text = text,
-                    Format = TypeTextFormat.Small
+                    Format = TypeFormatText.Small
                 },
                 new ControlText(this) { Text = "Strong", Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two), TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlText(this)
                 {
                     Text = text,
-                    Format = TypeTextFormat.Strong
+                    Format = TypeFormatText.Strong
                 },
                 new ControlText(this) { Text = "Code", Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two), TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlText(this)
                 {
                     Text = "10 PRINT \"HALLO WELT!\"<br>20 GOTO 10",
-                    Format = TypeTextFormat.Code
+                    Format = TypeFormatText.Code
                 },
                 new ControlText(this) { Text = "Output", Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two), TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlText(this)
                 {
                     Text = "C:\\DOS\\",
-                    Format = TypeTextFormat.Output
+                    Format = TypeFormatText.Output
                 },
                 new ControlText(this) { Text = "Output", Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two), TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlText(this)
                 {
                     Text = DateTime.Now.ToString(),
-                    Format = TypeTextFormat.Time
+                    Format = TypeFormatText.Time
                 },
                 new ControlText(this) { Text = "Mark", Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two), TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlText(this)
                 {
                     Text = text,
-                    Format = TypeTextFormat.Mark
+                    Format = TypeFormatText.Mark
                 },
                 new ControlText(this) { Text = "Highlight", Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two), TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlText(this)
                 {
                     Text = text,
-                    Format = TypeTextFormat.Highlight
+                    Format = TypeFormatText.Highlight
                 },
                 new ControlText(this) { Text = "Definition", Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two), TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlText(this)
                 {
                     Text = text,
-                    Format = TypeTextFormat.Definition
+                    Format = TypeFormatText.Definition
                 },
                 new ControlText(this) { Text = "Abbreviation", Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two), TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlText(this)
                 {
                     Text = text,
-                    Format = TypeTextFormat.Abbreviation
+                    Format = TypeFormatText.Abbreviation
                 },
                 new ControlText(this) { Text = "Blockquote", Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two), TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlText(this)
                 {
                     Text = text,
-                    Format = TypeTextFormat.Blockquote
+                    Format = TypeFormatText.Blockquote
                 },
                 new ControlText(this) { Text = "Figcaption", Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two), TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlText(this)
                 {
                     Text = text,
-                    Format = TypeTextFormat.Figcaption
+                    Format = TypeFormatText.Figcaption
                 },
                 new ControlText(this) { Text = "Preformatted", Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two), TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlText(this)
                 {
                     Text = text,
-                    Format = TypeTextFormat.Preformatted
+                    Format = TypeFormatText.Preformatted
                 }
             );
 
@@ -305,7 +305,7 @@ namespace Education.Pages
                 "Title",
                 "Legt einen Tooltip fest.",
                 "Title = \"Hallo Welt!\"",
-                new ControlText(this) { Text = "ExtraSmall", Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two), TextColor = new PropertyColorText(TypeColorText.Info) },
+                new ControlText(this) { Text = "Title", Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two), TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlText(this)
                 {
                     Text = text,

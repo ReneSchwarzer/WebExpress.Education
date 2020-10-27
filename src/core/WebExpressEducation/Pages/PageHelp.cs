@@ -39,49 +39,49 @@ namespace Education.Pages
             Main.Content.Add(new ControlText(this)
             {
                 Text = "WebExpressEducation",
-                Format = TypeTextFormat.H1
+                Format = TypeFormatText.H1
             });
 
             Main.Content.Add(new ControlText(this)
             {
                 Text = "Einführung in die Nutzung und Entwicklung mit WebExpress.",
-                Format = TypeTextFormat.Paragraph
+                Format = TypeFormatText.Paragraph
             });
 
             Main.Content.Add(new ControlText(this)
             {
                 Text = "Die Software stellt Informationen und Ressourcen bereit, welche zum Verständnis und zu Erlernung von WebExpress beitragen.",
-                Format = TypeTextFormat.Paragraph
+                Format = TypeFormatText.Paragraph
             });
 
             Main.Content.Add(new ControlText(this)
             {
                 Text = "Datenschutzrichtlinie",
-                Format = TypeTextFormat.H4
+                Format = TypeFormatText.H4
             });
 
             Main.Content.Add(new ControlText(this)
             {
                 Text = "Die während der Nutzung eingegebenen Daten werden lokal auf Ihrem Gerät gespeichert. Sie behalten jederzeit die Datenhoheit. Die Daten werden zu keiner Zeit an Dritte übermittelt. Persönliche Informationen und Standortinformationen werden nicht erhoben.",
-                Format = TypeTextFormat.Paragraph
+                Format = TypeFormatText.Paragraph
             });
 
             Main.Content.Add(new ControlText(this)
             {
                 Text = "Haftungsausschluss",
-                Format = TypeTextFormat.H4
+                Format = TypeFormatText.H4
             });
 
             Main.Content.Add(new ControlText(this)
             {
                 Text = "Die Haftung für Schäden durch Sachmängel wird ausgeschlossen. Die Haftung auf Schadensersatz wegen Körperverletzung sowie bei grober Fahrlässigkeit oder Vorsatz bleibt unberührt.",
-                Format = TypeTextFormat.Paragraph
+                Format = TypeFormatText.Paragraph
             });
 
             Main.Content.Add(new ControlText(this)
             {
                 Text = "Informationen über WebExpressEducation",
-                Format = TypeTextFormat.H1
+                Format = TypeFormatText.H1
             });
 
             Main.Content.Add

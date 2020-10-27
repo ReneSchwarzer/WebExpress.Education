@@ -105,19 +105,19 @@ namespace Education.Pages
             content.Content.Add(new ControlText(this)
             {
                 Text = Name,
-                Format = TypeTextFormat.H1
+                Format = TypeFormatText.H1
             });
 
             content.Content.Add(new ControlText(this)
             { 
                 Text = Description,
-                Format = TypeTextFormat.Paragraph
+                Format = TypeFormatText.Paragraph
             });
 
             content.Content.Add(new ControlText(this)
             {
                 Text = "Beispiele",
-                Format = TypeTextFormat.H1
+                Format = TypeFormatText.H1
             });
 
             content.Content.Add(Examples);
@@ -125,13 +125,13 @@ namespace Education.Pages
             content.Content.Add(new ControlText(this)
             {
                 Text = "Code",
-                Format = TypeTextFormat.H1
+                Format = TypeFormatText.H1
             });
 
             content.Content.Add(new ControlPanelCard(this, new ControlText(this)
             {
                 Text = Code,
-                Format = TypeTextFormat.Code,
+                Format = TypeFormatText.Code,
                 Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
             })
             {
@@ -144,7 +144,7 @@ namespace Education.Pages
                 content.Content.Add(new ControlText(this)
                 {
                     Text = "Eigenschaften",
-                    Format = TypeTextFormat.H1
+                    Format = TypeFormatText.H1
                 });
 
                 foreach (var item in Propertys)
@@ -152,13 +152,13 @@ namespace Education.Pages
                     content.Content.Add(new ControlText(this)
                     {
                         Text = item.Key,
-                        Format = TypeTextFormat.H4
+                        Format = TypeFormatText.H4
                     });
 
                     content.Content.Add(new ControlText(this)
                     {
                         Text = item.Value.Description,
-                        Format = TypeTextFormat.Paragraph
+                        Format = TypeFormatText.Paragraph
                     });
 
                     if (!string.IsNullOrWhiteSpace(item.Value.Callout))
@@ -179,7 +179,7 @@ namespace Education.Pages
                     content.Content.Add(new ControlText(this)
                     {
                         Text = item.Value.Code,
-                        Format = TypeTextFormat.Code
+                        Format = TypeFormatText.Code
                     });
                 }
             }

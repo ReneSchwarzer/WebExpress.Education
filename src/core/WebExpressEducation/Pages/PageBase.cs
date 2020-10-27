@@ -55,7 +55,7 @@ namespace Education.Pages
             {
                 Text = Title,
                 TextColor = new PropertyColorText(TypeColorText.White),
-                Format = TypeTextFormat.H1,
+                Format = TypeFormatText.H1,
                 Size = new PropertySizeText(TypeSizeText.Default),
                 Padding = new PropertySpacingPadding(PropertySpacing.Space.One),
                 Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.None, PropertySpacing.Space.None, PropertySpacing.Space.Null),
@@ -73,7 +73,7 @@ namespace Education.Pages
             {
                 Text = string.Format("{0}", ViewModel.Instance.Now),
                 TextColor = new PropertyColorText(TypeColorText.Muted),
-                Format = TypeTextFormat.Center,
+                Format = TypeFormatText.Center,
                 Size = new PropertySizeText(TypeSizeText.Small)
             });
         }

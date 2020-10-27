@@ -71,7 +71,7 @@ namespace Education.Pages
                 "Size",
                 "Legt die Größe des Icons fest",
                 "Size = new PropertySizeText(TypeSizeText.Small)",
-                new ControlText(this) { Text = "Extra Small", Format = TypeTextFormat.Span, TextColor = new PropertyColorText(TypeColorText.Info) },
+                new ControlText(this) { Text = "Extra Small", Format = TypeFormatText.Span, TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlIcon(this)
                 {
                     Title = "Extra Small",
@@ -80,7 +80,7 @@ namespace Education.Pages
                     TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 },
-                new ControlText(this) { Text = "Small", Format = TypeTextFormat.Span, TextColor = new PropertyColorText(TypeColorText.Info) },
+                new ControlText(this) { Text = "Small", Format = TypeFormatText.Span, TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlIcon(this)
                 {
                     Title = "Small",
@@ -89,7 +89,7 @@ namespace Education.Pages
                     TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 },
-                new ControlText(this) { Text = "Standard", Format = TypeTextFormat.Span, TextColor = new PropertyColorText(TypeColorText.Info) },
+                new ControlText(this) { Text = "Standard", Format = TypeFormatText.Span, TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlIcon(this)
                 {
                     Title = "Standard",
@@ -98,7 +98,7 @@ namespace Education.Pages
                     TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 },
-                new ControlText(this) { Text = "Large", Format = TypeTextFormat.Span, TextColor = new PropertyColorText(TypeColorText.Info) },
+                new ControlText(this) { Text = "Large", Format = TypeFormatText.Span, TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlIcon(this)
                 {
                     Title = "Large",
@@ -107,7 +107,7 @@ namespace Education.Pages
                     TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 },
-                new ControlText(this) { Text = "Extra Large", Format = TypeTextFormat.Span, TextColor = new PropertyColorText(TypeColorText.Info) },
+                new ControlText(this) { Text = "Extra Large", Format = TypeFormatText.Span, TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlIcon(this)
                 {
                     Title = "Extra Large",
@@ -116,7 +116,7 @@ namespace Education.Pages
                     TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 },
-                new ControlText(this) { Text = "Benutzerdefiniert", Format = TypeTextFormat.Span, TextColor = new PropertyColorText(TypeColorText.Info) },
+                new ControlText(this) { Text = "Benutzerdefiniert", Format = TypeFormatText.Span, TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlIcon(this)
                 {
                     Title = "Benutzerdefiniert",
