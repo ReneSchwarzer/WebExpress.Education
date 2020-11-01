@@ -20,9 +20,9 @@ namespace Education.Pages
             base.Init();
 
             Description = "Das ControlAlert kann zum Anzeigen eines Alarmes (z.B. bei Fehleingaben) eingesetzt werden.";
-            Code = "new ControlAlert(Page) { Text = \"Dies ist ein Alarm\", Dismissible = TypesDismissibleAlert.Dismissible, Fade = TypesFade.FadeShow, BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Success) }";
+            Code = "new ControlAlert() { Text = \"Dies ist ein Alarm\", Dismissible = TypesDismissibleAlert.Dismissible, Fade = TypesFade.FadeShow, BackgroundColor = new PropertyColorBackground(TypesBackgroundColor.Success) }";
 
-            AddExample(new ControlAlert(this)
+            AddExample(new ControlAlert()
             {
                 Text = "Dies ist ein Beispiel-Alarm!",
                 Dismissible = TypeDismissibleAlert.Dismissible,
@@ -35,7 +35,7 @@ namespace Education.Pages
                 "TextColor",
                 "Setzt die Textfarbe des Alarms.",
                 "TextColor = new PropertyColorText(TypeColorText.Warning)",
-                new ControlAlert(this)
+                new ControlAlert()
                 {
                     Text = "Dies ist ein Alarm mit Warn-Textfarbe!",
                     Dismissible = TypeDismissibleAlert.Dismissible,
@@ -50,83 +50,83 @@ namespace Education.Pages
                 "BackgroundColor",
                 "Setzt die Hintergrundfarbe des Alarms.",
                 "BackgroundColor = new PropertyColorBackgroundAlert(TypeColorBackground.Primary)",
-                new ControlAlert(this)
+                new ControlAlert()
                 {
                     Text = "Dies ist ein Standard-Alarm!",
                     Dismissible = TypeDismissibleAlert.Dismissible,
                     Fade = TypeFade.FadeShow
                 },
-                new ControlAlert(this)
+                new ControlAlert()
                 {
                     Text = "Dies ist ein Primär-Alarm!",
                     Dismissible = TypeDismissibleAlert.Dismissible,
                     Fade = TypeFade.FadeShow,
                     BackgroundColor = new PropertyColorBackgroundAlert(TypeColorBackground.Primary)
                 },
-                new ControlAlert(this)
+                new ControlAlert()
                 {
                     Text = "Dies ist ein Sekundär-Alarm!",
                     Dismissible = TypeDismissibleAlert.Dismissible,
                     Fade = TypeFade.FadeShow,
                     BackgroundColor = new PropertyColorBackgroundAlert(TypeColorBackground.Secondary)
                 },
-                new ControlAlert(this)
+                new ControlAlert()
                 {
                     Text = "Dies ist ein Info-Alarm!",
                     Dismissible = TypeDismissibleAlert.Dismissible,
                     Fade = TypeFade.FadeShow,
                     BackgroundColor = new PropertyColorBackgroundAlert(TypeColorBackground.Info)
                 },
-                new ControlAlert(this)
+                new ControlAlert()
                 {
                     Text = "Dies ist ein Erfolgs-Alarm!",
                     Dismissible = TypeDismissibleAlert.Dismissible,
                     Fade = TypeFade.FadeShow,
                     BackgroundColor = new PropertyColorBackgroundAlert(TypeColorBackground.Success)
                 },
-                new ControlAlert(this)
+                new ControlAlert()
                 {
                     Text = "Dies ist ein Warnungs-Alarm!",
                     Dismissible = TypeDismissibleAlert.Dismissible,
                     Fade = TypeFade.FadeShow,
                     BackgroundColor = new PropertyColorBackgroundAlert(TypeColorBackground.Warning)
                 },
-                new ControlAlert(this)
+                new ControlAlert()
                 {
                     Text = "Dies ist ein Fehler-Alarm!",
                     Dismissible = TypeDismissibleAlert.Dismissible,
                     Fade = TypeFade.FadeShow,
                     BackgroundColor = new PropertyColorBackgroundAlert(TypeColorBackground.Danger)
                 },
-                new ControlAlert(this)
+                new ControlAlert()
                 {
                     Text = "Dies ist ein dunkler Alarm!",
                     Dismissible = TypeDismissibleAlert.Dismissible,
                     Fade = TypeFade.FadeShow,
                     BackgroundColor = new PropertyColorBackgroundAlert(TypeColorBackground.Dark)
                 },
-                new ControlAlert(this)
+                new ControlAlert()
                 {
                     Text = "Dies ist ein heller Alarm!",
                     Dismissible = TypeDismissibleAlert.Dismissible,
                     Fade = TypeFade.FadeShow,
                     BackgroundColor = new PropertyColorBackgroundAlert(TypeColorBackground.Light)
                 },
-                new ControlAlert(this)
+                new ControlAlert()
                 {
                     Text = "Dies ist ein weißer Alarm!",
                     Dismissible = TypeDismissibleAlert.Dismissible,
                     Fade = TypeFade.FadeShow,
                     BackgroundColor = new PropertyColorBackgroundAlert(TypeColorBackground.White)
                 },
-                new ControlAlert(this)
+                new ControlAlert()
                 {
                     Text = "Dies ist ein transparenter Alarm!",
                     Dismissible = TypeDismissibleAlert.Dismissible,
                     Fade = TypeFade.FadeShow,
                     BackgroundColor = new PropertyColorBackgroundAlert(TypeColorBackground.Transparent)
                 },
-                new ControlAlert(this)
+                new ControlAlert()
                 {
                     Text = "Dies ist ein benutzerdefinierter Alarm!",
                     Dismissible = TypeDismissibleAlert.Dismissible,
@@ -141,13 +141,13 @@ namespace Education.Pages
                 "Dismissible",
                 "Bestimmt ob Control vom Benutzer geschlossen (ausgeblendet) werden kann.",
                 "Dismissible = TypeDismissibleAlert.Dismissible"
-                , new ControlAlert(this)
+                , new ControlAlert()
                 {
                     Text = "Dies ist ein Erfolgs-Alarm, welcher nicht ausblendet werden kann.",
                     Dismissible = TypeDismissibleAlert.None,
                     Fade = TypeFade.FadeShow,
                     BackgroundColor = new PropertyColorBackgroundAlert(TypeColorBackground.Success)
-                }, new ControlAlert(this)
+                }, new ControlAlert()
                 {
                     Text = "Dies ist ein Erfolgs-Alarm, welcher ausblendet werden kann.",
                     Dismissible = TypeDismissibleAlert.Dismissible,
@@ -161,14 +161,14 @@ namespace Education.Pages
                 "Fade",
                 "Bestimmt welcher Fadereffekt verwendet werden soll",
                 "Fade = TypeFade.FadeShow",
-                new ControlAlert(this)
+                new ControlAlert()
                 {
                     Text = "Dies ist ein Erfolgs-Alarm, welcher nicht animiert ist.",
                     Dismissible = TypeDismissibleAlert.Dismissible,
                     Fade = TypeFade.None,
                     BackgroundColor = new PropertyColorBackgroundAlert(TypeColorBackground.Success)
                 },
-                new ControlAlert(this)
+                new ControlAlert()
                 {
                     Text = "Dies ist ein Erfolgs-Alarm, welcher vollständig animiert ist.",
                     Dismissible = TypeDismissibleAlert.Dismissible,

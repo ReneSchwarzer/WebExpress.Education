@@ -43,6 +43,10 @@ namespace Education
             SiteMap.AddPage("Badge", "badge", (x) => new WorkerPage<PageControlBadge>(x));
             SiteMap.AddPage("Breadcrumb", "breadcrumb", (x) => new WorkerPage<PageControlBreadcrumb>(x));
             SiteMap.AddPage("Callout", "callout", (x) => new WorkerPage<PageControlPanelCallout>(x));
+            SiteMap.AddPage("Card", "card", (x) => new WorkerPage<PageControlPanelCard>(x));
+            SiteMap.AddPage("Formular", "formular", (x) => new WorkerPage<PageControlFormular>(x));
+            SiteMap.AddPage("FormularTextBox", "formular_textbox", (x) => new WorkerPage<PageControlFormularTextBox>(x));
+            SiteMap.AddPage("FormularComboBox", "formular_combobox", (x) => new WorkerPage<PageControlFormularComboBox>(x));
             SiteMap.AddPage("Icon", "icon", (x) => new WorkerPage<PageControlIcon>(x));
             SiteMap.AddPage("Line", "line", (x) => new WorkerPage<PageControlLine>(x));
             SiteMap.AddPage("Link", "link", (x) => new WorkerPage<PageControlLink>(x));
@@ -60,6 +64,10 @@ namespace Education
             SiteMap.AddPath("Home/Controls/Badge");
             SiteMap.AddPath("Home/Controls/Breadcrumb");
             SiteMap.AddPath("Home/Controls/Callout");
+            SiteMap.AddPath("Home/Controls/Card");
+            SiteMap.AddPath("Home/Controls/Formular");
+            SiteMap.AddPath("Home/Controls/Formular/FormularTextBox");
+            SiteMap.AddPath("Home/Controls/Formular/FormularComboBox");
             SiteMap.AddPath("Home/Controls/Icon");
             SiteMap.AddPath("Home/Controls/Line");
             SiteMap.AddPath("Home/Controls/Link");

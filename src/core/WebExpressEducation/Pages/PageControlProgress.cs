@@ -23,38 +23,38 @@ namespace Education.Pages
             base.Init();
 
             Description = "Das ControlProgressBar stellt eine Fortschrittsanzeige bereit.";
-            Code = "new ControlProgressBar(Page) { Color = new PropertyColorProgress(TypeColorProgress.Success) }";
+            Code = "new ControlProgressBar() { Color = new PropertyColorProgress(TypeColorProgress.Success) }";
 
             var enums = new List<TypeIcon>((TypeIcon[])Enum.GetValues(typeof(TypeIcon))).Where(x => x != TypeIcon.None);
 
             AddExample
             (
-                new ControlProgressBar(this)
+                new ControlProgressBar()
                 {
                     Value = 0,
                     Format = TypeFormatProgress.Colored,
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
                 },
-                 new ControlProgressBar(this)
+                 new ControlProgressBar()
                  {
                      Value = 25,
                      Format = TypeFormatProgress.Colored,
                      Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
                  }
                  ,
-                 new ControlProgressBar(this)
+                 new ControlProgressBar()
                  {
                      Value = 50,
                      Format = TypeFormatProgress.Colored,
                      Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
                  },
-                 new ControlProgressBar(this)
+                 new ControlProgressBar()
                  {
                      Value = 75,
                      Format = TypeFormatProgress.Colored,
                      Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
                  },
-                 new ControlProgressBar(this)
+                 new ControlProgressBar()
                  {
                      Value = 100,
                      Format = TypeFormatProgress.Colored,
@@ -68,7 +68,7 @@ namespace Education.Pages
                "Text",
                "Legt den Text fest, welcher auf dem Fortschrittsbalken angezeigt wird.",
                "Text = \"75%\"",
-               new ControlProgressBar(this)
+               new ControlProgressBar()
                {
                    Value = 75,
                    Text = "75%",
@@ -82,7 +82,7 @@ namespace Education.Pages
                 "Color",
                 "Setzt die Farbe des Fortschrittsbalkens.",
                 "Color = new PropertyColorProgress(TypeColorProgress.Secondary)",
-                new ControlProgressBar(this)
+                new ControlProgressBar()
                 {
                     Value = 10,
                     Text = "Primär",
@@ -90,7 +90,7 @@ namespace Education.Pages
                     Format = TypeFormatProgress.Colored,
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
                 },
-                new ControlProgressBar(this)
+                new ControlProgressBar()
                 {
                     Value = 20,
                     Text = "Sekundär",
@@ -98,7 +98,7 @@ namespace Education.Pages
                     Format = TypeFormatProgress.Colored,
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
                 },
-                new ControlProgressBar(this)
+                new ControlProgressBar()
                 {
                     Value = 30,
                     Text = "Info",
@@ -106,7 +106,7 @@ namespace Education.Pages
                     Format = TypeFormatProgress.Colored,
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
                 },
-                new ControlProgressBar(this)
+                new ControlProgressBar()
                 {
                     Value = 40,
                     Text = "Erfolg",
@@ -114,7 +114,7 @@ namespace Education.Pages
                     Format = TypeFormatProgress.Colored,
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
                 },
-                new ControlProgressBar(this)
+                new ControlProgressBar()
                 {
                     Value = 50,
                     Text = "Warnung",
@@ -122,7 +122,7 @@ namespace Education.Pages
                     Format = TypeFormatProgress.Colored,
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
                 },
-                new ControlProgressBar(this)
+                new ControlProgressBar()
                 {
                     Value = 60,
                     Text = "Fehler",
@@ -130,7 +130,7 @@ namespace Education.Pages
                     Format = TypeFormatProgress.Colored,
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
                 },
-                new ControlProgressBar(this)
+                new ControlProgressBar()
                 {
                     Value = 70,
                     Text = "Dunkel",
@@ -138,7 +138,7 @@ namespace Education.Pages
                     Format = TypeFormatProgress.Colored,
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
                 },
-                new ControlProgressBar(this)
+                new ControlProgressBar()
                 {
                     Value = 80,
                     Text = "Hell",
@@ -147,7 +147,7 @@ namespace Education.Pages
                     Format = TypeFormatProgress.Colored,
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
                 },
-                new ControlProgressBar(this)
+                new ControlProgressBar()
                 {
                     Value = 90,
                     Text = "Weiß",
@@ -156,7 +156,7 @@ namespace Education.Pages
                     Format = TypeFormatProgress.Colored,
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
                 },
-                new ControlProgressBar(this)
+                new ControlProgressBar()
                 {
                     Value = 100,
                     Text = "Benutzerdefiniert",
@@ -172,7 +172,7 @@ namespace Education.Pages
                 "Format",
                 "Setzt das Format des Fortschrittsbalkens",
                 "Format = TypeFormatProgress.Colored",
-                new ControlProgressBar(this)
+                new ControlProgressBar()
                 {
                     Value = 25,
                     Text = "Primär",
@@ -180,7 +180,7 @@ namespace Education.Pages
                     Format = TypeFormatProgress.Default,
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
                 },
-                new ControlProgressBar(this)
+                new ControlProgressBar()
                 {
                     Value = 50,
                     Text = "Sekundär",
@@ -188,7 +188,7 @@ namespace Education.Pages
                     Format = TypeFormatProgress.Colored,
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
                 },
-                 new ControlProgressBar(this)
+                 new ControlProgressBar()
                  {
                      Value = 75,
                      Text = "Info",
@@ -196,7 +196,7 @@ namespace Education.Pages
                      Format = TypeFormatProgress.Striped,
                      Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
                  },
-                 new ControlProgressBar(this)
+                 new ControlProgressBar()
                  {
                      Value = 100,
                      Text = "Erfolg",
@@ -211,7 +211,7 @@ namespace Education.Pages
                 "Size",
                 "Bestimmt die Höhe des Fortschrittbalkens.",
                 "Size = TypeSizeProgress.Small",
-                new ControlProgressBar(this)
+                new ControlProgressBar()
                 {
                     Value = 25,
                     Text = "ExtraSmall",
@@ -220,7 +220,7 @@ namespace Education.Pages
                     Format = TypeFormatProgress.Striped,
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
                 },
-                new ControlProgressBar(this)
+                new ControlProgressBar()
                 {
                     Value = 50,
                     Text = "Small",
@@ -229,7 +229,7 @@ namespace Education.Pages
                     Format = TypeFormatProgress.Striped,
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
                 },
-                 new ControlProgressBar(this)
+                 new ControlProgressBar()
                  {
                      Value = 75,
                      Text = "Standard",
@@ -238,7 +238,7 @@ namespace Education.Pages
                      Format = TypeFormatProgress.Striped,
                      Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
                  },
-                 new ControlProgressBar(this)
+                 new ControlProgressBar()
                  {
                      Value = 75,
                      Text = "Large",
@@ -247,7 +247,7 @@ namespace Education.Pages
                      Format = TypeFormatProgress.Striped,
                      Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Three)
                  },
-                 new ControlProgressBar(this)
+                 new ControlProgressBar()
                  {
                      Value = 100,
                      Text = "ExtraLarge",
@@ -263,7 +263,7 @@ namespace Education.Pages
                 "TextColor",
                 "Legt die Textfarbe fest.",
                 "TextColor = new PropertyColorText(TypeColorText.Warning)",
-                new ControlProgressBar(this)
+                new ControlProgressBar()
                 {
                     Value = 50,
                     Text = "Warnung",
@@ -279,7 +279,7 @@ namespace Education.Pages
                 "BackgroundColor",
                 "Legt die Hintergrundfarbe fest.",
                 "BackgroundColor = new PropertyColorBackground(TypeColorBackground.Warning)",
-                new ControlProgressBar(this)
+                new ControlProgressBar()
                 {
                     Value = 50,
                     Text = "Warnung",

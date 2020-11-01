@@ -29,7 +29,7 @@ namespace Education.Pages
         {
             base.Process();
 
-            Main.Content.Add(new ControlText(this)
+            Main.Content.Add(new ControlText()
             {
                 Text = "Willkommen",
                 Format = TypeFormatText.H1,

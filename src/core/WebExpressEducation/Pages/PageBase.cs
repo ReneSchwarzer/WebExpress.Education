@@ -36,22 +36,22 @@ namespace Education.Pages
             Head.Content.Add(HamburgerMenu);
             HamburgerMenu.HorizontalAlignment = TypeHorizontalAlignment.Left;
             HamburgerMenu.Image = Uri?.Root.Append("Assets/img/Logo.png");
-            HamburgerMenu.Add(new ControlLink(this) { Text = "Home", Icon = new PropertyIcon(TypeIcon.Home), Uri = Uri.Root });
-            HamburgerMenu.Add(new ControlLink(this) { Text = "Tutorials", Icon = new PropertyIcon(TypeIcon.GraduationCap), Uri = Uri.Root.Append("tutorials") });
-            HamburgerMenu.Add(new ControlLink(this) { Text = "Controls", Icon = new PropertyIcon(TypeIcon.Clone), Uri = Uri.Root.Append("controls") });
-            HamburgerMenu.Add(new ControlLink(this) { Text = "Html", Icon = new PropertyIcon(TypeIcon.Code), Uri = Uri.Root.Append("html") });
+            HamburgerMenu.Add(new ControlLink() { Text = "Home", Icon = new PropertyIcon(TypeIcon.Home), Uri = Uri.Root });
+            HamburgerMenu.Add(new ControlLink() { Text = "Tutorials", Icon = new PropertyIcon(TypeIcon.GraduationCap), Uri = Uri.Root.Append("tutorials") });
+            HamburgerMenu.Add(new ControlLink() { Text = "Controls", Icon = new PropertyIcon(TypeIcon.Clone), Uri = Uri.Root.Append("controls") });
+            HamburgerMenu.Add(new ControlLink() { Text = "Html", Icon = new PropertyIcon(TypeIcon.Code), Uri = Uri.Root.Append("html") });
             HamburgerMenu.AddSeperator();
-            HamburgerMenu.Add(new ControlLink(this) { Text = "Hilfe", Icon = new PropertyIcon(TypeIcon.InfoCircle), Uri = Uri.Root.Append("help") });
+            HamburgerMenu.Add(new ControlLink() { Text = "Hilfe", Icon = new PropertyIcon(TypeIcon.InfoCircle), Uri = Uri.Root.Append("help") });
 
             // SideBar
-            ToolBar = new ControlToolBar(this)
+            ToolBar = new ControlToolBar()
             {
                 BackgroundColor = new PropertyColorBackground(TypeColorBackground.Dark),
                 HorizontalAlignment = TypeHorizontalAlignment.Left
             };
             ToolBar.Classes.Add("sidebar");
 
-            Head.Content.Add(new ControlPanelCenter(this, new ControlText(this)
+            Head.Content.Add(new ControlPanelCenter(new ControlText()
             {
                 Text = Title,
                 TextColor = new PropertyColorText(TypeColorText.White),
@@ -67,9 +67,9 @@ namespace Education.Pages
             PathCtrl.Classes.Add("content");
 
             Main.Content.Add(new ControlTabMenu(this));
-            Main.Content.Add(new ControlLine(this));
+            Main.Content.Add(new ControlLine());
 
-            Foot.Content.Add(new ControlText(this, "now")
+            Foot.Content.Add(new ControlText("now")
             {
                 Text = string.Format("{0}", ViewModel.Instance.Now),
                 TextColor = new PropertyColorText(TypeColorText.Muted),

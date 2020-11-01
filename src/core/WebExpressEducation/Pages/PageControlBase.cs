@@ -39,7 +39,7 @@ namespace Education.Pages
 
                 if (uri.Contains("Controls"))
                 {
-                    Menu.Items.Add(new ControlLink(this)
+                    Menu.Items.Add(new ControlLink()
                     {
                         Text = v.Display,
                         Uri = uri,

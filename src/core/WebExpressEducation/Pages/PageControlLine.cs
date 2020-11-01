@@ -20,11 +20,11 @@ namespace Education.Pages
             base.Init();
 
             Description = "Das ControlLine stellt eine Abgrenzung (horizontale Linie) bereit.";
-            Code = "new ControlLine(Page) { }";
+            Code = "new ControlLine() { }";
 
             AddExample
             (
-                new ControlLine(this)
+                new ControlLine()
                 {
                 }
             );
@@ -35,53 +35,53 @@ namespace Education.Pages
                 "Color",
                 "Legt die Farbe fest.",
                 "Color = new PropertyColorLine(TypeColorLine.Primary)",
-                new ControlText(this) { Text = "Standard", TextColor = new PropertyColorText(TypeColorText.Info) },
-                new ControlLine(this)
+                new ControlText() { Text = "Standard", TextColor = new PropertyColorText(TypeColorText.Info) },
+                new ControlLine()
                 {
                     Color = new PropertyColorLine(TypeColorLine.Default)
                 },
-                new ControlText(this) { Text = "Primär", TextColor = new PropertyColorText(TypeColorText.Info) },
-                new ControlLine(this)
+                new ControlText() { Text = "Primär", TextColor = new PropertyColorText(TypeColorText.Info) },
+                new ControlLine()
                 {
                     Color = new PropertyColorLine(TypeColorLine.Primary)
                 },
-                new ControlText(this) { Text = "Sekundär", TextColor = new PropertyColorText(TypeColorText.Info) },
-                new ControlLine(this)
+                new ControlText() { Text = "Sekundär", TextColor = new PropertyColorText(TypeColorText.Info) },
+                new ControlLine()
                 {
                     Color = new PropertyColorLine(TypeColorLine.Secondary)
                 },
-                new ControlText(this) { Text = "Info", TextColor = new PropertyColorText(TypeColorText.Info) },
-                new ControlLine(this)
+                new ControlText() { Text = "Info", TextColor = new PropertyColorText(TypeColorText.Info) },
+                new ControlLine()
                 {
                     Color = new PropertyColorLine(TypeColorLine.Info)
                 },
-                new ControlText(this) { Text = "Erfolg", TextColor = new PropertyColorText(TypeColorText.Info) },
-                new ControlLine(this)
+                new ControlText() { Text = "Erfolg", TextColor = new PropertyColorText(TypeColorText.Info) },
+                new ControlLine()
                 {
                     Color = new PropertyColorLine(TypeColorLine.Success)
                 },
-                new ControlText(this) { Text = "Warnung", TextColor = new PropertyColorText(TypeColorText.Info) },
-                new ControlLine(this)
+                new ControlText() { Text = "Warnung", TextColor = new PropertyColorText(TypeColorText.Info) },
+                new ControlLine()
                 {
                     Color = new PropertyColorLine(TypeColorLine.Warning)
                 },
-                new ControlText(this) { Text = "Fehler", TextColor = new PropertyColorText(TypeColorText.Info) },
-                new ControlLine(this)
+                new ControlText() { Text = "Fehler", TextColor = new PropertyColorText(TypeColorText.Info) },
+                new ControlLine()
                 {
                     Color = new PropertyColorLine(TypeColorLine.Danger)
                 },
-                new ControlText(this) { Text = "Dunkel", TextColor = new PropertyColorText(TypeColorText.Info) },
-                new ControlLine(this)
+                new ControlText() { Text = "Dunkel", TextColor = new PropertyColorText(TypeColorText.Info) },
+                new ControlLine()
                 {
                     Color = new PropertyColorLine(TypeColorLine.Dark)
                 },
-                new ControlText(this) { Text = "Hell", TextColor = new PropertyColorText(TypeColorText.Info) },
-                new ControlLine(this)
+                new ControlText() { Text = "Hell", TextColor = new PropertyColorText(TypeColorText.Info) },
+                new ControlLine()
                 {
                     Color = new PropertyColorLine(TypeColorLine.Light)
                 },
-                new ControlText(this) { Text = "Benutzerdefiniert", TextColor = new PropertyColorText(TypeColorText.Info) },
-                new ControlLine(this)
+                new ControlText() { Text = "Benutzerdefiniert", TextColor = new PropertyColorText(TypeColorText.Info) },
+                new ControlLine()
                 {
                     Color = new PropertyColorLine("gold")
                 }

@@ -20,11 +20,11 @@ namespace Education.Pages
             base.Init();
 
             Description = "Das ControlPanelCallout stellt eine wichtige Information dar.";
-            Code = "new ControlPanelCallout(Page) { Title = \"Fehler\", Color = new PropertyColorCallout(TypeColorCallout.Info) }";
+            Code = "new ControlPanelCallout() { Title = \"Fehler\", Color = new PropertyColorCallout(TypeColorCallout.Info) }";
 
             AddExample
             (
-                new ControlPanelCallout(this, new ControlText(this) { Text = "Hallo Welt!" })
+                new ControlPanelCallout(new ControlText() { Text = "Hallo Welt!" })
                 {
                     Title = "Info",
                     Color = new PropertyColorCallout(TypeColorCallout.Info),
@@ -38,13 +38,13 @@ namespace Education.Pages
                 "Title",
                 "Legt ein Titel fest.",
                 "Title = \"Erfolgreich\"",
-                new ControlPanelCallout(this, new ControlText(this) { Text = "Mit einem Titel" })
+                new ControlPanelCallout(new ControlText() { Text = "Mit einem Titel" })
                 {
                     Title = "Erfolgreich",
                     Color = new PropertyColorCallout(TypeColorCallout.Success),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
-                new ControlPanelCallout(this, new ControlText(this) { Text = "Ohne einen Titel" })
+                new ControlPanelCallout(new ControlText() { Text = "Ohne einen Titel" })
                 {
                     Color = new PropertyColorCallout(TypeColorCallout.Success),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
@@ -56,60 +56,60 @@ namespace Education.Pages
                 "Color",
                 "Legt die Farbe fest.",
                 "Color = new PropertyColorCallout(TypeColorCallout.Primary)",
-                new ControlPanelCallout(this, new ControlText(this) { Text = "Hallo Welt!" })
+                new ControlPanelCallout(new ControlText() { Text = "Hallo Welt!" })
                 {
                     Title = "Standard",
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
-                new ControlPanelCallout(this, new ControlText(this) { Text = "Hallo Welt!" })
+                new ControlPanelCallout(new ControlText() { Text = "Hallo Welt!" })
                 {
                     Title = "Info",
                     Color = new PropertyColorCallout(TypeColorCallout.Info),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
-                new ControlPanelCallout(this, new ControlText(this) { Text = "Hallo Welt!" })
+                new ControlPanelCallout(new ControlText() { Text = "Hallo Welt!" })
                 {
                     Title = "Primär",
                     Color = new PropertyColorCallout(TypeColorCallout.Primary),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
-                new ControlPanelCallout(this, new ControlText(this) { Text = "Hallo Welt!" })
+                new ControlPanelCallout(new ControlText() { Text = "Hallo Welt!" })
                 {
                     Title = "Sekundär",
                     Color = new PropertyColorCallout(TypeColorCallout.Secondary),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
-                new ControlPanelCallout(this, new ControlText(this) { Text = "Hallo Welt!" })
+                new ControlPanelCallout(new ControlText() { Text = "Hallo Welt!" })
                 {
                     Title = "Erfolgreich",
                     Color = new PropertyColorCallout(TypeColorCallout.Success),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
-                new ControlPanelCallout(this, new ControlText(this) { Text = "Hallo Welt!" })
+                new ControlPanelCallout(new ControlText() { Text = "Hallo Welt!" })
                 {
                     Title = "Warnung",
                     Color = new PropertyColorCallout(TypeColorCallout.Warning),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
-                new ControlPanelCallout(this, new ControlText(this) { Text = "Hallo Welt!" })
+                new ControlPanelCallout(new ControlText() { Text = "Hallo Welt!" })
                 {
                     Title = "Fehler",
                     Color = new PropertyColorCallout(TypeColorCallout.Danger),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
-                new ControlPanelCallout(this, new ControlText(this) { Text = "Hallo Welt!" })
+                new ControlPanelCallout(new ControlText() { Text = "Hallo Welt!" })
                 {
                     Title = "Dunkel",
                     Color = new PropertyColorCallout(TypeColorCallout.Dark),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
-                new ControlPanelCallout(this, new ControlText(this) { Text = "Hallo Welt!" })
+                new ControlPanelCallout(new ControlText() { Text = "Hallo Welt!" })
                 {
                     Title = "Hell",
                     Color = new PropertyColorCallout(TypeColorCallout.Light),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
-                new ControlPanelCallout(this, new ControlText(this) { Text = "Hallo Welt!" })
+                new ControlPanelCallout(new ControlText() { Text = "Hallo Welt!" })
                 {
                     Title = "Benutzerdefiniert",
                     Color = new PropertyColorCallout("gold"),
@@ -122,7 +122,7 @@ namespace Education.Pages
                 "TextColor",
                 "Legt die Textfarbe fest",
                 "TextColor = new PropertyColorText(TypeColorText.Success)",
-                new ControlPanelCallout(this, new ControlText(this) { Text = "Mit einer Erfolgs-Textfarbe" })
+                new ControlPanelCallout(new ControlText() { Text = "Mit einer Erfolgs-Textfarbe" })
                 {
                     Title = "Erfolgreich",
                     Color = new PropertyColorCallout(TypeColorCallout.Success),
@@ -136,7 +136,7 @@ namespace Education.Pages
                 "BackgroundColor",
                 "Legt die Hintergrundfarbe fest",
                 "BackgroundColor = new PropertyColorBackground(TypeColorBackground.Warning)",
-                new ControlPanelCallout(this, new ControlText(this) { Text = "Mit einem Warn-Hintergrund" })
+                new ControlPanelCallout(new ControlText() { Text = "Mit einem Warn-Hintergrund" })
                 {
                     Title = "Erfolgreich",
                     Color = new PropertyColorCallout(TypeColorCallout.Success),

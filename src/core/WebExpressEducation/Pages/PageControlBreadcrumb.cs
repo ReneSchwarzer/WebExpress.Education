@@ -20,15 +20,15 @@ namespace Education.Pages
             base.Init();
 
             Description = "Das ControlBreadcrumb zerlegt den Uri-Pfad, so dass diese seperat aufgerufen werden können.";
-            Code = "new ControlBreadcrumb(Page) { Uri = Page.Uri }";
+            Code = "new ControlBreadcrumb() { Uri = Page.Uri }";
 
             AddExample
             (
-                new ControlBreadcrumb(this)
+                new ControlBreadcrumb()
                 {
                     Uri = Uri.Root
                 },
-                new ControlBreadcrumb(this)
+                new ControlBreadcrumb()
                 {
                     Uri = Uri
                 }

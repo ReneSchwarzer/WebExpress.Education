@@ -6,13 +6,16 @@ namespace Education.Controls
 {
     public class ControlTabMenu : ControlTab
     {
+        private IPage Page { get; set; }
+
         /// <summary>
         /// Konstruktor
         /// </summary>
         /// <param name="page">Die zugehörige Seite</param>
         public ControlTabMenu(IPage page)
-            : base(page)
+            : base()
         {
+            Page = page;
             Init();
         }
 
@@ -26,7 +29,7 @@ namespace Education.Controls
             Layout = TypeLayoutTab.Pill;
             HorizontalAlignment = TypeHorizontalAlignmentTab.Center;
 
-            Items.Add(new ControlLink(Page)
+            Items.Add(new ControlLink()
             {
                 Text = "Home",
                 Uri = root,
@@ -34,7 +37,7 @@ namespace Education.Controls
                 Icon = new PropertyIcon(TypeIcon.Home)
             });
 
-            Items.Add(new ControlLink(Page)
+            Items.Add(new ControlLink()
             {
                 Text = "Tutorials",
                 Uri = root.Append("tutorial"),
@@ -42,7 +45,7 @@ namespace Education.Controls
                 Icon = new PropertyIcon(TypeIcon.GraduationCap)
             });
 
-            Items.Add(new ControlLink(Page)
+            Items.Add(new ControlLink()
             {
                 Text = "Controls",
                 Uri = root.Append("control"),
@@ -50,7 +53,7 @@ namespace Education.Controls
                 Icon = new PropertyIcon(TypeIcon.Clone)
             });
 
-            Items.Add(new ControlLink(Page)
+            Items.Add(new ControlLink()
             {
                 Text = "Html",
                 Uri = root.Append("html"),
@@ -58,7 +61,7 @@ namespace Education.Controls
                 Icon = new PropertyIcon(TypeIcon.Code)
             });
 
-            Items.Add(new ControlLink(Page)
+            Items.Add(new ControlLink()
             {
                 Text = "Hilfe",
                 Uri = Page.Uri.Root.Append("help"),

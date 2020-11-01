@@ -69,15 +69,16 @@ namespace Education.Pages
             : base(name)
         {
             Name = name;
-            Examples = new ControlPanelCard(this)
+            Examples = new ControlPanelCard()
             {
                 BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light),
                 Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.None, PropertySpacing.Space.None, PropertySpacing.Space.Two)
             };
-            Menu = new ControlTab(this)
+            Menu = new ControlTab()
             {
                 Layout = TypeLayoutTab.Pill,
-                Orientation = TypeOrientationTab.Vertical
+                Orientation = TypeOrientationTab.Vertical,
+                GridColumn = new PropertyGrid(TypeDevice.Medium, 2)
             };
         }
 
@@ -95,26 +96,29 @@ namespace Education.Pages
         public override void Process()
         {
             base.Process();
-            var grid = new ControlGrid(this) 
+            var grid = new ControlPanelGrid() 
             { 
                 Margin = new PropertySpacingMargin(PropertySpacing.Space.Null) 
             };
 
-            var content = new ControlPanel(this);
+            var content = new ControlPanel() 
+            {
+                GridColumn = new PropertyGrid(TypeDevice.Medium, 10)
+            };
 
-            content.Content.Add(new ControlText(this)
+            content.Content.Add(new ControlText()
             {
                 Text = Name,
                 Format = TypeFormatText.H1
             });
 
-            content.Content.Add(new ControlText(this)
+            content.Content.Add(new ControlText()
             { 
                 Text = Description,
                 Format = TypeFormatText.Paragraph
             });
 
-            content.Content.Add(new ControlText(this)
+            content.Content.Add(new ControlText()
             {
                 Text = "Beispiele",
                 Format = TypeFormatText.H1
@@ -122,13 +126,13 @@ namespace Education.Pages
 
             content.Content.Add(Examples);
 
-            content.Content.Add(new ControlText(this)
+            content.Content.Add(new ControlText()
             {
                 Text = "Code",
                 Format = TypeFormatText.H1
             });
 
-            content.Content.Add(new ControlPanelCard(this, new ControlText(this)
+            content.Content.Add(new ControlPanelCard(new ControlText()
             {
                 Text = Code,
                 Format = TypeFormatText.Code,
@@ -141,7 +145,7 @@ namespace Education.Pages
 
             if (Propertys.Count > 0)
             {
-                content.Content.Add(new ControlText(this)
+                content.Content.Add(new ControlText()
                 {
                     Text = "Eigenschaften",
                     Format = TypeFormatText.H1
@@ -149,13 +153,13 @@ namespace Education.Pages
 
                 foreach (var item in Propertys)
                 {
-                    content.Content.Add(new ControlText(this)
+                    content.Content.Add(new ControlText()
                     {
                         Text = item.Key,
                         Format = TypeFormatText.H4
                     });
 
-                    content.Content.Add(new ControlText(this)
+                    content.Content.Add(new ControlText()
                     {
                         Text = item.Value.Description,
                         Format = TypeFormatText.Paragraph
@@ -163,20 +167,20 @@ namespace Education.Pages
 
                     if (!string.IsNullOrWhiteSpace(item.Value.Callout))
                     {
-                        content.Content.Add(new ControlPanelCallout(this, new ControlText(this) { Text = item.Value.Callout })
+                        content.Content.Add(new ControlPanelCallout(new ControlText() { Text = item.Value.Callout })
                         {
                             Color = new PropertyColorCallout(TypeColorCallout.Info),
                             Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                         });
                     }
 
-                    content.Content.Add(new ControlPanelCard(this, item.Value.Controls.ToArray())
+                    content.Content.Add(new ControlPanelCard(item.Value.Controls.ToArray())
                     {
                         BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light),
                         Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.None, PropertySpacing.Space.None, PropertySpacing.Space.Two)
                     });
 
-                    content.Content.Add(new ControlText(this)
+                    content.Content.Add(new ControlText()
                     {
                         Text = item.Value.Code,
                         Format = TypeFormatText.Code
@@ -184,8 +188,8 @@ namespace Education.Pages
                 }
             }
 
-            grid.Add(0, 2, Menu);
-            grid.Add(0, 10, content);
+            grid.Content.Add(Menu);
+            grid.Content.Add(content);
             Main.Content.Add(grid);
         }
 
