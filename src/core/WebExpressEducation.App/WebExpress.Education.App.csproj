@@ -16,7 +16,7 @@
     <ProjectReference Include="..\..\..\..\WebExpress\core\WebExpress.App\WebExpress.App.csproj" />
     <ProjectReference Include="..\..\..\..\WebExpress\core\WebExpress.UI\WebExpress.UI.csproj" />
     <ProjectReference Include="..\..\..\..\WebExpress\core\WebExpress\WebExpress.csproj" />
-    <ProjectReference Include="..\WebExpressEducation\WebExpressEducation.csproj" />
+    <ProjectReference Include="..\WebExpress.Education\WebExpress.Education.csproj" />
   </ItemGroup>
 
   <ItemGroup>

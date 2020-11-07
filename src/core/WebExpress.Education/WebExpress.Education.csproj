@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Version>1.0.0.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Rene_Schwarzer@hotmail.de</Authors>
+    <PackageLicenseExpression>GNU General Public License v3.0</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/ReneSchwarzer/WebExpressEducation.git</RepositoryUrl>
+    <AssemblyName>Education</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\img\Favicon.png" />
+    <None Remove="Assets\img\Icon16.png" />
+    <None Remove="Assets\img\Logo.png" />
+    <None Remove="Assets\img\Rocket.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\img\Favicon.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\img\Icon16.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\img\Logo.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\img\Rocket.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\WebExpress\core\WebExpress.UI\WebExpress.UI.csproj" />
+    <ProjectReference Include="..\..\..\..\WebExpress\core\WebExpress\WebExpress.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Assets\css\" />
+    <Folder Include="Assets\fonts\" />
+    <Folder Include="Assets\js\" />
+    <Folder Include="Controls\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Config\education.config.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Config\education.settings.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

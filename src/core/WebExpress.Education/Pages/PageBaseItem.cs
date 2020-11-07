@@ -7,7 +7,7 @@ namespace Education.Pages
 {
     public abstract class PageBaseItem : PageBase
     {
-        public class PropertyItem
+        public abstract class Item
         {
             /// <summary>
             /// Die Steuerelemente
@@ -30,6 +30,8 @@ namespace Education.Pages
             public string Code { get; set; }
 
         }
+        public class PropertyItem : Item { };
+        public class ContentItem : Item { };
 
         /// <summary>
         /// Aufnahme der Links zu den verschiedenen Elementen
@@ -54,7 +56,7 @@ namespace Education.Pages
         /// <summary>
         /// Aufnahme der Eigenschaften
         /// </summary>
-        public Dictionary<string, PropertyItem> Propertys { get; private set; } = new Dictionary<string, PropertyItem>();
+        public Dictionary<string, Item> Items { get; private set; } = new Dictionary<string, Item>();
 
         /// <summary>
         /// Aufnahme des Beispielcodes
@@ -143,7 +145,9 @@ namespace Education.Pages
                 Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.None, PropertySpacing.Space.None, PropertySpacing.Space.Two)
             });
 
-            if (Propertys.Count > 0)
+            var propertys = Items.Where(x => x.Value is PropertyItem);
+
+            if (propertys.Count() > 0)
             {
                 content.Content.Add(new ControlText()
                 {
@@ -151,7 +155,54 @@ namespace Education.Pages
                     Format = TypeFormatText.H1
                 });
 
-                foreach (var item in Propertys)
+                foreach (var item in propertys)
+                {
+                    content.Content.Add(new ControlText()
+                    {
+                        Text = item.Key,
+                        Format = TypeFormatText.H4
+                    });
+
+                    content.Content.Add(new ControlText()
+                    {
+                        Text = item.Value.Description,
+                        Format = TypeFormatText.Paragraph
+                    });
+
+                    if (!string.IsNullOrWhiteSpace(item.Value.Callout))
+                    {
+                        content.Content.Add(new ControlPanelCallout(new ControlText() { Text = item.Value.Callout })
+                        {
+                            Color = new PropertyColorCallout(TypeColorCallout.Info),
+                            Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
+                        });
+                    }
+
+                    content.Content.Add(new ControlPanelCard(item.Value.Controls.ToArray())
+                    {
+                        BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light),
+                        Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.None, PropertySpacing.Space.None, PropertySpacing.Space.Two)
+                    });
+
+                    content.Content.Add(new ControlText()
+                    {
+                        Text = item.Value.Code,
+                        Format = TypeFormatText.Code
+                    });
+                }
+            }
+
+            var contentItem = Items.Where(x => x.Value is ContentItem);
+
+            if (contentItem.Count() > 0)
+            {
+                content.Content.Add(new ControlText()
+                {
+                    Text = "Untergeordnete Elemente",
+                    Format = TypeFormatText.H1
+                });
+
+                foreach (var item in contentItem)
                 {
                     content.Content.Add(new ControlText()
                     {
@@ -209,9 +260,9 @@ namespace Education.Pages
         /// <param name="controls">Die Steuerlemente</param>
         protected void AddProperty(string key, params Control[] controls)
         {
-            if (!Propertys.ContainsKey(key))
+            if (!Items.ContainsKey(key))
             {
-                Propertys.Add(key, new PropertyItem() { Controls = controls.ToList() });
+                Items.Add(key, new PropertyItem() { Controls = controls.ToList() });
             }
         }
 
@@ -223,9 +274,9 @@ namespace Education.Pages
         /// <param name="controls">Die Steuerlemente</param>
         protected void AddProperty(string key, string description, params Control[] controls)
         {
-            if (!Propertys.ContainsKey(key))
+            if (!Items.ContainsKey(key))
             {
-                Propertys.Add(key, new PropertyItem() { Controls = controls.ToList(), Description = description });
+                Items.Add(key, new PropertyItem() { Controls = controls.ToList(), Description = description });
             }
         }
 
@@ -238,9 +289,9 @@ namespace Education.Pages
         /// <param name="controls">Die Steuerlemente</param>
         protected void AddProperty(string key, string description, string code, params Control[] controls)
         {
-            if (!Propertys.ContainsKey(key))
+            if (!Items.ContainsKey(key))
             {
-                Propertys.Add(key, new PropertyItem() { Controls = controls.ToList(), Description = description, Code = code });
+                Items.Add(key, new PropertyItem() { Controls = controls.ToList(), Description = description, Code = code });
             }
         }
 
@@ -254,15 +305,30 @@ namespace Education.Pages
         /// <param name="controls">Die Steuerlemente</param>
         protected void AddProperty(string key, string description, string callout, string code, params Control[] controls)
         {
-            if (!Propertys.ContainsKey(key))
+            if (!Items.ContainsKey(key))
             {
-                Propertys.Add(key, new PropertyItem() 
+                Items.Add(key, new PropertyItem() 
                 { 
                     Controls = controls.ToList(), 
                     Description = description, 
                     Callout = callout,
                     Code = code 
                 });
+            }
+        }
+
+        /// <summary>
+        /// Fügt eine Eigenschaft hinzu
+        /// </summary>
+        /// <param name="key">Der Name</param>
+        /// <param name="description">Eine Beschreibung</param>
+        /// <param name="code">Der Beispielcode</param>
+        /// <param name="controls">Die Steuerlemente</param>
+        protected void AddContent(string key, string description, string code, params Control[] controls)
+        {
+            if (!Items.ContainsKey(key))
+            {
+                Items.Add(key, new ContentItem() { Controls = controls.ToList(), Description = description, Code = code });
             }
         }
     }

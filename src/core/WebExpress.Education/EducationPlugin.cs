@@ -1,5 +1,6 @@
 ﻿using Education.Model;
 using Education.Pages;
+using System;
 using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
@@ -31,7 +32,7 @@ namespace Education
             Context.Log.Info(MethodBase.GetCurrentMethod(), "Education Plugin initialisierung");
 
             // Ressourcen
-            SiteMap.AddPage("Assets", "Assets", (x) => new WorkerFile(x, Context.AssetBaseFolder));
+            SiteMap.AddPage("Assets", "Assets", (x) => new WorkerRessource(x, Assembly.GetExecutingAssembly(), "WebExpressEducation"));
             SiteMap.AddPath("Assets", true);
             
             // Seiten
@@ -44,12 +45,14 @@ namespace Education
             SiteMap.AddPage("Breadcrumb", "breadcrumb", (x) => new WorkerPage<PageControlBreadcrumb>(x));
             SiteMap.AddPage("Callout", "callout", (x) => new WorkerPage<PageControlPanelCallout>(x));
             SiteMap.AddPage("Card", "card", (x) => new WorkerPage<PageControlPanelCard>(x));
+            SiteMap.AddPage("Header", "header", (x) => new WorkerPage<PageControlPanelHeader>(x));
             SiteMap.AddPage("Formular", "formular", (x) => new WorkerPage<PageControlFormular>(x));
             SiteMap.AddPage("FormularTextBox", "formular_textbox", (x) => new WorkerPage<PageControlFormularTextBox>(x));
             SiteMap.AddPage("FormularComboBox", "formular_combobox", (x) => new WorkerPage<PageControlFormularComboBox>(x));
             SiteMap.AddPage("Icon", "icon", (x) => new WorkerPage<PageControlIcon>(x));
             SiteMap.AddPage("Line", "line", (x) => new WorkerPage<PageControlLine>(x));
             SiteMap.AddPage("Link", "link", (x) => new WorkerPage<PageControlLink>(x));
+            SiteMap.AddPage("List", "list", (x) => new WorkerPage<PageControlList>(x));
             SiteMap.AddPage("Progress", "progress", (x) => new WorkerPage<PageControlProgress>(x));
             SiteMap.AddPage("Tab", "tab", (x) => new WorkerPage<PageControlTab>(x));
             SiteMap.AddPage("Text", "text", (x) => new WorkerPage<PageControlText>(x));
@@ -65,12 +68,14 @@ namespace Education
             SiteMap.AddPath("Home/Controls/Breadcrumb");
             SiteMap.AddPath("Home/Controls/Callout");
             SiteMap.AddPath("Home/Controls/Card");
+            SiteMap.AddPath("Home/Controls/Header");
             SiteMap.AddPath("Home/Controls/Formular");
             SiteMap.AddPath("Home/Controls/Formular/FormularTextBox");
             SiteMap.AddPath("Home/Controls/Formular/FormularComboBox");
             SiteMap.AddPath("Home/Controls/Icon");
             SiteMap.AddPath("Home/Controls/Line");
             SiteMap.AddPath("Home/Controls/Link");
+            SiteMap.AddPath("Home/Controls/List");
             SiteMap.AddPath("Home/Controls/Progress");
             SiteMap.AddPath("Home/Controls/Tab");
             SiteMap.AddPath("Home/Controls/Text");
