@@ -45,6 +45,7 @@ namespace Education
             SiteMap.AddPage("Breadcrumb", "breadcrumb", (x) => new WorkerPage<PageControlBreadcrumb>(x));
             SiteMap.AddPage("Callout", "callout", (x) => new WorkerPage<PageControlPanelCallout>(x));
             SiteMap.AddPage("Card", "card", (x) => new WorkerPage<PageControlPanelCard>(x));
+            SiteMap.AddPage("Flexbox", "flexbox", (x) => new WorkerPage<PageControlPanelFlexbox>(x));
             SiteMap.AddPage("Header", "header", (x) => new WorkerPage<PageControlPanelHeader>(x));
             SiteMap.AddPage("Formular", "formular", (x) => new WorkerPage<PageControlFormular>(x));
             SiteMap.AddPage("FormularTextBox", "formular_textbox", (x) => new WorkerPage<PageControlFormularTextBox>(x));
@@ -68,6 +69,7 @@ namespace Education
             SiteMap.AddPath("Home/Controls/Breadcrumb");
             SiteMap.AddPath("Home/Controls/Callout");
             SiteMap.AddPath("Home/Controls/Card");
+            SiteMap.AddPath("Home/Controls/Flexbox");
             SiteMap.AddPath("Home/Controls/Header");
             SiteMap.AddPath("Home/Controls/Formular");
             SiteMap.AddPath("Home/Controls/Formular/FormularTextBox");
