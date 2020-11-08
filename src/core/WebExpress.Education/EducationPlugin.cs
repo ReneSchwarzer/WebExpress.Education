@@ -15,7 +15,7 @@ namespace Education
         /// Konstruktor
         /// </summary>
         public EducationPlugin()
-            : base("Education", "/Asserts/img/Education.svg")
+            : base("Education", "/Assets/img/Logo.png")
         {
         }
 
@@ -41,10 +41,12 @@ namespace Education
             SiteMap.AddPage("Controls", "control", (x) => new WorkerPage<PageControl>(x));
             SiteMap.AddPage("Alert", "alert", (x) => new WorkerPage<PageControlAlert>(x));
             SiteMap.AddPage("Button", "button", (x) => new WorkerPage<PageControlButton>(x));
-            SiteMap.AddPage("Badge", "badge", (x) => new WorkerPage<PageControlBadge>(x));
+            SiteMap.AddPage("ButtonLink", "buttonlink", (x) => new WorkerPage<PageControlButtonLink>(x));
+            SiteMap.AddPage("Badge", "badge", (x) => new WorkerPage<PageControlButton>(x));
             SiteMap.AddPage("Breadcrumb", "breadcrumb", (x) => new WorkerPage<PageControlBreadcrumb>(x));
             SiteMap.AddPage("Callout", "callout", (x) => new WorkerPage<PageControlPanelCallout>(x));
             SiteMap.AddPage("Card", "card", (x) => new WorkerPage<PageControlPanelCard>(x));
+            SiteMap.AddPage("Dropdown", "dropdown", (x) => new WorkerPage<PageControlDropdown>(x));
             SiteMap.AddPage("Flexbox", "flexbox", (x) => new WorkerPage<PageControlPanelFlexbox>(x));
             SiteMap.AddPage("Header", "header", (x) => new WorkerPage<PageControlPanelHeader>(x));
             SiteMap.AddPage("Formular", "formular", (x) => new WorkerPage<PageControlFormular>(x));
@@ -65,10 +67,12 @@ namespace Education
             SiteMap.AddPath("Home/Controls");
             SiteMap.AddPath("Home/Controls/Alert");
             SiteMap.AddPath("Home/Controls/Button");
+            SiteMap.AddPath("Home/Controls/ButtonLink");
             SiteMap.AddPath("Home/Controls/Badge");
             SiteMap.AddPath("Home/Controls/Breadcrumb");
             SiteMap.AddPath("Home/Controls/Callout");
             SiteMap.AddPath("Home/Controls/Card");
+            SiteMap.AddPath("Home/Controls/Dropdown");
             SiteMap.AddPath("Home/Controls/Flexbox");
             SiteMap.AddPath("Home/Controls/Header");
             SiteMap.AddPath("Home/Controls/Formular");

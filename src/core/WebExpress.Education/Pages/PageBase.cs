@@ -16,13 +16,7 @@ namespace Education.Pages
         public PageBase(string title)
             : base()
         {
-            Title = "Education";
-
-            if (!string.IsNullOrWhiteSpace(title))
-            {
-                Title += " - " + title;
-            }
-
+            Title = title;
             Favicons.Add(new Favicon("/Assets/img/Favicon.png", TypeFavicon.PNG));
         }
 
@@ -32,44 +26,83 @@ namespace Education.Pages
         public override void Init()
         {
             base.Init();
-            Head.Styles = new List<string>(new[] { "position: sticky; top: 0; z-index: 99;" });
-            Head.Content.Add(HamburgerMenu);
-            HamburgerMenu.HorizontalAlignment = TypeHorizontalAlignment.Left;
-            HamburgerMenu.Image = Uri?.Root.Append("Assets/img/Logo.png");
-            HamburgerMenu.Add(new ControlLink() { Text = "Home", Icon = new PropertyIcon(TypeIcon.Home), Uri = Uri.Root });
-            HamburgerMenu.Add(new ControlLink() { Text = "Tutorials", Icon = new PropertyIcon(TypeIcon.GraduationCap), Uri = Uri.Root.Append("tutorials") });
-            HamburgerMenu.Add(new ControlLink() { Text = "Controls", Icon = new PropertyIcon(TypeIcon.Clone), Uri = Uri.Root.Append("controls") });
-            HamburgerMenu.Add(new ControlLink() { Text = "Html", Icon = new PropertyIcon(TypeIcon.Code), Uri = Uri.Root.Append("html") });
-            HamburgerMenu.AddSeperator();
-            HamburgerMenu.Add(new ControlLink() { Text = "Hilfe", Icon = new PropertyIcon(TypeIcon.InfoCircle), Uri = Uri.Root.Append("help") });
+            
+            Hamburger.Add(new ControlLink() { Text = "Home", Icon = new PropertyIcon(TypeIcon.Home), Uri = Uri.Root });
+            Hamburger.Add(new ControlLink() { Text = "Tutorials", Icon = new PropertyIcon(TypeIcon.GraduationCap), Uri = Uri.Root.Append("tutorials") });
+            Hamburger.Add(new ControlLink() { Text = "Controls", Icon = new PropertyIcon(TypeIcon.Clone), Uri = Uri.Root.Append("control") });
+            Hamburger.Add(new ControlLink() { Text = "Html", Icon = new PropertyIcon(TypeIcon.Code), Uri = Uri.Root.Append("html") });
+            Hamburger.AddSeperator();
+            Hamburger.Add(new ControlLink() { Text = "Hilfe", Icon = new PropertyIcon(TypeIcon.InfoCircle), Uri = Uri.Root.Append("help") });
 
-            // SideBar
-            ToolBar = new ControlToolBar()
+            AppFunctions.Content.Add(new ControlTabMenu(this));
+
+            if (this is PageHome)
             {
-                BackgroundColor = new PropertyColorBackground(TypeColorBackground.Dark),
-                HorizontalAlignment = TypeHorizontalAlignment.Left
-            };
-            ToolBar.Classes.Add("sidebar");
-
-            Head.Content.Add(new ControlPanelCenter(new ControlText()
+                SidebarHeader.Content.Add(new ControlLink()
+                {
+                    Text = "Home",
+                    Uri = Uri.Root,
+                    Active = TypeActive.Active,
+                    Icon = new PropertyIcon(TypeIcon.Home),
+                    Size = new PropertySizeText(TypeSizeText.Large),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.Two, PropertySpacing.Space.None),
+                    TextColor = new PropertyColorText(TypeColorText.Dark)
+                });
+            }
+            else if (this is PageTutorial)
             {
-                Text = Title,
-                TextColor = new PropertyColorText(TypeColorText.White),
-                Format = TypeFormatText.H1,
-                Size = new PropertySizeText(TypeSizeText.Default),
-                Padding = new PropertySpacingPadding(PropertySpacing.Space.One),
-                Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.None, PropertySpacing.Space.None, PropertySpacing.Space.Null),
-                Styles = new List<string>(new[] { "font-size:190%; height: 50px;" })
-            })); ;
+                SidebarHeader.Content.Add(new ControlLink()
+                {
+                    Text = "Tutorials",
+                    Uri = Uri.Root.Append("tutorials"),
+                    Active = TypeActive.Active,
+                    Icon = new PropertyIcon(TypeIcon.GraduationCap),
+                    Size = new PropertySizeText(TypeSizeText.Large),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.Two, PropertySpacing.Space.None),
+                    TextColor = new PropertyColorText(TypeColorText.Dark)
+                });
+            }
+            else if (this is PageControl)
+            {
+                SidebarHeader.Content.Add(new ControlLink()
+                {
+                    Text = "Controls",
+                    Uri = Uri.Root.Append("control"),
+                    Active = TypeActive.Active,
+                    Icon = new PropertyIcon(TypeIcon.Clone),
+                    Size = new PropertySizeText(TypeSizeText.Large),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.Two, PropertySpacing.Space.None),
+                    TextColor = new PropertyColorText(TypeColorText.Dark)
+                });
+            }
+            else if (this is PageHtml)
+            {
+                SidebarHeader.Content.Add(new ControlLink()
+                {
+                    Text = "Html",
+                    Uri = Uri.Root.Append("html"),
+                    Active = TypeActive.Active,
+                    Icon = new PropertyIcon(TypeIcon.Code),
+                    Size = new PropertySizeText(TypeSizeText.Large),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.Two, PropertySpacing.Space.None),
+                    TextColor = new PropertyColorText(TypeColorText.Dark)
+                });
+            }
+            else if (this is PageHelp)
+            {
+                SidebarHeader.Content.Add(new ControlLink()
+                {
+                    Text = "Hilfe",
+                    Uri = Uri.Root.Append("help"),
+                    Active = TypeActive.Active,
+                    Icon = new PropertyIcon(TypeIcon.InfoCircle),
+                    Size = new PropertySizeText(TypeSizeText.Large),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.Two, PropertySpacing.Space.None),
+                    TextColor = new PropertyColorText(TypeColorText.Dark)
+                });
+            }
 
-            Main.Classes.Add("content");
-            Main.Margin = new PropertySpacingMargin(PropertySpacing.Space.Two, PropertySpacing.Space.None);
-            PathCtrl.Classes.Add("content");
-
-            Main.Content.Add(new ControlTabMenu(this));
-            Main.Content.Add(new ControlLine());
-
-            Foot.Content.Add(new ControlText("now")
+            Footer.Content.Add(new ControlText("now")
             {
                 Text = string.Format("{0}", ViewModel.Instance.Now),
                 TextColor = new PropertyColorText(TypeColorText.Muted),

@@ -26,6 +26,8 @@ namespace Education.Controls
         {
             var root = Page.Uri.Root;
 
+            TextColor = new PropertyColorText(TypeColorText.White);
+
             Layout = TypeLayoutTab.Pill;
             HorizontalAlignment = TypeHorizontalAlignmentTab.Center;
 

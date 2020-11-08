@@ -2,13 +2,13 @@
 
 namespace Education.Pages
 {
-    public class PageControlButton : PageControlBase
+    public class PageControlButtonLink : PageControlBase
     {
         /// <summary>
         /// Konstruktor
         /// </summary>
-        public PageControlButton()
-            : base("ControlButton")
+        public PageControlButtonLink()
+            : base("ControlButtonLink")
         {
         }
 
@@ -19,24 +19,27 @@ namespace Education.Pages
         {
             base.Init();
 
-            Description = "Das ControlButton sellt eine Schaltfläche bereit.";
-            Code = "new ControlButton() {  }";
+            Description = "Das ControlButtonLink ist ein Link in Form einer Schaltfläche.";
+            Code = "new ControlButtonLink() {  }";
 
             AddExample
             (
-                new ControlButton()
-                {
-                    Text = "Hallo Welt!"
-                },
-                new ControlButton()
+                new ControlButtonLink()
                 {
                     Text = "Hallo Welt!",
-                    BackgroundColor = new PropertyColorButton(TypeColorButton.Info)
+                    Uri = Uri
                 },
-                new ControlButton()
+                new ControlButtonLink()
                 {
                     Text = "Hallo Welt!",
-                    BackgroundColor = new PropertyColorButton(TypeColorButton.Warning)
+                    BackgroundColor = new PropertyColorButton(TypeColorButton.Info),
+                    Uri = Uri
+                },
+                new ControlButtonLink()
+                {
+                    Text = "Hallo Welt!",
+                    BackgroundColor = new PropertyColorButton(TypeColorButton.Warning),
+                    Uri = Uri
                 }
             );
 
@@ -46,49 +49,58 @@ namespace Education.Pages
                 "BackgroundColor",
                 "Setzt die Hintergrundfarbe der Schaltfläche.",
                 "Color = new PropertyColorButton(TypeColorButton.Primary)",
-                new ControlButton()
+                new ControlButtonLink()
                 {
-                    Text = "Standard"
+                    Text = "Standard",
+                    Uri = Uri
                 },
-                new ControlButton()
+                new ControlButtonLink()
                 {
                     Text = "Primär",
-                    BackgroundColor = new PropertyColorButton(TypeColorButton.Primary)
+                    BackgroundColor = new PropertyColorButton(TypeColorButton.Primary),
+                    Uri = Uri
                 },
-                new ControlButton()
+                new ControlButtonLink()
                 {
                     Text = "Info",
-                    BackgroundColor = new PropertyColorButton(TypeColorButton.Info)
+                    BackgroundColor = new PropertyColorButton(TypeColorButton.Info),
+                    Uri = Uri
                 },
-                new ControlButton()
+                new ControlButtonLink()
                 {
                     Text = "Erfolg",
-                    BackgroundColor = new PropertyColorButton(TypeColorButton.Success)
+                    BackgroundColor = new PropertyColorButton(TypeColorButton.Success),
+                    Uri = Uri
                 },
-                new ControlButton()
+                new ControlButtonLink()
                 {
                     Text = "Warnung",
-                    BackgroundColor = new PropertyColorButton(TypeColorButton.Warning)
+                    BackgroundColor = new PropertyColorButton(TypeColorButton.Warning),
+                    Uri = Uri
                 },
-                new ControlButton()
+                new ControlButtonLink()
                 {
                     Text = "Fehler",
-                    BackgroundColor = new PropertyColorButton(TypeColorButton.Danger)
+                    BackgroundColor = new PropertyColorButton(TypeColorButton.Danger),
+                    Uri = Uri
                 },
-                new ControlButton()
+                new ControlButtonLink()
                 {
                     Text = "Dunkel",
-                    BackgroundColor = new PropertyColorButton(TypeColorButton.Dark)
+                    BackgroundColor = new PropertyColorButton(TypeColorButton.Dark),
+                    Uri = Uri
                 },
-                new ControlButton()
+                new ControlButtonLink()
                 {
                     Text = "Hell",
-                    BackgroundColor = new PropertyColorButton(TypeColorButton.Light)
+                    BackgroundColor = new PropertyColorButton(TypeColorButton.Light),
+                    Uri = Uri
                 },
-                new ControlButton()
+                new ControlButtonLink()
                 {
                     Text = "Benutzerdefiniert",
-                    BackgroundColor = new PropertyColorButton("gold")
+                    BackgroundColor = new PropertyColorButton("gold"),
+                    Uri = Uri
                 }
             );
 
@@ -97,58 +109,67 @@ namespace Education.Pages
                 "Outline",
                 "Entfernt die Hintergrundfarbe von der Schaltfläche.",
                 "Outline = true",
-                new ControlButton()
+                new ControlButtonLink()
                 {
                     Text = "Standard",
-                    Outline = true
+                    Outline = true,
+                    Uri = Uri
                 },
-                new ControlButton()
+                new ControlButtonLink()
                 {
                     Text = "Primär",
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Primary),
-                    Outline = true
+                    Outline = true,
+                    Uri = Uri
                 },
-                new ControlButton()
+                new ControlButtonLink()
                 {
                     Text = "Info",
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Info),
-                    Outline = true
+                    Outline = true,
+                    Uri = Uri
                 },
-                new ControlButton()
+                new ControlButtonLink()
                 {
                     Text = "Erfolg",
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Success),
-                    Outline = true
+                    Outline = true,
+                    Uri = Uri
                 },
-                new ControlButton()
+                new ControlButtonLink()
                 {
                     Text = "Warnung",
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Warning),
-                    Outline = true
+                    Outline = true,
+                    Uri = Uri
                 },
-                new ControlButton()
+                new ControlButtonLink()
                 {
                     Text = "Fehler",
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Danger),
-                    Outline = true
+                    Outline = true,
+                    Uri = Uri
                 },
-                new ControlButton()
+                new ControlButtonLink()
                 {
                     Text = "Dunkel",
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Dark),
-                    Outline = true
+                    Outline = true,
+                    Uri = Uri
                 },
-                new ControlButton()
+                new ControlButtonLink()
                 {
                     Text = "Hell",
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Light),
-                    Outline = true
+                    Outline = true,
+                    Uri = Uri
                 },
-                new ControlButton()
+                new ControlButtonLink()
                 {
                     Text = "Benutzerdefiniert",
                     BackgroundColor = new PropertyColorButton("gold"),
-                    Outline = true
+                    Outline = true,
+                    Uri = Uri
                 }
             );
 
@@ -157,23 +178,26 @@ namespace Education.Pages
                 "Size",
                 "Bestimmt die Größe der Schaltfläche.",
                 "Size = TypeSizeButton.Small",
-                new ControlButton()
+                new ControlButtonLink()
                 {
                     Text = "Small",
                     Size = TypeSizeButton.Small,
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Primary),
+                    Uri = Uri
                 },
-                new ControlButton()
+                new ControlButtonLink()
                 {
                     Text = "Standard",
                     Size = TypeSizeButton.Default,
-                    BackgroundColor = new PropertyColorButton(TypeColorButton.Primary)
+                    BackgroundColor = new PropertyColorButton(TypeColorButton.Primary),
+                    Uri = Uri
                 },
-                new ControlButton()
+                new ControlButtonLink()
                 {
                     Text = "Lagrge",
                     Size = TypeSizeButton.Large,
-                    BackgroundColor = new PropertyColorButton(TypeColorButton.Primary)
+                    BackgroundColor = new PropertyColorButton(TypeColorButton.Primary),
+                    Uri = Uri
                 }
             );
 
@@ -182,17 +206,19 @@ namespace Education.Pages
                 "Icon",
                 "Fügt ein Icon der Schaltfläche hinzu.",
                 "Icon = new PropertyIcon(TypeIcon.Home)",
-                new ControlButton()
+                new ControlButtonLink()
                 {
                     Text = "Home",
                     Icon = new PropertyIcon(TypeIcon.Home),
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Primary),
+                    Uri = Uri
                 },
-                new ControlButton()
+                new ControlButtonLink()
                 {
                     Text = "Benutzerdefiniert",
                     Icon = new PropertyIcon(Uri.Root.Append("/Assets/img/Icon16.png")),
-                    BackgroundColor = new PropertyColorButton(TypeColorButton.Primary)
+                    BackgroundColor = new PropertyColorButton(TypeColorButton.Primary),
+                    Uri = Uri
                 }
             );
 
@@ -201,11 +227,12 @@ namespace Education.Pages
                "Block",
                "Spannt die Schaltfläche über die gesammte Bereite.",
                "Block = TypeBlockButton.Block",
-               new ControlButton()
+               new ControlButtonLink()
                {
                    Text = "Block",
                    Block = TypeBlockButton.Block,
-                   BackgroundColor = new PropertyColorButton(TypeColorButton.Primary)
+                   BackgroundColor = new PropertyColorButton(TypeColorButton.Primary),
+                   Uri = Uri
                }
             );
 
@@ -214,26 +241,29 @@ namespace Education.Pages
                 "Active",
                 "Setzt die Aktivitätseigenschaft der Schaltfläche.",
                 "Active = TypesActive.Active",
-                new ControlButton()
+                new ControlButtonLink()
                 {
                     Text = "None",
                     Active = TypeActive.None,
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Primary),
-                    Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.Two),
+                    Uri = Uri
                 },
-                new ControlButton()
+                new ControlButtonLink()
                 {
                     Text = "Active",
                     Active = TypeActive.Active,
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Primary),
-                    Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.Two),
+                    Uri = Uri
                 },
-                new ControlButton()
+                new ControlButtonLink()
                 {
                     Text = "Disable",
                     Active = TypeActive.Disabled,
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Primary),
-                    Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.Two),
+                    Uri = Uri
                 }
             );
 
@@ -242,22 +272,15 @@ namespace Education.Pages
                 "Modal",
                 "Blendet ein Dialog ein.",
                 "Modal = new ControlModal(...)",
-                new ControlButton()
+                new ControlButtonLink()
                 {
                     Text = "Klick mich!",
                     Modal = new ControlModal(null, "Dialog", new ControlText() { Text = "Hallo Welt!" }),
                     TextColor = new PropertyColorText(TypeColorText.Default),
-                    Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.Two),
+                    Uri = Uri
                 }
             );
-        }
-
-        /// <summary>
-        /// Verarbeitung
-        /// </summary>
-        public override void Process()
-        {
-            base.Process();
         }
     }
 }

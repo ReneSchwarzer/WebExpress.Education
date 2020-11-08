@@ -98,21 +98,10 @@ namespace Education.Pages
         public override void Process()
         {
             base.Process();
-            var grid = new ControlPanelGrid() 
-            { 
-                Margin = new PropertySpacingMargin(PropertySpacing.Space.Null) 
-            };
 
             var content = new ControlPanel() 
             {
-                GridColumn = new PropertyGrid(TypeDevice.Medium, 10)
             };
-
-            content.Content.Add(new ControlText()
-            {
-                Text = Name,
-                Format = TypeFormatText.H1
-            });
 
             content.Content.Add(new ControlText()
             { 
@@ -123,7 +112,7 @@ namespace Education.Pages
             content.Content.Add(new ControlText()
             {
                 Text = "Beispiele",
-                Format = TypeFormatText.H1
+                Format = TypeFormatText.H3
             });
 
             content.Content.Add(Examples);
@@ -131,7 +120,7 @@ namespace Education.Pages
             content.Content.Add(new ControlText()
             {
                 Text = "Code",
-                Format = TypeFormatText.H1
+                Format = TypeFormatText.H3
             });
 
             content.Content.Add(new ControlPanelCard(new ControlText()
@@ -152,7 +141,7 @@ namespace Education.Pages
                 content.Content.Add(new ControlText()
                 {
                     Text = "Eigenschaften",
-                    Format = TypeFormatText.H1
+                    Format = TypeFormatText.H3
                 });
 
                 foreach (var item in propertys)
@@ -199,7 +188,7 @@ namespace Education.Pages
                 content.Content.Add(new ControlText()
                 {
                     Text = "Untergeordnete Elemente",
-                    Format = TypeFormatText.H1
+                    Format = TypeFormatText.H3
                 });
 
                 foreach (var item in contentItem)
@@ -239,9 +228,8 @@ namespace Education.Pages
                 }
             }
 
-            grid.Content.Add(Menu);
-            grid.Content.Add(content);
-            Main.Content.Add(grid);
+            Content.Content.Add(content);
+            SidebarNavigation.Content.Add(Menu);
         }
 
         /// <summary>

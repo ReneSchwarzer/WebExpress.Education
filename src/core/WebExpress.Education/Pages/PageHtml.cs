@@ -28,7 +28,7 @@ namespace Education.Pages
         {
             base.Process();
 
-            Main.Content.Add(new ControlText()
+            Content.Content.Add(new ControlText()
             {
                 Text = "Html",
                 Format = TypeFormatText.H1,
