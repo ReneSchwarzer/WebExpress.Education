@@ -36,7 +36,7 @@ namespace Education.Pages
         /// <summary>
         /// Aufnahme der Links zu den verschiedenen Elementen
         /// </summary>
-        public ControlTab Menu { get; private set; }
+        public ControlNavigation Menu { get; private set; }
         
         /// <summary>
         /// Aufnahme des Namens
@@ -76,7 +76,7 @@ namespace Education.Pages
                 BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light),
                 Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.None, PropertySpacing.Space.None, PropertySpacing.Space.Two)
             };
-            Menu = new ControlTab()
+            Menu = new ControlNavigation()
             {
                 Layout = TypeLayoutTab.Pill,
                 Orientation = TypeOrientationTab.Vertical,

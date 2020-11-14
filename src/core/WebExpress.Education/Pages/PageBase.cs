@@ -27,14 +27,14 @@ namespace Education.Pages
         {
             base.Init();
             
-            Hamburger.Add(new ControlLink() { Text = "Home", Icon = new PropertyIcon(TypeIcon.Home), Uri = Uri.Root });
-            Hamburger.Add(new ControlLink() { Text = "Tutorials", Icon = new PropertyIcon(TypeIcon.GraduationCap), Uri = Uri.Root.Append("tutorials") });
-            Hamburger.Add(new ControlLink() { Text = "Controls", Icon = new PropertyIcon(TypeIcon.Clone), Uri = Uri.Root.Append("control") });
-            Hamburger.Add(new ControlLink() { Text = "Html", Icon = new PropertyIcon(TypeIcon.Code), Uri = Uri.Root.Append("html") });
-            Hamburger.AddSeperator();
-            Hamburger.Add(new ControlLink() { Text = "Hilfe", Icon = new PropertyIcon(TypeIcon.InfoCircle), Uri = Uri.Root.Append("help") });
+            //Hamburger.Add(new ControlLink() { Text = "Home", Icon = new PropertyIcon(TypeIcon.Home), Uri = Uri.Root });
+            //Hamburger.Add(new ControlLink() { Text = "Tutorials", Icon = new PropertyIcon(TypeIcon.GraduationCap), Uri = Uri.Root.Append("tutorials") });
+            //Hamburger.Add(new ControlLink() { Text = "Controls", Icon = new PropertyIcon(TypeIcon.Clone), Uri = Uri.Root.Append("control") });
+            //Hamburger.Add(new ControlLink() { Text = "Html", Icon = new PropertyIcon(TypeIcon.Code), Uri = Uri.Root.Append("html") });
+            //Hamburger.AddSeperator();
+            //Hamburger.Add(new ControlLink() { Text = "Hilfe", Icon = new PropertyIcon(TypeIcon.InfoCircle), Uri = Uri.Root.Append("help") });
 
-            AppFunctions.Content.Add(new ControlTabMenu(this));
+            //AppNavigation = new ControlTabMenu(this);
 
             if (this is PageHome)
             {

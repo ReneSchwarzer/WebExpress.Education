@@ -41,7 +41,6 @@
     <Folder Include="Assets\css\" />
     <Folder Include="Assets\fonts\" />
     <Folder Include="Assets\js\" />
-    <Folder Include="Controls\" />
   </ItemGroup>
 
   <ItemGroup>

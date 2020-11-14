@@ -201,6 +201,29 @@ namespace Education.Pages
 
             AddProperty
             (
+                "Decoration",
+                "Bestimmt, ob der Link beim Hoovern unterstrichen wird oder nicht.",
+                "Decoration = TypeTextDecoration.None",
+                new ControlLink()
+                {
+                    Text = "Default",
+                    Decoration = TypeTextDecoration.Default,
+                    Uri = Uri,
+                    TextColor = new PropertyColorText(TypeColorText.Default),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
+                },
+                new ControlLink()
+                {
+                    Text = "None",
+                    Decoration = TypeTextDecoration.None,
+                    Uri = Uri,
+                    TextColor = new PropertyColorText(TypeColorText.Default),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
+                }
+            );
+
+            AddProperty
+            (
                 "Size",
                 "Bestimmt die Größe des Links.",
                 "Size = TypeSizeButton.Small",

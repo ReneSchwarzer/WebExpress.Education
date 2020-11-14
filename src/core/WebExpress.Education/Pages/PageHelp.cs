@@ -30,7 +30,7 @@ namespace Education.Pages
 
             Content.Content.Add(new ControlImage()
             {
-                Source = Uri.Root.Append("Assets/StoreLogo.png"),
+                Uri = Uri.Root.Append("Assets/StoreLogo.png"),
                 Width = 200,
                 Height = 200,
                 HorizontalAlignment = TypeHorizontalAlignment.Right

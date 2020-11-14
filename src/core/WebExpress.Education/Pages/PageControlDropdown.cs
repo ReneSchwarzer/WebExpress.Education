@@ -4,11 +4,11 @@ namespace Education.Pages
 {
     public class PageControlDropdown : PageControlBase
     {
-        private Control item1 = new ControlDropdownHeader() { Text = "Header" };
-        private Control item2 = new ControlLink() { Text = "Erster Eintrag" };
-        private Control item3 = new ControlLink() { Text = "Zweiter Eintrag" };
-        private Control item4 = new ControlDropdownDivider();
-        private Control item5 = new ControlLink() { Text = "Dritter Eintrag" };
+        private IControlDropdownItem item1 = new ControlDropdownHeader() { Text = "Header" };
+        private IControlDropdownItem item2 = new ControlLink() { Text = "Erster Eintrag" };
+        private IControlDropdownItem item3 = new ControlLink() { Text = "Zweiter Eintrag" };
+        private IControlDropdownItem item4 = new ControlDropdownDivider();
+        private IControlDropdownItem item5 = new ControlLink() { Text = "Dritter Eintrag" };
 
         /// <summary>
         /// Konstruktor

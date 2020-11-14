@@ -4,13 +4,13 @@ using WebExpress.UI.Controls;
 
 namespace Education.Pages
 {
-    public class PageControlTab : PageControlBase
+    public class PageControlNavigation : PageControlBase
     {
         /// <summary>
         /// Konstruktor
         /// </summary>
-        public PageControlTab()
-            : base("ControlTab")
+        public PageControlNavigation()
+            : base("ControlNavigation")
         {
         }
 
@@ -21,12 +21,12 @@ namespace Education.Pages
         {
             base.Init();
 
-            Description = "Das ControlTab sellt Links als einen Tab dar.";
-            Code = "new ControlTab() {  }";
+            Description = "Das ControlNavigation sellt Links in einem Navigationssteuerelement dar.";
+            Code = "new ControlNavigation() {  }";
 
             AddExample
             (
-                new ControlTab
+                new ControlNavigation
                 (
                     CreateLink(1, "Eins", string.IsNullOrWhiteSpace(GetParam("link")) || GetParam("link") == "1" ? TypeActive.Active : TypeActive.None),
                     CreateLink(2, "Zwei", GetParam("link") == "2" ? TypeActive.Active : TypeActive.None),
@@ -43,7 +43,7 @@ namespace Education.Pages
                 "Active",
                 "Setzt den Aktivitätsstatus innerhalb des Links.",
                 "Active = TypesActive.Active",
-                new ControlTab
+                new ControlNavigation
                 (
                     CreateLink(1, "None", TypeActive.None),
                     CreateLink(1, "Active", TypeActive.Active),
@@ -57,10 +57,10 @@ namespace Education.Pages
             AddProperty
             (
                 "Layout",
-                "Setzt das Layout des Tabs.",
+                "Setzt das Layout des Navigationssteuerelementes.",
                 "Layout = TypesLayoutTab.Tab",
                 new ControlText() { Text = "Default", TextColor = new PropertyColorText(TypeColorText.Info) },
-                new ControlTab
+                new ControlNavigation
                 (
                     CreateLink(1, "None", TypeActive.None),
                     CreateLink(1, "Active", TypeActive.Active),
@@ -70,7 +70,7 @@ namespace Education.Pages
                     Layout = TypeLayoutTab.Default
                 },
                 new ControlText() { Text = "Menu", TextColor = new PropertyColorText(TypeColorText.Info) },
-                new ControlTab
+                new ControlNavigation
                 (
                     CreateLink(1, "None", TypeActive.None),
                     CreateLink(1, "Active", TypeActive.Active),
@@ -80,7 +80,7 @@ namespace Education.Pages
                     Layout = TypeLayoutTab.Menu
                 },
                 new ControlText() { Text = "Tab", TextColor = new PropertyColorText(TypeColorText.Info) },
-                new ControlTab
+                new ControlNavigation
                 (
                     CreateLink(1, "None", TypeActive.None),
                     CreateLink(1, "Active", TypeActive.Active),
@@ -90,7 +90,7 @@ namespace Education.Pages
                     Layout = TypeLayoutTab.Tab
                 },
                 new ControlText() { Text = "Pill", TextColor = new PropertyColorText(TypeColorText.Info) },
-                new ControlTab
+                new ControlNavigation
                 (
                     CreateLink(1, "None", TypeActive.None),
                     CreateLink(1, "Active", TypeActive.Active),
@@ -104,10 +104,10 @@ namespace Education.Pages
             AddProperty
             (
                 "HorizontalAlignment",
-                "Setzt die horizontale Ausrichtung des Tabs.",
+                "Setzt die horizontale Ausrichtung des Navigationssteuerelementes.",
                 "Active = TypeActive.Active",
                 new ControlText() { Text = "Default", TextColor = new PropertyColorText(TypeColorText.Info) },
-                new ControlTab
+                new ControlNavigation
                 (
                     CreateLink(1, "Eins", string.IsNullOrWhiteSpace(GetParam("link")) || GetParam("link") == "1" ? TypeActive.Active : TypeActive.None),
                     CreateLink(2, "Zwei", GetParam("link") == "2" ? TypeActive.Active : TypeActive.None),
@@ -118,7 +118,7 @@ namespace Education.Pages
                     HorizontalAlignment = TypeHorizontalAlignmentTab.Default
                 },
                 new ControlText() { Text = "Left", TextColor = new PropertyColorText(TypeColorText.Info) },
-                new ControlTab
+                new ControlNavigation
                 (
                     CreateLink(1, "Eins", string.IsNullOrWhiteSpace(GetParam("link")) || GetParam("link") == "1" ? TypeActive.Active : TypeActive.None),
                     CreateLink(2, "Zwei", GetParam("link") == "2" ? TypeActive.Active : TypeActive.None),
@@ -130,7 +130,7 @@ namespace Education.Pages
                     HorizontalAlignment = TypeHorizontalAlignmentTab.Left
                 },
                 new ControlText() { Text = "Center", TextColor = new PropertyColorText(TypeColorText.Info) },
-                new ControlTab
+                new ControlNavigation
                 (
                     CreateLink(1, "Eins", string.IsNullOrWhiteSpace(GetParam("link")) || GetParam("link") == "1" ? TypeActive.Active : TypeActive.None),
                     CreateLink(2, "Zwei", GetParam("link") == "2" ? TypeActive.Active : TypeActive.None),
@@ -141,7 +141,7 @@ namespace Education.Pages
                     HorizontalAlignment = TypeHorizontalAlignmentTab.Center
                 },
                 new ControlText() { Text = "Right", TextColor = new PropertyColorText(TypeColorText.Info) },
-                new ControlTab
+                new ControlNavigation
                 (
                     CreateLink(1, "Eins", string.IsNullOrWhiteSpace(GetParam("link")) || GetParam("link") == "1" ? TypeActive.Active : TypeActive.None),
                     CreateLink(2, "Zwei", GetParam("link") == "2" ? TypeActive.Active : TypeActive.None),
@@ -156,10 +156,10 @@ namespace Education.Pages
             AddProperty
             (
                 "Orientation",
-                "Setzt die Orientierung des Tabs.",
+                "Setzt die Orientierung des Navigationssteuerelementes.",
                 "Orientation = TypeNavOrientation.Vertical",
                 new ControlText() { Text = "Default", TextColor = new PropertyColorText(TypeColorText.Info) },
-                new ControlTab
+                new ControlNavigation
                 (
                     CreateLink(1, "Eins", string.IsNullOrWhiteSpace(GetParam("link")) || GetParam("link") == "1" ? TypeActive.Active : TypeActive.None),
                     CreateLink(2, "Zwei", GetParam("link") == "2" ? TypeActive.Active : TypeActive.None),
@@ -170,7 +170,7 @@ namespace Education.Pages
                     Orientation = TypeOrientationTab.Default 
                 },
                 new ControlText() { Text = "Horizontal", TextColor = new PropertyColorText(TypeColorText.Info) },
-                new ControlTab
+                new ControlNavigation
                 (
                     CreateLink(1, "Eins", string.IsNullOrWhiteSpace(GetParam("link")) || GetParam("link") == "1" ? TypeActive.Active : TypeActive.None),
                     CreateLink(2, "Zwei", GetParam("link") == "2" ? TypeActive.Active : TypeActive.None),
@@ -181,7 +181,7 @@ namespace Education.Pages
                     Orientation = TypeOrientationTab.Horizontal
                 },
                 new ControlText() { Text = "Vertical", TextColor = new PropertyColorText(TypeColorText.Info) },
-                new ControlTab
+                new ControlNavigation
                 (
                     CreateLink(1, "Eins", string.IsNullOrWhiteSpace(GetParam("link")) || GetParam("link") == "1" ? TypeActive.Active : TypeActive.None),
                     CreateLink(2, "Zwei", GetParam("link") == "2" ? TypeActive.Active : TypeActive.None),
@@ -196,10 +196,10 @@ namespace Education.Pages
             AddProperty
             (
                 "Justified",
-                "Bestimmt, ob die Tab-Register die gleiche Größe besitzen sollen.",
+                "Bestimmt, ob die Links die gleiche Größe besitzen sollen.",
                 "Justified = TypeNavJustified.Justified",
                 new ControlText() { Text = "Default", TextColor = new PropertyColorText(TypeColorText.Info) },
-                new ControlTab
+                new ControlNavigation
                 (
                     CreateLink(1, "Eins", string.IsNullOrWhiteSpace(GetParam("link")) || GetParam("link") == "1" ? TypeActive.Active : TypeActive.None),
                     CreateLink(2, "Zwei", GetParam("link") == "2" ? TypeActive.Active : TypeActive.None),
@@ -210,7 +210,7 @@ namespace Education.Pages
                     Justified = TypeJustifiedTab.Default
                 },
                 new ControlText() { Text = "Justified", TextColor = new PropertyColorText(TypeColorText.Info) },
-                new ControlTab
+                new ControlNavigation
                 (
                     CreateLink(1, "Eins", string.IsNullOrWhiteSpace(GetParam("link")) || GetParam("link") == "1" ? TypeActive.Active : TypeActive.None),
                     CreateLink(2, "Zwei", GetParam("link") == "2" ? TypeActive.Active : TypeActive.None),

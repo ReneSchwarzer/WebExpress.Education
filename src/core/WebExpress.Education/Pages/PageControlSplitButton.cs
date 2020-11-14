@@ -2,13 +2,19 @@
 
 namespace Education.Pages
 {
-    public class PageControlButton : PageControlBase
+    public class PageControlSplitButton : PageControlBase
     {
+        private IControlSplitButtonItem item1 = new ControlDropdownHeader() { Text = "Header" };
+        private IControlSplitButtonItem item2 = new ControlLink() { Text = "Erster Eintrag" };
+        private IControlSplitButtonItem item3 = new ControlLink() { Text = "Zweiter Eintrag" };
+        private IControlSplitButtonItem item4 = new ControlDropdownDivider();
+        private IControlSplitButtonItem item5 = new ControlLink() { Text = "Dritter Eintrag" };
+
         /// <summary>
         /// Konstruktor
         /// </summary>
-        public PageControlButton()
-            : base("ControlButton")
+        public PageControlSplitButton()
+            : base("ControlSplitButton")
         {
         }
 
@@ -19,21 +25,21 @@ namespace Education.Pages
         {
             base.Init();
 
-            Description = "Das ControlButton sellt eine Schaltfläche bereit.";
-            Code = "new ControlButton() {  }";
+            Description = "Das ControlSplitButton sellt eine Schaltfläche mit einem Menü für zusätzliche Optionen bereit.";
+            Code = "new ControlSplitButton() {  }";
 
             AddExample
             (
-                new ControlButton()
+                new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "Hallo Welt!"
                 },
-                new ControlButton()
+                new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "Hallo Welt!",
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Info)
                 },
-                new ControlButton()
+                new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "Hallo Welt!",
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Warning)
@@ -46,46 +52,46 @@ namespace Education.Pages
                 "BackgroundColor",
                 "Setzt die Hintergrundfarbe der Schaltfläche.",
                 "Color = new PropertyColorButton(TypeColorButton.Primary)",
-                new ControlButton()
+                new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "Standard"
                 },
-                new ControlButton()
+                new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "Primär",
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Primary)
                 },
-                new ControlButton()
+                new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "Info",
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Info)
                 },
-                new ControlButton()
+                new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "Erfolg",
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Success)
                 },
-                new ControlButton()
+                new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "Warnung",
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Warning)
                 },
-                new ControlButton()
+                new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "Fehler",
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Danger)
                 },
-                new ControlButton()
+                new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "Dunkel",
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Dark)
                 },
-                new ControlButton()
+                new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "Hell",
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Light)
                 },
-                new ControlButton()
+                new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "Benutzerdefiniert",
                     BackgroundColor = new PropertyColorButton("gold")
@@ -97,54 +103,54 @@ namespace Education.Pages
                 "Outline",
                 "Entfernt die Hintergrundfarbe von der Schaltfläche.",
                 "Outline = true",
-                new ControlButton()
+                new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "Standard",
                     Outline = true
                 },
-                new ControlButton()
+                new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "Primär",
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Primary),
                     Outline = true
                 },
-                new ControlButton()
+                new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "Info",
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Info),
                     Outline = true
                 },
-                new ControlButton()
+                new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "Erfolg",
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Success),
                     Outline = true
                 },
-                new ControlButton()
+                new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "Warnung",
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Warning),
                     Outline = true
                 },
-                new ControlButton()
+                new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "Fehler",
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Danger),
                     Outline = true
                 },
-                new ControlButton()
+                new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "Dunkel",
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Dark),
                     Outline = true
                 },
-                new ControlButton()
+                new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "Hell",
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Light),
                     Outline = true
                 },
-                new ControlButton()
+                new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "Benutzerdefiniert",
                     BackgroundColor = new PropertyColorButton("gold"),
@@ -157,19 +163,19 @@ namespace Education.Pages
                 "Size",
                 "Bestimmt die Größe der Schaltfläche.",
                 "Size = TypeSizeButton.Small",
-                new ControlButton()
+                new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "Small",
                     Size = TypeSizeButton.Small,
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Primary),
                 },
-                new ControlButton()
+                new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "Standard",
                     Size = TypeSizeButton.Default,
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Primary)
                 },
-                new ControlButton()
+                new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "Lagrge",
                     Size = TypeSizeButton.Large,
@@ -182,13 +188,13 @@ namespace Education.Pages
                 "Icon",
                 "Fügt ein Icon der Schaltfläche hinzu.",
                 "Icon = new PropertyIcon(TypeIcon.Home)",
-                new ControlButton()
+                new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "Home",
                     Icon = new PropertyIcon(TypeIcon.Home),
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Primary),
                 },
-                new ControlButton()
+                new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "Benutzerdefiniert",
                     Icon = new PropertyIcon(Uri.Root.Append("/Assets/img/Icon16.png")),
@@ -201,7 +207,7 @@ namespace Education.Pages
                "Block",
                "Spannt die Schaltfläche über die gesammte Bereite.",
                "Block = TypeBlockButton.Block",
-               new ControlButton()
+               new ControlSplitButton(item1, item2, item3, item4, item5)
                {
                    Text = "Block",
                    Block = TypeBlockButton.Block,
@@ -214,21 +220,21 @@ namespace Education.Pages
                 "Active",
                 "Setzt die Aktivitätseigenschaft der Schaltfläche.",
                 "Active = TypesActive.Active",
-                new ControlButton()
+                new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "None",
                     Active = TypeActive.None,
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Primary),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 },
-                new ControlButton()
+                new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "Active",
                     Active = TypeActive.Active,
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Primary),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 },
-                new ControlButton()
+                new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "Disable",
                     Active = TypeActive.Disabled,
@@ -242,7 +248,7 @@ namespace Education.Pages
                 "Modal",
                 "Blendet ein Dialog ein.",
                 "Modal = new ControlModal(...)",
-                new ControlButton()
+                new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "Klick mich!",
                     Modal = new ControlModal(null, "Dialog", new ControlText() { Text = "Hallo Welt!" }),
@@ -251,14 +257,6 @@ namespace Education.Pages
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 }
             );
-        }
-
-        /// <summary>
-        /// Verarbeitung
-        /// </summary>
-        public override void Process()
-        {
-            base.Process();
         }
     }
 }
