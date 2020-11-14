@@ -45,52 +45,62 @@ namespace Education.Pages
                 new ControlText()
                 {
                     Text = "Standard-Textfarbe",
-                    TextColor = new PropertyColorText(TypeColorText.Default)
+                    TextColor = new PropertyColorText(TypeColorText.Default),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
                 new ControlText()
                 {
                     Text = "Primäre-Textfarbe",
-                    TextColor = new PropertyColorText(TypeColorText.Primary)
+                    TextColor = new PropertyColorText(TypeColorText.Primary),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
                 new ControlText()
                 {
                     Text = "Info-Textfarbe",
-                    TextColor = new PropertyColorText(TypeColorText.Info)
+                    TextColor = new PropertyColorText(TypeColorText.Info),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
                 new ControlText()
                 {
                     Text = "Erfolgs-Textfarbe",
-                    TextColor = new PropertyColorText(TypeColorText.Success)
+                    TextColor = new PropertyColorText(TypeColorText.Success),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
                 new ControlText()
                 {
                     Text = "Warnungs-Textfarbe",
-                    TextColor = new PropertyColorText(TypeColorText.Warning)
+                    TextColor = new PropertyColorText(TypeColorText.Warning),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
                 new ControlText()
                 {
                     Text = "Fehler-Textfarbe",
-                    TextColor = new PropertyColorText(TypeColorText.Danger)
+                    TextColor = new PropertyColorText(TypeColorText.Danger),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
                 new ControlText()
                 {
                     Text = "Dunkle Textfarbe",
-                    TextColor = new PropertyColorText(TypeColorText.Dark)
+                    TextColor = new PropertyColorText(TypeColorText.Dark),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
                 new ControlText()
                 {
                     Text = "Helle Textfarbe",
-                    TextColor = new PropertyColorText(TypeColorText.Light)
+                    TextColor = new PropertyColorText(TypeColorText.Light),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
                 new ControlText()
                 {
                     Text = "Weiße Textfarbe",
-                    TextColor = new PropertyColorText(TypeColorText.White)
+                    TextColor = new PropertyColorText(TypeColorText.White),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
                 new ControlText()
                 {
                     Text = "Benutzerdefinierte Textfarbe",
-                    TextColor = new PropertyColorText("gold")
+                    TextColor = new PropertyColorText("gold"),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 }
              );
 
@@ -101,63 +111,166 @@ namespace Education.Pages
                 "BackgroundColor = new PropertyColorBackground(TypeColorBackground.Primary)",
                 new ControlText()
                 {
-                    Text = "Standard-Hintergrund"
+                    Text = "Standard-Hintergrund",
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
                 new ControlText()
                 {
                     Text = "Primär-Hintergrund",
-                    BackgroundColor = new PropertyColorBackground(TypeColorBackground.Primary)
+                    BackgroundColor = new PropertyColorBackground(TypeColorBackground.Primary),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
                 new ControlText()
                 {
                     Text = "Sekundär-Hintergrund",
-                    BackgroundColor = new PropertyColorBackground(TypeColorBackground.Secondary)
+                    BackgroundColor = new PropertyColorBackground(TypeColorBackground.Secondary),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
                 new ControlText()
                 {
                     Text = "Info-Hintergrund",
-                    BackgroundColor = new PropertyColorBackground(TypeColorBackground.Info)
+                    BackgroundColor = new PropertyColorBackground(TypeColorBackground.Info),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
                 new ControlText()
                 {
                     Text = "Erfolgs-Hintergrund",
-                    BackgroundColor = new PropertyColorBackground(TypeColorBackground.Success)
+                    BackgroundColor = new PropertyColorBackground(TypeColorBackground.Success),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
                 new ControlText()
                 {
                     Text = "Warnungs-Hintergrund",
-                    BackgroundColor = new PropertyColorBackground(TypeColorBackground.Warning)
+                    BackgroundColor = new PropertyColorBackground(TypeColorBackground.Warning),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
                 new ControlText()
                 {
                     Text = "Fehler-Hintergrund",
-                    BackgroundColor = new PropertyColorBackground(TypeColorBackground.Danger)
+                    BackgroundColor = new PropertyColorBackground(TypeColorBackground.Danger),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
                 new ControlText()
                 {
                     Text = "Dunkler Hintergrund",
-                    BackgroundColor = new PropertyColorBackground(TypeColorBackground.Dark)
+                    BackgroundColor = new PropertyColorBackground(TypeColorBackground.Dark),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
                 new ControlText()
                 {
                     Text = "Heller Hintergrund",
-                    BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light)
+                    BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
                 new ControlText()
                 {
                     Text = "Weißer Hintergrund",
-                    BackgroundColor = new PropertyColorBackground(TypeColorBackground.White)
+                    BackgroundColor = new PropertyColorBackground(TypeColorBackground.White),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
                 new ControlText()
                 {
                     Text = "Transparenter Hintergrund",
-                    BackgroundColor = new PropertyColorBackground(TypeColorBackground.Transparent)
+                    BackgroundColor = new PropertyColorBackground(TypeColorBackground.Transparent),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 },
                 new ControlText()
                 {
                     Text = "Benutzerdefinierter Hintergrund",
                     TextColor = new PropertyColorText("red"),
-                    BackgroundColor = new PropertyColorBackground("gold")
+                    BackgroundColor = new PropertyColorBackground("gold"),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
+                }
+            );
+
+            AddProperty
+            (
+                "BorderColor",
+                "Setzt die Rahmenfarbe des Steuerelementes.",
+                "BorderColor = new PropertyColorBorder(TypeColorBorder.Primary)",
+                new ControlText()
+                {
+                    Text = "Standard-Rahmenfarbe",
+                    Border = new PropertyBorder(true),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
+                },
+                new ControlText()
+                {
+                    Text = "Primär-Rahmenfarbe",
+                    BorderColor = new PropertyColorBorder(TypeColorBorder.Primary),
+                    Border = new PropertyBorder(true),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
+                },
+                new ControlText()
+                {
+                    Text = "Sekundär-Rahmenfarbe",
+                    BorderColor = new PropertyColorBorder(TypeColorBorder.Secondary),
+                    Border = new PropertyBorder(true),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
+                },
+                new ControlText()
+                {
+                    Text = "Info-Rahmenfarbe",
+                    BorderColor = new PropertyColorBorder(TypeColorBorder.Info),
+                    Border = new PropertyBorder(true),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
+                },
+                new ControlText()
+                {
+                    Text = "Erfolgs-Rahmenfarbe",
+                    BorderColor = new PropertyColorBorder(TypeColorBorder.Success),
+                    Border = new PropertyBorder(true),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
+                },
+                new ControlText()
+                {
+                    Text = "Warnungs-Rahmenfarbe",
+                    BorderColor = new PropertyColorBorder(TypeColorBorder.Warning),
+                    Border = new PropertyBorder(true),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
+                },
+                new ControlText()
+                {
+                    Text = "Fehler-Rahmenfarbe",
+                    BorderColor = new PropertyColorBorder(TypeColorBorder.Danger),
+                    Border = new PropertyBorder(true),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
+                },
+                new ControlText()
+                {
+                    Text = "Dunkle Rahmenfarbe",
+                    BorderColor = new PropertyColorBorder(TypeColorBorder.Dark),
+                    Border = new PropertyBorder(true),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
+                },
+                new ControlText()
+                {
+                    Text = "Helle Rahmenfarbe",
+                    BorderColor = new PropertyColorBorder(TypeColorBorder.Light),
+                    Border = new PropertyBorder(true),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
+                },
+                new ControlText()
+                {
+                    Text = "Weiße Rahmenfarbe",
+                    BorderColor = new PropertyColorBorder(TypeColorBorder.White),
+                    Border = new PropertyBorder(true),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
+                },
+                new ControlText()
+                {
+                    Text = "Transparente Rahmenfarbe",
+                    BorderColor = new PropertyColorBorder(TypeColorBorder.Transparent),
+                    Border = new PropertyBorder(true),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
+                },
+                new ControlText()
+                {
+                    Text = "Benutzerdefinierte Rahmenfarbe",
+                    TextColor = new PropertyColorText("red"),
+                    Border = new PropertyBorder(true),
+                    BorderColor = new PropertyColorBorder("gold"),
+                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two)
                 }
             );
 
