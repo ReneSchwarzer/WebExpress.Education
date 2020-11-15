@@ -5,7 +5,7 @@ using WebExpress.UI.Plugin;
 
 namespace Education.Controls
 {
-    public class ControlAppNavigationHtml : ControlLink, IPluginComponentAppNavigationPrimary
+    public class ControlAppNavigationHtml : ControlNavigationItemLink, IPluginComponentAppNavigationPrimary
     {
         /// <summary>
         /// Konstruktor
@@ -21,7 +21,6 @@ namespace Education.Controls
         /// </summary>
         private void Init()
         {
-            TextColor = new PropertyColorText(TypeColorText.Light);
         }
 
         /// <summary>

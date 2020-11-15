@@ -229,7 +229,7 @@ namespace Education.Pages
             }
 
             Content.Content.Add(content);
-            SidebarNavigation.Content.Add(Menu);
+            Sidebar.Navigation.Items.AddRange(Menu.Items);
         }
 
         /// <summary>

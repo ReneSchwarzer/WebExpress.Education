@@ -63,6 +63,7 @@ namespace Education
             SiteMap.AddPage("Navigation", "navigation", (x) => new WorkerPage<PageControlNavigation>(x));
             SiteMap.AddPage("Pagination", "pagination", (x) => new WorkerPage<PageControlPagination>(x));
             SiteMap.AddPage("Text", "text", (x) => new WorkerPage<PageControlText>(x));
+            SiteMap.AddPage("Toolbar", "toolbar", (x) => new WorkerPage<PageControlToolBar>(x));
             SiteMap.AddPage("Html", "html", (x) => new WorkerPage<PageHtml>(x));
             SiteMap.AddPage("Hilfe", "help", (x) => new WorkerPage<PageHelp>(x));
 
@@ -93,6 +94,7 @@ namespace Education
             SiteMap.AddPath("Home/Controls/Navigation");
             SiteMap.AddPath("Home/Controls/Pagination");
             SiteMap.AddPath("Home/Controls/Text");
+            SiteMap.AddPath("Home/Controls/Toolbar");
             SiteMap.AddPath("Home/Html");
             SiteMap.AddPath("Home/Hilfe");
         }

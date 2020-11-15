@@ -38,7 +38,7 @@ namespace Education.Pages
 
             if (this is PageHome)
             {
-                SidebarHeader.Content.Add(new ControlLink()
+                Sidebar.Header.Content.Add(new ControlLink()
                 {
                     Text = "Home",
                     Uri = Uri.Root,
@@ -51,7 +51,7 @@ namespace Education.Pages
             }
             else if (this is PageTutorial)
             {
-                SidebarHeader.Content.Add(new ControlLink()
+                Sidebar.Header.Content.Add(new ControlLink()
                 {
                     Text = "Tutorials",
                     Uri = Uri.Root.Append("tutorials"),
@@ -64,7 +64,7 @@ namespace Education.Pages
             }
             else if (this is PageControl)
             {
-                SidebarHeader.Content.Add(new ControlLink()
+                Sidebar.Header.Content.Add(new ControlLink()
                 {
                     Text = "Controls",
                     Uri = Uri.Root.Append("control"),
@@ -77,7 +77,7 @@ namespace Education.Pages
             }
             else if (this is PageHtml)
             {
-                SidebarHeader.Content.Add(new ControlLink()
+                Sidebar.Header.Content.Add(new ControlLink()
                 {
                     Text = "Html",
                     Uri = Uri.Root.Append("html"),
@@ -90,7 +90,7 @@ namespace Education.Pages
             }
             else if (this is PageHelp)
             {
-                SidebarHeader.Content.Add(new ControlLink()
+                Sidebar.Header.Content.Add(new ControlLink()
                 {
                     Text = "Hilfe",
                     Uri = Uri.Root.Append("help"),

@@ -122,6 +122,12 @@ namespace Education.Pages
                     Outline = true,
                     Uri = Uri
                 },
+                new ControlButton()
+                {
+                    Text = "Sekundär",
+                    BackgroundColor = new PropertyColorButton(TypeColorButton.Secondary),
+                    Outline = true
+                },
                 new ControlButtonLink()
                 {
                     Text = "Info",

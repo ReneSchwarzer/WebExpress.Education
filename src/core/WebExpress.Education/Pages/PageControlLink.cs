@@ -29,14 +29,12 @@ namespace Education.Pages
                 new ControlLink()
                 {
                     Text = "Home",
-                    Uri = Uri.Root,
-                    TextColor = new PropertyColorText(TypeColorText.Default)
+                    Uri = Uri.Root
                 },
                 new ControlLink()
                 {
                     Text = Name,
-                    Uri = Uri,
-                    TextColor = new PropertyColorText(TypeColorText.Default)
+                    Uri = Uri
                 }
             );
 
@@ -50,7 +48,6 @@ namespace Education.Pages
                 {
                     Text = "Hallo Welt!",
                     Uri = Uri,
-                    TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 }
             );
@@ -63,7 +60,6 @@ namespace Education.Pages
                 new ControlLink(new ControlText() { Text = "Hallo Welt!", Format = TypeFormatText.Italic }, new ControlBadge() { Value = "1", BackgroundColor = new PropertyColorBackgroundBadge(TypeColorBackground.Danger) })
                 {
                     Uri = Uri,
-                    TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 }
             );
@@ -78,7 +74,6 @@ namespace Education.Pages
                     Text = "Probier es aus",
                     Uri = Uri,
                     Title = "Hallo Welt!",
-                    TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 }
             );
@@ -93,7 +88,6 @@ namespace Education.Pages
                     Text = "Probier es aus",
                     Uri = Uri,
                     Target = TypeTarget.Blank,
-                    TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 }
             );
@@ -107,13 +101,11 @@ namespace Education.Pages
                 {
                     Text = "Mit Uri",
                     Uri = Uri,
-                    TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 },
                 new ControlLink()
                 {
                     Text = "Ohne Uri",
-                    TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 }
             );
@@ -178,7 +170,6 @@ namespace Education.Pages
                     Text = "None",
                     Active = TypeActive.None,
                     Uri = Uri,
-                    TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 },
                 new ControlLink()
@@ -186,7 +177,6 @@ namespace Education.Pages
                     Text = "Active",
                     Active = TypeActive.Active,
                     Uri = Uri,
-                    TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 },
                 new ControlLink()
@@ -194,7 +184,6 @@ namespace Education.Pages
                     Text = "Disable",
                     Active = TypeActive.Disabled,
                     Uri = Uri,
-                    TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 }
             );
@@ -209,7 +198,6 @@ namespace Education.Pages
                     Text = "Default",
                     Decoration = TypeTextDecoration.Default,
                     Uri = Uri,
-                    TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 },
                 new ControlLink()
@@ -217,7 +205,6 @@ namespace Education.Pages
                     Text = "None",
                     Decoration = TypeTextDecoration.None,
                     Uri = Uri,
-                    TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 }
             );
@@ -232,7 +219,6 @@ namespace Education.Pages
                     Text = "Extra Small",
                     Uri = Uri,
                     Size = new PropertySizeText(TypeSizeText.ExtraSmall),
-                    TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 },
                 new ControlLink()
@@ -240,7 +226,6 @@ namespace Education.Pages
                     Text = "Small",
                     Uri = Uri,
                     Size = new PropertySizeText(TypeSizeText.Small),
-                    TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 },
                 new ControlLink()
@@ -248,7 +233,6 @@ namespace Education.Pages
                     Text = "Standard",
                     Uri = Uri,
                     Size = new PropertySizeText(TypeSizeText.Default),
-                    TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 },
                 new ControlLink()
@@ -256,7 +240,6 @@ namespace Education.Pages
                     Text = "Large",
                     Uri = Uri,
                     Size = new PropertySizeText(TypeSizeText.Large),
-                    TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 },
                 new ControlLink()
@@ -264,7 +247,6 @@ namespace Education.Pages
                     Text = "Extra Large",
                     Uri = Uri,
                     Size = new PropertySizeText(TypeSizeText.ExtraLarge),
-                    TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 },
                 new ControlLink()
@@ -272,7 +254,6 @@ namespace Education.Pages
                     Text = "Benutzerdefiniert",
                     Uri = Uri,
                     Size = new PropertySizeText(3.1f),
-                    TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 }
             );
@@ -286,7 +267,6 @@ namespace Education.Pages
                 {
                     Text = "Standard",
                     Uri = Uri,
-                    TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 },
                 new ControlLink()
@@ -503,18 +483,9 @@ namespace Education.Pages
                     Text = "Klick mich!",
                     Uri = Uri,
                     Modal = new ControlModal(null, "Dialog", new ControlText() { Text = "Hallo Welt!" }),
-                    TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 }
             );
-        }
-
-        /// <summary>
-        /// Verarbeitung
-        /// </summary>
-        public override void Process()
-        {
-            base.Process();
         }
     }
 }

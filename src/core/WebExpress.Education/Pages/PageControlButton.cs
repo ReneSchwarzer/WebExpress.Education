@@ -110,6 +110,12 @@ namespace Education.Pages
                 },
                 new ControlButton()
                 {
+                    Text = "Sekundär",
+                    BackgroundColor = new PropertyColorButton(TypeColorButton.Secondary),
+                    Outline = true
+                },
+                new ControlButton()
+                {
                     Text = "Info",
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Info),
                     Outline = true

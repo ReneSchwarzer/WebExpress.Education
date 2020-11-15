@@ -4,11 +4,11 @@ namespace Education.Pages
 {
     public class PageControlSplitButtonLink : PageControlBase
     {
-        private IControlSplitButtonItem item1 = new ControlDropdownHeader() { Text = "Header" };
-        private IControlSplitButtonItem item2 = new ControlLink() { Text = "Erster Eintrag" };
-        private IControlSplitButtonItem item3 = new ControlLink() { Text = "Zweiter Eintrag" };
-        private IControlSplitButtonItem item4 = new ControlDropdownDivider();
-        private IControlSplitButtonItem item5 = new ControlLink() { Text = "Dritter Eintrag" };
+        private IControlSplitButtonItem item1 = new ControlSplitButtonItemHeader() { Text = "Header" };
+        private IControlSplitButtonItem item2 = new ControlSplitButtonItemLink() { Text = "Erster Eintrag" };
+        private IControlSplitButtonItem item3 = new ControlSplitButtonItemLink() { Text = "Zweiter Eintrag" };
+        private IControlSplitButtonItem item4 = new ControlSplitButtonItemDivider();
+        private IControlSplitButtonItem item5 = new ControlSplitButtonItemLink() { Text = "Dritter Eintrag" };
 
         /// <summary>
         /// Konstruktor
@@ -127,6 +127,12 @@ namespace Education.Pages
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Primary),
                     Outline = true,
                     Uri = Uri
+                },
+                new ControlSplitButtonLink(item1, item2, item3, item4, item5)
+                {
+                    Text = "Sekundär",
+                    BackgroundColor = new PropertyColorButton(TypeColorButton.Secondary),
+                    Outline = true
                 },
                 new ControlSplitButtonLink(item1, item2, item3, item4, item5)
                 {

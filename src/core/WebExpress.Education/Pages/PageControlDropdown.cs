@@ -4,11 +4,11 @@ namespace Education.Pages
 {
     public class PageControlDropdown : PageControlBase
     {
-        private IControlDropdownItem item1 = new ControlDropdownHeader() { Text = "Header" };
-        private IControlDropdownItem item2 = new ControlLink() { Text = "Erster Eintrag" };
-        private IControlDropdownItem item3 = new ControlLink() { Text = "Zweiter Eintrag" };
-        private IControlDropdownItem item4 = new ControlDropdownDivider();
-        private IControlDropdownItem item5 = new ControlLink() { Text = "Dritter Eintrag" };
+        private IControlDropdownItem item1 = new ControlDropdownItemHeader() { Text = "Header" };
+        private IControlDropdownItem item2 = new ControlDropdownItemLink() { Text = "Erster Eintrag" };
+        private IControlDropdownItem item3 = new ControlDropdownItemLink() { Text = "Zweiter Eintrag" };
+        private IControlDropdownItem item4 = new ControlDropdownItemDivider();
+        private IControlDropdownItem item5 = new ControlDropdownItemLink() { Text = "Dritter Eintrag" };
 
         /// <summary>
         /// Konstruktor
@@ -326,6 +326,34 @@ namespace Education.Pages
                     {
                         Text = "Toogle",
                         Toogle = TypeToggleDropdown.Toggle,
+                        BackgroundColor = new PropertyColorButton(TypeColorButton.Primary),
+                        Margin = new PropertySpacingMargin(PropertySpacing.Space.Two, PropertySpacing.Space.None)
+                    }
+                )
+                {
+                    Layout = TypeLayoutFlexbox.Default,
+                    Align = TypeAlignFlexbox.Center
+                }
+            );
+
+            AddProperty
+            (
+                "MenuAlighment",
+                "Bestimmt wie das Menü zur Schaltfläche ausgerichtet werden soll.",
+                "AlighmentMenu = TypeAlighmentDropdownMenu.Right",
+                new ControlPanelFlexbox
+                (
+                    new ControlDropdown(item1, item2, item3, item4, item5)
+                    {
+                        Text = "None",
+                        AlighmentMenu = TypeAlighmentDropdownMenu.Default,
+                        BackgroundColor = new PropertyColorButton(TypeColorButton.Primary),
+                        Margin = new PropertySpacingMargin(PropertySpacing.Space.Two, PropertySpacing.Space.None)
+                    },
+                    new ControlDropdown(item1, item2, item3, item4, item5)
+                    {
+                        Text = "Rechts",
+                        AlighmentMenu = TypeAlighmentDropdownMenu.Right,
                         BackgroundColor = new PropertyColorButton(TypeColorButton.Primary),
                         Margin = new PropertySpacingMargin(PropertySpacing.Space.Two, PropertySpacing.Space.None)
                     }

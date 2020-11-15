@@ -222,6 +222,146 @@ namespace Education.Pages
                 }
             );
 
+            AddProperty
+            (
+                "ActiveColor",
+                "Bestimmt die aktive Farbe.",
+                "ActiveColor = new PropertyColorBackground(TypeColorBackground.Secondary)",
+                new ControlText() { Text = "Default", TextColor = new PropertyColorText(TypeColorText.Info) },
+                new ControlNavigation
+                (
+                    CreateLink(1, "Eins", string.IsNullOrWhiteSpace(GetParam("link")) || GetParam("link") == "1" ? TypeActive.Active : TypeActive.None),
+                    CreateLink(2, "Zwei", GetParam("link") == "2" ? TypeActive.Active : TypeActive.None),
+                    CreateLink(3, "Drei", GetParam("link") == "3" ? TypeActive.Active : TypeActive.None)
+                )
+                {
+                    Layout = TypeLayoutTab.Pill,
+                    ActiveColor = new PropertyColorBackground(TypeColorBackground.Default)
+                },
+                new ControlText() { Text = "Primär", TextColor = new PropertyColorText(TypeColorText.Info) },
+                new ControlNavigation
+                (
+                    CreateLink(1, "Eins", string.IsNullOrWhiteSpace(GetParam("link")) || GetParam("link") == "1" ? TypeActive.Active : TypeActive.None),
+                    CreateLink(2, "Zwei", GetParam("link") == "2" ? TypeActive.Active : TypeActive.None),
+                    CreateLink(3, "Drei", GetParam("link") == "3" ? TypeActive.Active : TypeActive.None)
+                )
+                {
+                    Layout = TypeLayoutTab.Pill,
+                    ActiveColor = new PropertyColorBackground(TypeColorBackground.Primary)
+                },
+                new ControlText() { Text = "Sekundär", TextColor = new PropertyColorText(TypeColorText.Info) },
+                new ControlNavigation
+                (
+                    CreateLink(1, "Eins", string.IsNullOrWhiteSpace(GetParam("link")) || GetParam("link") == "1" ? TypeActive.Active : TypeActive.None),
+                    CreateLink(2, "Zwei", GetParam("link") == "2" ? TypeActive.Active : TypeActive.None),
+                    CreateLink(3, "Drei", GetParam("link") == "3" ? TypeActive.Active : TypeActive.None)
+                )
+                {
+                    Layout = TypeLayoutTab.Pill,
+                    ActiveColor = new PropertyColorBackground(TypeColorBackground.Secondary)
+                },
+                new ControlText() { Text = "Info", TextColor = new PropertyColorText(TypeColorText.Info) },
+                new ControlNavigation
+                (
+                    CreateLink(1, "Eins", string.IsNullOrWhiteSpace(GetParam("link")) || GetParam("link") == "1" ? TypeActive.Active : TypeActive.None),
+                    CreateLink(2, "Zwei", GetParam("link") == "2" ? TypeActive.Active : TypeActive.None),
+                    CreateLink(3, "Drei", GetParam("link") == "3" ? TypeActive.Active : TypeActive.None)
+                )
+                {
+                    Layout = TypeLayoutTab.Pill,
+                    ActiveColor = new PropertyColorBackground(TypeColorBackground.Info)
+                },
+                new ControlText() { Text = "Erfolg", TextColor = new PropertyColorText(TypeColorText.Info) },
+                new ControlNavigation
+                (
+                    CreateLink(1, "Eins", string.IsNullOrWhiteSpace(GetParam("link")) || GetParam("link") == "1" ? TypeActive.Active : TypeActive.None),
+                    CreateLink(2, "Zwei", GetParam("link") == "2" ? TypeActive.Active : TypeActive.None),
+                    CreateLink(3, "Drei", GetParam("link") == "3" ? TypeActive.Active : TypeActive.None)
+                )
+                {
+                    Layout = TypeLayoutTab.Pill,
+                    ActiveColor = new PropertyColorBackground(TypeColorBackground.Success)
+                },
+                new ControlText() { Text = "Warnung", TextColor = new PropertyColorText(TypeColorText.Info) },
+                new ControlNavigation
+                (
+                    CreateLink(1, "Eins", string.IsNullOrWhiteSpace(GetParam("link")) || GetParam("link") == "1" ? TypeActive.Active : TypeActive.None),
+                    CreateLink(2, "Zwei", GetParam("link") == "2" ? TypeActive.Active : TypeActive.None),
+                    CreateLink(3, "Drei", GetParam("link") == "3" ? TypeActive.Active : TypeActive.None)
+                )
+                {
+                    Layout = TypeLayoutTab.Pill,
+                    ActiveColor = new PropertyColorBackground(TypeColorBackground.Warning)
+                },
+                new ControlText() { Text = "Fehler", TextColor = new PropertyColorText(TypeColorText.Info) },
+                new ControlNavigation
+                (
+                    CreateLink(1, "Eins", string.IsNullOrWhiteSpace(GetParam("link")) || GetParam("link") == "1" ? TypeActive.Active : TypeActive.None),
+                    CreateLink(2, "Zwei", GetParam("link") == "2" ? TypeActive.Active : TypeActive.None),
+                    CreateLink(3, "Drei", GetParam("link") == "3" ? TypeActive.Active : TypeActive.None)
+                )
+                {
+                    Layout = TypeLayoutTab.Pill,
+                    ActiveColor = new PropertyColorBackground(TypeColorBackground.Danger)
+                },
+                new ControlText() { Text = "Dunkel", TextColor = new PropertyColorText(TypeColorText.Info) },
+                new ControlNavigation
+                (
+                    CreateLink(1, "Eins", string.IsNullOrWhiteSpace(GetParam("link")) || GetParam("link") == "1" ? TypeActive.Active : TypeActive.None),
+                    CreateLink(2, "Zwei", GetParam("link") == "2" ? TypeActive.Active : TypeActive.None),
+                    CreateLink(3, "Drei", GetParam("link") == "3" ? TypeActive.Active : TypeActive.None)
+                )
+                {
+                    Layout = TypeLayoutTab.Pill,
+                    ActiveColor = new PropertyColorBackground(TypeColorBackground.Dark)
+                },
+                new ControlText() { Text = "Hell", TextColor = new PropertyColorText(TypeColorText.Info) },
+                new ControlNavigation
+                (
+                    CreateLink(1, "Eins", string.IsNullOrWhiteSpace(GetParam("link")) || GetParam("link") == "1" ? TypeActive.Active : TypeActive.None),
+                    CreateLink(2, "Zwei", GetParam("link") == "2" ? TypeActive.Active : TypeActive.None),
+                    CreateLink(3, "Drei", GetParam("link") == "3" ? TypeActive.Active : TypeActive.None)
+                )
+                {
+                    Layout = TypeLayoutTab.Pill,
+                    ActiveColor = new PropertyColorBackground(TypeColorBackground.Light)
+                },
+                new ControlText() { Text = "Weiß", TextColor = new PropertyColorText(TypeColorText.Info) },
+                new ControlNavigation
+                (
+                    CreateLink(1, "Eins", string.IsNullOrWhiteSpace(GetParam("link")) || GetParam("link") == "1" ? TypeActive.Active : TypeActive.None),
+                    CreateLink(2, "Zwei", GetParam("link") == "2" ? TypeActive.Active : TypeActive.None),
+                    CreateLink(3, "Drei", GetParam("link") == "3" ? TypeActive.Active : TypeActive.None)
+                )
+                {
+                    Layout = TypeLayoutTab.Pill,
+                    ActiveColor = new PropertyColorBackground(TypeColorBackground.White)
+                },
+                new ControlText() { Text = "Transparent", TextColor = new PropertyColorText(TypeColorText.Info) },
+                new ControlNavigation
+                (
+                    CreateLink(1, "Eins", string.IsNullOrWhiteSpace(GetParam("link")) || GetParam("link") == "1" ? TypeActive.Active : TypeActive.None),
+                    CreateLink(2, "Zwei", GetParam("link") == "2" ? TypeActive.Active : TypeActive.None),
+                    CreateLink(3, "Drei", GetParam("link") == "3" ? TypeActive.Active : TypeActive.None)
+                )
+                {
+                    Layout = TypeLayoutTab.Pill,
+                    ActiveColor = new PropertyColorBackground(TypeColorBackground.Transparent)
+                },
+                new ControlText() { Text = "Benutzerdefiniert", TextColor = new PropertyColorText(TypeColorText.Info) },
+                new ControlNavigation
+                (
+                    CreateLink(1, "Eins", string.IsNullOrWhiteSpace(GetParam("link")) || GetParam("link") == "1" ? TypeActive.Active : TypeActive.None),
+                    CreateLink(2, "Zwei", GetParam("link") == "2" ? TypeActive.Active : TypeActive.None),
+                    CreateLink(3, "Drei", GetParam("link") == "3" ? TypeActive.Active : TypeActive.None)
+                )
+                {
+                    Layout = TypeLayoutTab.Pill,
+                    ActiveColor = new PropertyColorBackground("gold")
+                }
+
+            );
+
         }
 
         /// <summary>
@@ -239,14 +379,14 @@ namespace Education.Pages
         /// <param name="text">Der Text</param>
         /// <param name="active">Der Aktivitätsstatus</param>
         /// <returns></returns>
-        private ControlLink CreateLink
+        private ControlNavigationItemLink CreateLink
         (
             int id, 
             string text, 
             TypeActive active = TypeActive.None
         )
         {
-            var link = new ControlLink()
+            var link = new ControlNavigationItemLink()
             {
                 Text = text,
                 Uri = Uri,
