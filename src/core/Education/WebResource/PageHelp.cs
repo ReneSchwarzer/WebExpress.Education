@@ -38,7 +38,7 @@ namespace Education.WebResource
 
             var version = PluginManager.GetPlugin(Context.PluginID)?.Version;
 
-            Content.Content.Add(new ControlImage()
+            Content.Primary.Add(new ControlImage()
             {
                 Uri = Uri.Root.Append("Assets/StoreLogo.png"),
                 Width = 200,
@@ -46,55 +46,55 @@ namespace Education.WebResource
                 HorizontalAlignment = TypeHorizontalAlignment.Right
             });
 
-            Content.Content.Add(new ControlText()
+            Content.Primary.Add(new ControlText()
             {
                 Text = "WebExpressEducation",
                 Format = TypeFormatText.H1
             });
 
-            Content.Content.Add(new ControlText()
+            Content.Primary.Add(new ControlText()
             {
                 Text = "Einführung in die Nutzung und Entwicklung mit WebExpress.",
                 Format = TypeFormatText.Paragraph
             });
 
-            Content.Content.Add(new ControlText()
+            Content.Primary.Add(new ControlText()
             {
                 Text = "Die Software stellt Informationen und Ressourcen bereit, welche zum Verständnis und zu Erlernung von WebExpress beitragen.",
                 Format = TypeFormatText.Paragraph
             });
 
-            Content.Content.Add(new ControlText()
+            Content.Primary.Add(new ControlText()
             {
                 Text = "Datenschutzrichtlinie",
                 Format = TypeFormatText.H4
             });
 
-            Content.Content.Add(new ControlText()
+            Content.Primary.Add(new ControlText()
             {
                 Text = "Die während der Nutzung eingegebenen Daten werden lokal auf Ihrem Gerät gespeichert. Sie behalten jederzeit die Datenhoheit. Die Daten werden zu keiner Zeit an Dritte übermittelt. Persönliche Informationen und Standortinformationen werden nicht erhoben.",
                 Format = TypeFormatText.Paragraph
             });
 
-            Content.Content.Add(new ControlText()
+            Content.Primary.Add(new ControlText()
             {
                 Text = "Haftungsausschluss",
                 Format = TypeFormatText.H4
             });
 
-            Content.Content.Add(new ControlText()
+            Content.Primary.Add(new ControlText()
             {
                 Text = "Die Haftung für Schäden durch Sachmängel wird ausgeschlossen. Die Haftung auf Schadensersatz wegen Körperverletzung sowie bei grober Fahrlässigkeit oder Vorsatz bleibt unberührt.",
                 Format = TypeFormatText.Paragraph
             });
 
-            Content.Content.Add(new ControlText()
+            Content.Primary.Add(new ControlText()
             {
                 Text = "Informationen über WebExpressEducation",
                 Format = TypeFormatText.H1
             });
 
-            Content.Content.Add
+            Content.Primary.Add
             (
                 new ControlPanelCenter
                 (

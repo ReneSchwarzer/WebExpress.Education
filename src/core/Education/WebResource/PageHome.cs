@@ -36,7 +36,7 @@ namespace Education.WebResource
         {
             base.Process();
 
-            Content.Content.Add(new ControlText()
+            Content.Primary.Add(new ControlText()
             {
                 Text = "Willkommen",
                 Format = TypeFormatText.H1,

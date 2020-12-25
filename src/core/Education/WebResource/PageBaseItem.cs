@@ -218,7 +218,7 @@ namespace Education.WebResource
                 }
             }
 
-            Content.Content.Add(content);
+            Content.Primary.Add(content);
         }
 
         /// <summary>
