@@ -6,13 +6,13 @@ using WebExpress.Uri;
 
 namespace Education.WebResource
 {
-    [ID("FormularComboBox")]
-    [Title("page.control.formularcombobox.name")]
-    [Segment("formularcombobox", "page.control.formularcombobox.name")]
+    [ID("FormularItemComboBox")]
+    [Title("page.control.formular.item.combobox.name")]
+    [Segment("formularcombobox", "page.control.formular.item.combobox.name")]
     [Path("/Control")]
     [Module("edu")]
     [Context("control")]
-    public sealed class PageControlFormularComboBox : PageControlBase
+    public sealed class PageControlFormularItemComboBox : PageControlBase
     {
         /// <summary>
         /// Das Beispielformular
@@ -36,7 +36,7 @@ namespace Education.WebResource
         /// <summary>
         /// Konstruktor
         /// </summary>
-        public PageControlFormularComboBox()
+        public PageControlFormularItemComboBox()
         {
         }
 

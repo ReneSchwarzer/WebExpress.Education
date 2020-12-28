@@ -1,17 +1,15 @@
 ﻿using WebExpress.Attribute;
-using WebExpress.Module;
 using WebExpress.UI.WebControl;
-using WebExpress.Uri;
 
 namespace Education.WebResource
 {
-    [ID("FormularTextBox")]
-    [Title("page.control.formulartextbox.name")]
-    [Segment("formulartextbox", "page.control.formulartextbox.name")]
+    [ID("FormularItemTextBox")]
+    [Title("page.control.formular.item.textbox.name")]
+    [Segment("formulartextbox", "page.control.formular.item.textbox.name")]
     [Path("/Control")]
     [Module("edu")]
     [Context("control")]
-    public sealed class PageControlFormularTextBox : PageControlBase
+    public sealed class PageControlFormularItemTextBox : PageControlBase
     {
         /// <summary>
         /// Das Beispielformular
@@ -23,7 +21,7 @@ namespace Education.WebResource
         /// <summary>
         /// Konstruktor
         /// </summary>
-        public PageControlFormularTextBox()
+        public PageControlFormularItemTextBox()
         {
         }
 
@@ -48,7 +46,7 @@ namespace Education.WebResource
                 "Placeholder = \"Geben Sie hier einen Wert an!\"",
                 new ControlFormular(new ControlFormularItemInputTextBox("placeholder") { Placeholder = "Geben Sie hier einen Wert an!" })
                 {
-                    Layout = TypeLayoutFormular.Inline,
+                    //Layout = TypeLayoutFormular.Inline,
                     EnableCancelButton = false
                 }
             );
@@ -60,7 +58,7 @@ namespace Education.WebResource
                 "MinLength = 3",
                 new ControlFormular(new ControlFormularItemInputTextBox("minlength") { MinLength = 3 })
                 {
-                    Layout = TypeLayoutFormular.Inline,
+                    //Layout = TypeLayoutFormular.Inline,
                     EnableCancelButton = false
                 }
             );
@@ -72,7 +70,7 @@ namespace Education.WebResource
                 "MaxLength = 3",
                 new ControlFormular(new ControlFormularItemInputTextBox("maxlength") { MaxLength = 3 })
                 {
-                    Layout = TypeLayoutFormular.Inline,
+                    //Layout = TypeLayoutFormular.Inline,
                     EnableCancelButton = false
                 }
             );
@@ -84,7 +82,7 @@ namespace Education.WebResource
                 "Pattern = \"[A-Za-z]{3}\"",
                 new ControlFormular(new ControlFormularItemInputTextBox("pattern") { Pattern = "[A-Za-z]{3}" })
                 {
-                    Layout = TypeLayoutFormular.Inline,
+                    //Layout = TypeLayoutFormular.Inline,
                     EnableCancelButton = false
                 }
             );

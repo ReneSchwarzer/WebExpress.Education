@@ -4,12 +4,12 @@ using WebExpress.UI.WebControl;
 namespace Education.WebResource
 {
     [ID("FormularItemInputTag")]
-    [Title("page.control.formulartag.name")]
-    [Segment("formulartag", "page.control.formulartag.name")]
+    [Title("page.control.formular.item.tag.name")]
+    [Segment("formulartag", "page.control.formular.item.tag.name")]
     [Path("/Control")]
     [Module("edu")]
     [Context("control")]
-    public sealed class PageControlFormularTag : PageControlBase
+    public sealed class PageControlFormularItemTag : PageControlBase
     {
         /// <summary>
         /// Das Beispielformular
@@ -21,7 +21,7 @@ namespace Education.WebResource
         /// <summary>
         /// Konstruktor
         /// </summary>
-        public PageControlFormularTag()
+        public PageControlFormularItemTag()
         {
         }
 
@@ -46,7 +46,7 @@ namespace Education.WebResource
                 "Placeholder = \"Geben Sie hier einen Wert an!\"",
                 new ControlFormular(new ControlFormularItemInputTag("placeholder") { Placeholder = "Geben Sie hier einen Wert an!", Value = "Hallo;Welt" })
                 {
-                    Layout = TypeLayoutFormular.Inline,
+                    //Layout = TypeLayoutFormular.Inline,
                     EnableCancelButton = false
                 }
             );
@@ -58,7 +58,7 @@ namespace Education.WebResource
                 "MinLength = 3",
                 new ControlFormular(new ControlFormularItemInputTag("minlength") { Value = "Hallo;Welt" })
                 {
-                    Layout = TypeLayoutFormular.Inline,
+                    //Layout = TypeLayoutFormular.Inline,
                     EnableCancelButton = false
                 }
             );
@@ -70,7 +70,7 @@ namespace Education.WebResource
                 "MaxLength = 3",
                 new ControlFormular(new ControlFormularItemInputTag("maxlength") { Value = "Hallo;Welt" })
                 {
-                    Layout = TypeLayoutFormular.Inline,
+                    //Layout = TypeLayoutFormular.Inline,
                     EnableCancelButton = false
                 }
             );

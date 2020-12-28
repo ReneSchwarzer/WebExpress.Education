@@ -41,36 +41,33 @@ namespace Education.WebResource
             AddExample(form);
 
             // Eigenschaften
-            AddProperty
-            (
-                "Layout",
-                "Legt die Anordnung der Steuerelemente fest",
-                "Layout = TypeLayoutFormular.Inline",
-                new ControlFormular(new ControlFormularItemInputTextBox("layout1") { Icon = new PropertyIcon(TypeIcon.AlignLeft), Label = "Anordnung", Value = "Default", Help = "Dies ist ein Hilfetext" })
-                {
-                    Border = new PropertyBorder(true),
-                    Layout = TypeLayoutFormular.Default,
-                    EnableCancelButton = false,
-                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two),
-                    Padding = new PropertySpacingPadding(PropertySpacing.Space.Two)
-                },
-                new ControlFormular(new ControlFormularItemInputTextBox("layout1") { Icon = new PropertyIcon(TypeIcon.AlignLeft), Label = "Anordnung", Value = "Inline", Help = "Dies ist ein Hilfetext" })
-                {
-                    Border = new PropertyBorder(true),
-                    Layout = TypeLayoutFormular.Inline,
-                    EnableCancelButton = false,
-                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two),
-                    Padding = new PropertySpacingPadding(PropertySpacing.Space.Two)
-                },
-                new ControlFormular(new ControlFormularItemInputTextBox("layout2") { Icon = new PropertyIcon(TypeIcon.AlignLeft), Label = "Anordnung", Value = "Horizontal", Help = "Dies ist ein Hilfetext" })
-                {
-                    Border = new PropertyBorder(true),
-                    Layout = TypeLayoutFormular.Horizontal,
-                    EnableCancelButton = false,
-                    Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two),
-                    Padding = new PropertySpacingPadding(PropertySpacing.Space.Two)
-                }
-            );
+            //AddProperty
+            //(
+            //    "Layout",
+            //    "Legt die Anordnung der Steuerelemente fest",
+            //    "Layout = TypeLayoutFormular.Inline",
+            //    new ControlFormular(new ControlFormularItemInputTextBox("layout1") { Icon = new PropertyIcon(TypeIcon.AlignLeft), Label = "Anordnung", Value = "Default", Help = "Dies ist ein Hilfetext" })
+            //    {
+            //        Border = new PropertyBorder(true),
+            //        EnableCancelButton = false,
+            //        Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two),
+            //        Padding = new PropertySpacingPadding(PropertySpacing.Space.Two)
+            //    },
+            //    new ControlFormular(new ControlFormularItemInputTextBox("layout1") { Icon = new PropertyIcon(TypeIcon.AlignLeft), Label = "Anordnung", Value = "Inline", Help = "Dies ist ein Hilfetext" })
+            //    {
+            //        Border = new PropertyBorder(true),
+            //        EnableCancelButton = false,
+            //        Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two),
+            //        Padding = new PropertySpacingPadding(PropertySpacing.Space.Two)
+            //    },
+            //    new ControlFormular(new ControlFormularItemInputTextBox("layout2") { Icon = new PropertyIcon(TypeIcon.AlignLeft), Label = "Anordnung", Value = "Horizontal", Help = "Dies ist ein Hilfetext" })
+            //    {
+            //        Border = new PropertyBorder(true),
+            //        EnableCancelButton = false,
+            //        Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two),
+            //        Padding = new PropertySpacingPadding(PropertySpacing.Space.Two)
+            //    }
+            //);
 
             AddProperty
             (
@@ -81,7 +78,6 @@ namespace Education.WebResource
                 {
                     Name = "Formular",
                     Border = new PropertyBorder(true),
-                    Layout = TypeLayoutFormular.Inline,
                     EnableCancelButton = false,
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two),
                     Padding = new PropertySpacingPadding(PropertySpacing.Space.Two)
@@ -97,7 +93,6 @@ namespace Education.WebResource
                 {
                     Name = "Formular",
                     Border = new PropertyBorder(true),
-                    Layout = TypeLayoutFormular.Inline,
                     EnableCancelButton = true,
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two),
                     Padding = new PropertySpacingPadding(PropertySpacing.Space.Two)
@@ -106,7 +101,6 @@ namespace Education.WebResource
                 {
                     Name = "Formular",
                     Border = new PropertyBorder(true),
-                    Layout = TypeLayoutFormular.Inline,
                     EnableCancelButton = false,
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two),
                     Padding = new PropertySpacingPadding(PropertySpacing.Space.Two)
