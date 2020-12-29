@@ -61,7 +61,7 @@ namespace Education.WebResource
 
 
             var form = new ControlFormular(combo);
-            form.InitFormular += (s, e) =>
+            form.InitializeFormular += (s, e) =>
             {
                 combo.Value = "1";
             };
