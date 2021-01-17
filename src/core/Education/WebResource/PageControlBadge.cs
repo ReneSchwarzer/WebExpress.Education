@@ -302,13 +302,5 @@ namespace Education.WebResource
                 }
             );
         }
-
-        /// <summary>
-        /// Verarbeitung
-        /// </summary>
-        public override void Process()
-        {
-            base.Process();
-        }
     }
 }

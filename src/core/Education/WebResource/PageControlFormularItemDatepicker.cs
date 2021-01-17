@@ -31,13 +31,17 @@ namespace Education.WebResource
                 Label = "Grüße",
                 Icon = new PropertyIcon(TypeIcon.Font),
                 Value = DateTime.Now.ToString(Culture.DateTimeFormat.ShortDatePattern),
-                Help = " Das ist der zugehörige Hilfetext."
-            })
-            {
-            };
+                Help = "Das ist der zugehörige Hilfetext."
+            });
 
             Description = "Das ControlFormularItemInputDatepicker stelt eine Eingabe für ein Datum bereit.";
-            Code = "new ControlFormularItemInputDatepicker(\"form\", new ControlFormularItemInputTag(\"regards\") { Label = \"Grüße\", Value = \"Hallo;Welt!\", Icon = new PropertyIcon(TypeIcon.Font), Help = \"Das ist der zugehörige Hilfetext.\" })";
+            Code = @"new ControlFormular(""form"", new ControlFormularItemInputDatepicker(""regards"")
+            {
+                Label = ""Grüße"",
+                Icon = new PropertyIcon(TypeIcon.Font),
+                Value = DateTime.Now.ToString(Culture.DateTimeFormat.ShortDatePattern),
+                Help = ""Das ist der zugehörige Hilfetext.""
+            });";
 
             AddExample(form);
 
