@@ -34,12 +34,12 @@ namespace Education.WebResource
                     Title = "My First dataset",
                     BackgroundColor = new List<PropertyColorChart>{ new PropertyColorChart(TypeColorChart.Danger) },
                     BorderColor = new List<PropertyColorChart>{ new PropertyColorChart(TypeColorChart.Danger) },
-                    Data = new int[] { 47, -30, -99, -8, 74, 41, -47 }
+                    Data = new float[] { 47, -30, -99, -8, 74, 41, -47 }
                 },
                 new ControlChartDataset()
                 {
                     Title = "My Second dataset",
-                    Data = new int[] { 89, -82, 14, 98, 18, 58, -16 },
+                    Data = new float[] { 89, -82, 14, 98, 18, 58, -16 },
                     Fill = TypeFillChart.Start,
                     Point = TypePointChart.Rhombus
                 }
@@ -68,7 +68,7 @@ namespace Education.WebResource
                         new PropertyColorChart(TypeColorChart.Warning),
                         new PropertyColorChart(TypeColorChart.Danger)
                     },
-                    Data = new int[] { 70, 73, 80, 49, 5 }
+                    Data = new float[] { 70, 73, 80, 49, 5 }
                 },
             };
 
