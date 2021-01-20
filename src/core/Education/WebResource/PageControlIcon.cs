@@ -67,7 +67,7 @@ namespace Education.WebResource
                "Icon = new PropertyIcon(Uri.Root.Append(\"/Assets/img/Icon16.png\")",
                new ControlIcon()
                {
-                   Icon = new PropertyIcon(Uri.Root.Append("/Assets/img/Icon16.png")),
+                   Icon = new PropertyIcon(Uri.Root.Append("/Assets/img/Icon16.png"), new PropertySizeIcon(24, TypeSizeUnit.Pixel)),
                    Title = "Rakete",
                    Margin = new PropertySpacingMargin(PropertySpacing.Space.Two),
                    TextColor = new PropertyColorText(TypeColorText.Primary)
