@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generiert durch Microsoft Visio, SVG Export education.svg Zeichenblatt-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="3.44083in" height="2.04772in"
+		viewBox="0 0 247.74 147.436" xml:space="preserve" color-interpolation-filters="sRGB" class="st2">
+	<v:documentProperties v:langID="1031" v:metric="true" v:viewMarkup="false"/>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#ffd965;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st2 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>Zeichenblatt-1</title>
+		<v:pageProperties v:drawingScale="1" v:pageScale="1" v:drawingUnits="19" v:shadowOffsetX="8.99993"
+				v:shadowOffsetY="-8.99993"/>
+		<g id="shape15-1" v:mID="15" v:groupContext="shape" transform="translate(0.12,-0.12)">
+			<title>Tabelle.15</title>
+			<path d="M222.44 65.6 L222.44 93.97 A21.2406 15.3716 -100 0 0 233.93 133.97 A26.5203 18.7366 -75.09 0 0 232.2 94.67 L232.2
+						 62.54 L222.44 65.6 ZM49.47 73.24 L49.47 120.8 A74.2845 26.6388 -180 0 0 198.03 120.8 L198.03 73.24 L125.02
+						 96.1 A4.24483 4.24483 0 0 1 122.48 96.1 L49.47 73.24 ZM125.02 83.37 L244.52 45.95 A4.24483 4.24483 -180
+						 0 0 244.52 37.85 L125.02 0.43 A4.24483 4.24483 -180 0 0 122.48 0.43 L2.98 37.85 A4.24483 4.24483 -180 0
+						 0 2.98 45.95 L122.48 83.37 A4.24483 4.24483 -180 0 0 125.02 83.37 Z" class="st1"/>
+		</g>
+	</g>
+</svg>

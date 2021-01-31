@@ -12,6 +12,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\img\Education.svg" />
     <None Remove="Assets\img\Favicon.png" />
     <None Remove="Assets\img\Icon16.png" />
     <None Remove="Assets\img\Logo.png" />
@@ -21,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Assets\img\education.svg" />
     <EmbeddedResource Include="Assets\img\Favicon.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </EmbeddedResource>

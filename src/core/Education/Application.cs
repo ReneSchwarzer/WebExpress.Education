@@ -6,7 +6,7 @@ namespace WebExpress.Education
     [ID("education")]
     [Name("app.name")]
     [Description("app.description")]
-    [Icon("/assets/img/Logo.png")]
+    [Icon("/assets/img/education.svg")]
     [AssetPath("/")]
     [ContextPath("/edu")]
     public sealed class Application : IApplication
