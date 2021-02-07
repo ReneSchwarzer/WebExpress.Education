@@ -30,18 +30,18 @@ namespace Education.WebResource
             Description = "Das ControlPanelFlexbox stellt eine ... bereit.";
             Code = "new ControlPanelFlexbox";
             Code += "(";
-            Code += "    new ControlText() { Text = \"Erster Einrag\", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two) },";
-            Code += "    new ControlText() { Text = \"Zweiter Einrag\", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two) },";
-            Code += "    new ControlText() { Text = \"Dritter Einrag\", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two) }";
+            Code += "    new ControlText() { Text = \"Erster Eintrag\", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two) },";
+            Code += "    new ControlText() { Text = \"Zweiter Eintrag\", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two) },";
+            Code += "    new ControlText() { Text = \"Dritter Eintrag\", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two) }";
             Code += ")";
 
             AddExample
             (
                 new ControlPanelFlexbox
                 (
-                    new ControlText() { Text = "Erster Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Zweiter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Dritter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
+                    new ControlText() { Text = "Erster Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Zweiter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Dritter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
                 )
                 {
                     Layout = TypeLayoutFlexbox.Default,
@@ -58,9 +58,9 @@ namespace Education.WebResource
                 new ControlText() { Text = "Ohne", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlPanelFlexbox
                 (
-                    new ControlText() { Text = "Erster Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Zweiter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Dritter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
+                    new ControlText() { Text = "Erster Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Zweiter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Dritter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
                 )
                 {
                     Layout = TypeLayoutFlexbox.None,
@@ -69,9 +69,9 @@ namespace Education.WebResource
                 new ControlText() { Text = "Standard", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlPanelFlexbox
                 (
-                    new ControlText() { Text = "Erster Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Zweiter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Dritter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
+                    new ControlText() { Text = "Erster Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Zweiter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Dritter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
                 )
                 {
                     Layout = TypeLayoutFlexbox.Default,
@@ -80,9 +80,9 @@ namespace Education.WebResource
                 new ControlText() { Text = "Inline", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlPanelFlexbox
                 (
-                    new ControlText() { Text = "Erster Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Zweiter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Dritter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
+                    new ControlText() { Text = "Erster Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Zweiter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Dritter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
                 )
                 {
                     Layout = TypeLayoutFlexbox.Inline,
@@ -98,9 +98,9 @@ namespace Education.WebResource
                 new ControlText() { Text = "Ohne", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlPanelFlexbox
                 (
-                    new ControlText() { Text = "Erster Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Zweiter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Dritter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
+                    new ControlText() { Text = "Erster Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Zweiter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Dritter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
                 )
                 {
                     Layout = TypeLayoutFlexbox.Default,
@@ -110,9 +110,9 @@ namespace Education.WebResource
                 new ControlText() { Text = "Links", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlPanelFlexbox
                 (
-                    new ControlText() { Text = "Erster Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Zweiter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Dritter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
+                    new ControlText() { Text = "Erster Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Zweiter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Dritter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
                 )
                 {
                     Layout = TypeLayoutFlexbox.Default,
@@ -122,9 +122,9 @@ namespace Education.WebResource
                 new ControlText() { Text = "Rechts", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlPanelFlexbox
                 (
-                    new ControlText() { Text = "Erster Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Zweiter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Dritter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
+                    new ControlText() { Text = "Erster Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Zweiter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Dritter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
                 )
                 {
                     Layout = TypeLayoutFlexbox.Default,
@@ -134,9 +134,9 @@ namespace Education.WebResource
                 new ControlText() { Text = "Zentriert", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlPanelFlexbox
                 (
-                    new ControlText() { Text = "Erster Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Zweiter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Dritter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
+                    new ControlText() { Text = "Erster Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Zweiter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Dritter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
                 )
                 {
                     Layout = TypeLayoutFlexbox.Default,
@@ -146,9 +146,9 @@ namespace Education.WebResource
                 new ControlText() { Text = "Between", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlPanelFlexbox
                 (
-                    new ControlText() { Text = "Erster Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Zweiter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Dritter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
+                    new ControlText() { Text = "Erster Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Zweiter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Dritter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
                 )
                 {
                     Layout = TypeLayoutFlexbox.Default,
@@ -158,9 +158,9 @@ namespace Education.WebResource
                 new ControlText() { Text = "Around", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlPanelFlexbox
                 (
-                    new ControlText() { Text = "Erster Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Zweiter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Dritter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
+                    new ControlText() { Text = "Erster Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Zweiter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Dritter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
                 )
                 {
                     Layout = TypeLayoutFlexbox.Default,
@@ -178,9 +178,9 @@ namespace Education.WebResource
                 new ControlText() { Text = "Ohne", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlPanelFlexbox
                 (
-                    new ControlText() { Text = "Erster Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Zweiter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Dritter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
+                    new ControlText() { Text = "Erster Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Zweiter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Dritter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
                 )
                 {
                     Layout = TypeLayoutFlexbox.Default,
@@ -192,9 +192,9 @@ namespace Education.WebResource
                 new ControlText() { Text = "Oben", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlPanelFlexbox
                 (
-                    new ControlText() { Text = "Erster Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Zweiter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Dritter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
+                    new ControlText() { Text = "Erster Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Zweiter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Dritter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
                 )
                 {
                     Layout = TypeLayoutFlexbox.Default,
@@ -206,9 +206,9 @@ namespace Education.WebResource
                 new ControlText() { Text = "Unten", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlPanelFlexbox
                 (
-                    new ControlText() { Text = "Erster Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Zweiter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Dritter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
+                    new ControlText() { Text = "Erster Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Zweiter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Dritter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
                 )
                 {
                     Layout = TypeLayoutFlexbox.Default,
@@ -220,9 +220,9 @@ namespace Education.WebResource
                 new ControlText() { Text = "Zentriert", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlPanelFlexbox
                 (
-                    new ControlText() { Text = "Erster Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Zweiter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Dritter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
+                    new ControlText() { Text = "Erster Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Zweiter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Dritter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
                 )
                 {
                     Layout = TypeLayoutFlexbox.Default,
@@ -234,9 +234,9 @@ namespace Education.WebResource
                 new ControlText() { Text = "Baseline", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlPanelFlexbox
                 (
-                    new ControlText() { Text = "Erster Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Zweiter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Dritter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
+                    new ControlText() { Text = "Erster Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Zweiter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Dritter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
                 )
                 {
                     Layout = TypeLayoutFlexbox.Default,
@@ -248,9 +248,9 @@ namespace Education.WebResource
                 new ControlText() { Text = "Gestreckt", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlPanelFlexbox
                 (
-                    new ControlText() { Text = "Erster Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Zweiter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Dritter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
+                    new ControlText() { Text = "Erster Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Zweiter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Dritter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
                 )
                 {
                     Layout = TypeLayoutFlexbox.Default,
@@ -270,21 +270,21 @@ namespace Education.WebResource
                 new ControlText() { Text = "Ohne", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlPanelFlexbox
                 (
-                    new ControlText() { Text = "Erster Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Zweiter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Dritter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Vierter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Fünfter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Sechster Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Siebenter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Achter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Neunter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Zenhnter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Elfter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Zwölfter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Dreizehnter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Vierzenhnter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Fünfzehnter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
+                    new ControlText() { Text = "Erster Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Zweiter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Dritter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Vierter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Fünfter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Sechster Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Siebenter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Achter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Neunter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Zenhnter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Elfter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Zwölfter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Dreizehnter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Vierzenhnter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Fünfzehnter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) }
                 )
                 {
                     Layout = TypeLayoutFlexbox.Default,
@@ -296,21 +296,21 @@ namespace Education.WebResource
                 new ControlText() { Text = "Nowrap", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlPanelFlexbox
                 (
-new ControlText() { Text = "Erster Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Zweiter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Dritter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Vierter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Fünfter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Sechster Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Siebenter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Achter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Neunter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Zenhnter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Elfter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Zwölfter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Dreizehnter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Vierzenhnter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Fünfzehnter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) })
+new ControlText() { Text = "Erster Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Zweiter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Dritter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Vierter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Fünfter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Sechster Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Siebenter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Achter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Neunter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Zenhnter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Elfter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Zwölfter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Dreizehnter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Vierzenhnter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Fünfzehnter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) })
                 {
                     Layout = TypeLayoutFlexbox.Default,
                     Wrap = TypeWrap.Nowrap,
@@ -321,21 +321,21 @@ new ControlText() { Text = "Erster Einrag", Format = TypeFormatText.Default, Bor
                 new ControlText() { Text = "Oben", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlPanelFlexbox
                 (
-new ControlText() { Text = "Erster Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Zweiter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Dritter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Vierter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Fünfter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Sechster Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Siebenter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Achter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Neunter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Zenhnter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Elfter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Zwölfter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Dreizehnter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Vierzenhnter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Fünfzehnter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) })
+new ControlText() { Text = "Erster Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Zweiter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Dritter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Vierter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Fünfter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Sechster Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Siebenter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Achter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Neunter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Zenhnter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Elfter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Zwölfter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Dreizehnter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Vierzenhnter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Fünfzehnter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) })
                 {
                     Layout = TypeLayoutFlexbox.Default,
                     Wrap = TypeWrap.Wrap,
@@ -346,21 +346,21 @@ new ControlText() { Text = "Erster Einrag", Format = TypeFormatText.Default, Bor
                 new ControlText() { Text = "Unten", TextColor = new PropertyColorText(TypeColorText.Info) },
                 new ControlPanelFlexbox
                 (
-new ControlText() { Text = "Erster Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Zweiter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Dritter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Vierter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Fünfter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Sechster Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Siebenter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Achter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Neunter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Zenhnter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Elfter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Zwölfter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Dreizehnter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Vierzenhnter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
-                    new ControlText() { Text = "Fünfzehnter Einrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) })
+new ControlText() { Text = "Erster Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Zweiter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Dritter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Vierter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Fünfter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Sechster Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Siebenter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Achter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Neunter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Zenhnter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Elfter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Zwölfter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Dreizehnter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Vierzenhnter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) },
+                    new ControlText() { Text = "Fünfzehnter Eintrag", Format = TypeFormatText.Default, Border = new PropertyBorder(true), Padding = new PropertySpacingPadding(PropertySpacing.Space.Two), BackgroundColor = new PropertyColorBackground(TypeColorBackground.Light) })
                 {
                     Layout = TypeLayoutFlexbox.Default,
                     Wrap = TypeWrap.Reverse,
