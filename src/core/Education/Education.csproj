@@ -12,6 +12,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\img\Carousel1.svg" />
+    <None Remove="Assets\img\Carousel2.svg" />
+    <None Remove="Assets\img\Carousel3.svg" />
     <None Remove="Assets\img\Education.svg" />
     <None Remove="Assets\img\Favicon.png" />
     <None Remove="Assets\img\Icon16.png" />
@@ -22,6 +25,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Assets\img\Carousel1.svg" />
+    <EmbeddedResource Include="Assets\img\Carousel2.svg" />
+    <EmbeddedResource Include="Assets\img\Carousel3.svg" />
     <EmbeddedResource Include="Assets\img\education.svg" />
     <EmbeddedResource Include="Assets\img\Favicon.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
