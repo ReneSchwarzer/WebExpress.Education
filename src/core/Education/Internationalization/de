@@ -92,6 +92,9 @@ page.control.timeline.name=ControlTimeline
 page.control.timeline.description=
 page.control.toolbar.name=ControlToolbar
 page.control.toolbar.description=
+page.control.tree.description=
+page.control.tree.name=ControlTree
+page.control.tree.description=
 
 page.html.name=HTML
 page.html.description=

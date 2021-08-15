@@ -107,7 +107,7 @@ namespace Education.WebResource
             (
                 "Active",
                 "Bestimmt den Ativitätsstatus eines Listenelementes. Hinweis: Wird nur bei Group, Flush und Horizontal angewendet.",
-                "Active = TypesLayoutList.Group",
+                "Active = TypeActive.Active",
                 new ControlList
                 (
                     new ControlListItem(new ControlText() { Text = "Ohne" }) { Active = TypeActive.None },
@@ -192,14 +192,6 @@ namespace Education.WebResource
                     Layout = TypeLayoutList.Group
                 }
             );
-        }
-
-        /// <summary>
-        /// Verarbeitung
-        /// </summary>
-        public override void Process()
-        {
-            base.Process();
         }
     }
 }
