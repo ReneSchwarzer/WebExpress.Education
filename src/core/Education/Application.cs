@@ -1,5 +1,5 @@
-﻿using WebExpress.Application;
-using WebExpress.Attribute;
+﻿using WebExpress.WebApplication;
+using WebExpress.WebAttribute;
 
 namespace WebExpress.Education
 {
@@ -7,7 +7,8 @@ namespace WebExpress.Education
     [Name("app.name")]
     [Description("app.description")]
     [Icon("/assets/img/education.svg")]
-    [AssetPath("/")]
+    [AssetPath("edu")]
+    [DataPath("edu")]
     [ContextPath("/edu")]
     public sealed class Application : IApplication
     {

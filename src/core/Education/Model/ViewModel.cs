@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Reflection;
 using System.Xml.Serialization;
-using WebExpress.Module;
-using WebExpress.Plugin;
+using WebExpress.WebModule;
 
 namespace Education.Model
 {

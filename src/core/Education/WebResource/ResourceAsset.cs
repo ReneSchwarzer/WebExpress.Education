@@ -1,5 +1,6 @@
 ﻿using System.IO;
-using WebExpress.Attribute;
+using WebExpress.WebAttribute;
+using WebExpress.WebResource;
 
 namespace Education.WebResource
 {
@@ -24,9 +25,10 @@ namespace Education.WebResource
         /// <summary>
         /// Initialisierung
         /// </summary>
-        public override void Initialization()
+        /// <param name="context">Der Kontext</param>
+        public override void Initialization(IResourceContext context)
         {
-            base.Initialization();
+            base.Initialization(context);
 
             AssetDirectory = "Education";
         }

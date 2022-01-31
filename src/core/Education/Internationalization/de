@@ -1,13 +1,13 @@
 ﻿# Deutsch
 
 plugin.name=Education-Plugin
-plugin.description=Plugin mit Bespielanwendung zum erlernen von WebExpress.
+plugin.description=Plugin mit Bespielanwendung zum Erlernen von WebExpress.
 
 app.name=Education
 app.description=Bespielanwendung zum erlernen von WebExpress.
 
 module.name=Education-Modul
-module.description=Modul der Bespielanwendung zum erlernen von WebExpress.
+module.description=Modul der Bespielanwendung zum Erlernen von WebExpress.
 
 page.home.name=Home
 page.home.description=
@@ -88,6 +88,8 @@ page.control.splitbutton.name=ControlSplitButton
 page.control.splitbutton.description=
 page.control.splitbuttonlink.name=ControlSplitButtonLink
 page.control.splitbuttonlink.description=
+page.control.tagcloud.name=ControlTagCloud
+page.control.tagcloud.description=
 page.control.text.name=ControlText
 page.control.text.description=
 page.control.timeline.name=ControlTimeline

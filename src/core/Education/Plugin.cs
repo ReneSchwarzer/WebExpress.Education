@@ -1,6 +1,6 @@
 ﻿using Education.Model;
-using WebExpress.Attribute;
-using WebExpress.Plugin;
+using WebExpress.WebAttribute;
+using WebExpress.WebPlugin;
 
 namespace Education
 {
