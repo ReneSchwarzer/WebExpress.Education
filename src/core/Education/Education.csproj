@@ -17,6 +17,28 @@
     <None Remove="Assets\img\Carousel3.svg" />
     <None Remove="Assets\img\Education.svg" />
     <None Remove="Assets\img\Favicon.png" />
+    <None Remove="Assets\img\flag_ca.svg" />
+    <None Remove="Assets\img\flag_cn.svg" />
+    <None Remove="Assets\img\flag_cz.svg" />
+    <None Remove="Assets\img\flag_dd.svg" />
+    <None Remove="Assets\img\flag_de.svg" />
+    <None Remove="Assets\img\flag_es.svg" />
+    <None Remove="Assets\img\flag_fi.svg" />
+    <None Remove="Assets\img\flag_gb.svg" />
+    <None Remove="Assets\img\flag_gr.svg" />
+    <None Remove="Assets\img\flag_it.svg" />
+    <None Remove="Assets\img\flag_jm.svg" />
+    <None Remove="Assets\img\flag_kp.svg" />
+    <None Remove="Assets\img\flag_kr.svg" />
+    <None Remove="Assets\img\flag_mx.svg" />
+    <None Remove="Assets\img\flag_nl.svg" />
+    <None Remove="Assets\img\flag_no.svg" />
+    <None Remove="Assets\img\flag_pl.svg" />
+    <None Remove="Assets\img\flag_pt.svg" />
+    <None Remove="Assets\img\flag_ru.svg" />
+    <None Remove="Assets\img\flag_sv.svg" />
+    <None Remove="Assets\img\flag_us.svg" />
+    <None Remove="Assets\img\flag_zw.svg" />
     <None Remove="Assets\img\Icon16.png" />
     <None Remove="Assets\img\Logo.png" />
     <None Remove="Assets\img\Rocket.png" />
@@ -32,6 +54,28 @@
     <EmbeddedResource Include="Assets\img\Favicon.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Assets\img\flag_ca.svg" />
+    <EmbeddedResource Include="Assets\img\flag_cn.svg" />
+    <EmbeddedResource Include="Assets\img\flag_cz.svg" />
+    <EmbeddedResource Include="Assets\img\flag_dd.svg" />
+    <EmbeddedResource Include="Assets\img\flag_de.svg" />
+    <EmbeddedResource Include="Assets\img\flag_es.svg" />
+    <EmbeddedResource Include="Assets\img\flag_fi.svg" />
+    <EmbeddedResource Include="Assets\img\flag_gb.svg" />
+    <EmbeddedResource Include="Assets\img\flag_gr.svg" />
+    <EmbeddedResource Include="Assets\img\flag_it.svg" />
+    <EmbeddedResource Include="Assets\img\flag_jm.svg" />
+    <EmbeddedResource Include="Assets\img\flag_kp.svg" />
+    <EmbeddedResource Include="Assets\img\flag_kr.svg" />
+    <EmbeddedResource Include="Assets\img\flag_mx.svg" />
+    <EmbeddedResource Include="Assets\img\flag_nl.svg" />
+    <EmbeddedResource Include="Assets\img\flag_no.svg" />
+    <EmbeddedResource Include="Assets\img\flag_pl.svg" />
+    <EmbeddedResource Include="Assets\img\flag_pt.svg" />
+    <EmbeddedResource Include="Assets\img\flag_ru.svg" />
+    <EmbeddedResource Include="Assets\img\flag_sv.svg" />
+    <EmbeddedResource Include="Assets\img\flag_us.svg" />
+    <EmbeddedResource Include="Assets\img\flag_zw.svg" />
     <EmbeddedResource Include="Assets\img\Icon16.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </EmbeddedResource>

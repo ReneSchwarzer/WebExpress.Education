@@ -9,7 +9,7 @@ namespace Education.WebPage
     /// </summary>
     [ID("Carousel")]
     [Title("education:page.control.carousel.name")]
-    [Segment("carousel", "education:page.control.Carousel.name")]
+    [Segment("carousel", "education:page.control.carousel.name")]
     [Path("/Control")]
     [Module("edu")]
     [Context("control")]

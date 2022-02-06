@@ -7,7 +7,7 @@ namespace Education.WebPage
 {
     [ID("FormularItemInputDatepicker")]
     [Title("education:page.control.formular.item.datepicker.name")]
-    [Segment("formulartag", "education:page.control.formular.item.datepicker.name")]
+    [Segment("formulardatepicker", "education:page.control.formular.item.datepicker.name")]
     [Path("/Control")]
     [Module("edu")]
     [Context("control")]
