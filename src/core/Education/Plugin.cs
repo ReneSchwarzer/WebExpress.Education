@@ -4,7 +4,7 @@ using WebExpress.WebPlugin;
 
 namespace Education
 {
-    [ID("Education")]
+    [Id("Education")]
     [Name("plugin.name")]
     [Description("plugin.description")]
     [Icon("/assets/img/Logo.png")]

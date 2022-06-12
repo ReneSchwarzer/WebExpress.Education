@@ -3,7 +3,7 @@ using WebExpress.WebModule;
 
 namespace WebExpress.Education
 {
-    [ID("Edu")]
+    [Id("Edu")]
     [Name("module.name")]
     [Description("module.description")]
     [Icon("/assets/img/Logo.png")]

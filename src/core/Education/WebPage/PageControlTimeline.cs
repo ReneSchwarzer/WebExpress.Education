@@ -5,7 +5,7 @@ using WebExpress.WebResource;
 
 namespace Education.WebPage
 {
-    [ID("Timeline")]
+    [Id("Timeline")]
     [Title("education:page.control.timeline.name")]
     [Segment("timeline", "education:page.control.timeline.name")]
     [Path("/Control")]

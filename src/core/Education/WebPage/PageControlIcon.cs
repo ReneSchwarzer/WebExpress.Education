@@ -7,7 +7,7 @@ using WebExpress.WebResource;
 
 namespace Education.WebPage
 {
-    [ID("Icon")]
+    [Id("Icon")]
     [Title("education:page.control.icon.name")]
     [Segment("icon", "education:page.control.icon.name")]
     [Path("/Control")]

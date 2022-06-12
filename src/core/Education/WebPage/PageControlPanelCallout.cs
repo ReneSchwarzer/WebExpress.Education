@@ -4,7 +4,7 @@ using WebExpress.WebResource;
 
 namespace Education.WebPage
 {
-    [ID("Callout")]
+    [Id("Callout")]
     [Title("education:page.control.callout.name")]
     [Segment("callout", "education:page.control.callout.name")]
     [Path("/Control")]

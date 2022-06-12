@@ -4,18 +4,18 @@ using WebExpress.WebResource;
 
 namespace Education.WebPage
 {
-    [ID("FormularItemInputMoveSelector")]
+    [Id("FormularItemInputMoveSelector")]
     [Title("education:page.control.formular.item.selectionmove.name")]
     [Segment("formularmoveselector", "education:page.control.formular.item.selectionmove.name")]
     [Path("/Control")]
     [Module("edu")]
     [Context("control")]
-    public sealed class PageControlFormularItemInputSelectionMove : PageControlBase
+    public sealed class PageControlFormularItemInputMove : PageControlBase
     {
         /// <summary>
         /// Das Beispielformular
         /// </summary>
-        private readonly ControlFormular form = new ControlFormular("form", new ControlFormularItemInputSelectionMove
+        private readonly ControlFormular form = new ControlFormular("form", new ControlFormularItemInputMove
         (
             "regards",
             new ControlFormularItemInputSelectionItem() { ID = "1", Label = "Hallo", Image = "../assets/img/flag_ca.svg", Icon = "fas fa-flag" },
@@ -37,7 +37,7 @@ namespace Education.WebPage
         /// <summary>
         /// Konstruktor
         /// </summary>
-        public PageControlFormularItemInputSelectionMove()
+        public PageControlFormularItemInputMove()
         {
         }
 

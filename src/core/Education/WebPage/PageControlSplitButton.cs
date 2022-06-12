@@ -4,7 +4,7 @@ using WebExpress.WebResource;
 
 namespace Education.WebPage
 {
-    [ID("SplitButton")]
+    [Id("SplitButton")]
     [Title("education:page.control.splitbutton.name")]
     [Segment("splitbutton", "education:page.control.splitbutton.name")]
     [Path("/Control")]
@@ -265,7 +265,7 @@ namespace Education.WebPage
                 new ControlSplitButton(item1, item2, item3, item4, item5)
                 {
                     Text = "Klick mich!",
-                    Modal = new ControlModal(null, "Dialog", new ControlText() { Text = "Hallo Welt!" }),
+                    Modal = new PropertyModal(TypeModal.Modal, new ControlModal(null, "Dialog", new ControlText() { Text = "Hallo Welt!" })),
                     TextColor = new PropertyColorText(TypeColorText.Default),
                     BackgroundColor = new PropertyColorButton(TypeColorButton.Primary),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)

@@ -4,7 +4,7 @@ using WebExpress.WebResource;
 
 namespace Education.WebPage
 {
-    [ID("Card")]
+    [Id("Card")]
     [Title("education:page.control.card.name")]
     [Segment("card", "education:page.control.card.name")]
     [Path("/Control")]

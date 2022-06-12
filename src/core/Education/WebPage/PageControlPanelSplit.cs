@@ -5,7 +5,7 @@ using WebExpress.WebResource;
 
 namespace Education.WebPage
 {
-    [ID("SplitPanel")]
+    [Id("SplitPanel")]
     [Title("education:page.control.panelsplit.name")]
     [Segment("splitpanel", "education:page.control.panelsplit.name")]
     [Path("/Control")]

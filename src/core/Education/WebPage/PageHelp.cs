@@ -7,7 +7,7 @@ using WebExpress.WebResource;
 
 namespace Education.WebPage
 {
-    [ID("Help")]
+    [Id("Help")]
     [Title("education:page.help.name")]
     [Segment("help", "education:page.help.name")]
     [Path("/")]
@@ -39,7 +39,7 @@ namespace Education.WebPage
         {
             base.Process(context);
 
-            var version = PluginManager.GetPlugin(Context.Application.Plugin.PluginID)?.Version;
+            var version = PluginManager.GetPlugin(Context.Application.Plugin.PluginId)?.Version;
 
             context.VisualTree.Content.Primary.Add(new ControlImage()
             {

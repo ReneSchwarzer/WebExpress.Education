@@ -6,7 +6,7 @@ using WebExpress.WebResource;
 
 namespace Education.WebPage
 {
-    [ID("Link")]
+    [Id("Link")]
     [Title("education:page.control.link.name")]
     [Segment("link", "education:page.control.link.name")]
     [Path("/Control")]
@@ -490,7 +490,7 @@ namespace Education.WebPage
                 {
                     Text = "Klick mich!",
                     Uri = Uri,
-                    Modal = new ControlModal(null, "Dialog", new ControlText() { Text = "Hallo Welt!" }),
+                    Modal = new PropertyModal(TypeModal.Modal, new ControlModal(null, "Dialog", new ControlText() { Text = "Hallo Welt!" })),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two)
                 }
             );

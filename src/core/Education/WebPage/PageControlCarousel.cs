@@ -7,7 +7,7 @@ namespace Education.WebPage
     /// <summary>
     /// Control zur visuellen Darstellung eines Bilderkarussells
     /// </summary>
-    [ID("Carousel")]
+    [Id("Carousel")]
     [Title("education:page.control.carousel.name")]
     [Segment("carousel", "education:page.control.carousel.name")]
     [Path("/Control")]

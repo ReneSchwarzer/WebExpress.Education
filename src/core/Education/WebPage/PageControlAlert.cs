@@ -7,7 +7,7 @@ namespace Education.WebPage
     /// <summary>
     /// Control zur visuellen Darstellung eines Alarms
     /// </summary>
-    [ID("Alert")]
+    [Id("Alert")]
     [Title("education:page.control.alert.name")]
     [Segment("alert", "education:page.control.alert.name")]
     [Path("/Control")]

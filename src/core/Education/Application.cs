@@ -3,7 +3,7 @@ using WebExpress.WebAttribute;
 
 namespace WebExpress.Education
 {
-    [ID("education")]
+    [Id("education")]
     [Name("app.name")]
     [Description("app.description")]
     [Icon("/assets/img/education.svg")]

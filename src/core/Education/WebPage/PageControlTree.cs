@@ -5,7 +5,7 @@ using WebExpress.WebResource;
 
 namespace Education.WebPage
 {
-    [ID("Tree")]
+    [Id("Tree")]
     [Title("education:page.control.tree.name")]
     [Segment("tree", "education:page.control.tree.name")]
     [Path("/Control")]

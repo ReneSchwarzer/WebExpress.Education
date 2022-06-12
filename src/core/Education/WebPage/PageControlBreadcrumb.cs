@@ -4,7 +4,7 @@ using WebExpress.WebResource;
 
 namespace Education.WebPage
 {
-    [ID("Breadcrumb")]
+    [Id("Breadcrumb")]
     [Title("education:page.control.breadcrumb.name")]
     [Segment("breadcrumb", "education:page.control.breadcrumb.name")]
     [Path("/Control")]

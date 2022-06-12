@@ -4,7 +4,7 @@ using WebExpress.WebResource;
 
 namespace Education.WebPage
 {
-    [ID("ButtonLink")]
+    [Id("ButtonLink")]
     [Title("education:page.control.buttonlink.name")]
     [Segment("buttonlink", "education:page.control.buttonlink.name")]
     [Path("/Control")]
@@ -289,7 +289,7 @@ namespace Education.WebPage
                 new ControlButtonLink()
                 {
                     Text = "Klick mich!",
-                    Modal = new ControlModal(null, "Dialog", new ControlText() { Text = "Hallo Welt!" }),
+                    Modal = new PropertyModal(TypeModal.Modal, new ControlModal(null, "Dialog", new ControlText() { Text = "Hallo Welt!" })),
                     TextColor = new PropertyColorText(TypeColorText.Default),
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.Two),
                     Uri = Uri

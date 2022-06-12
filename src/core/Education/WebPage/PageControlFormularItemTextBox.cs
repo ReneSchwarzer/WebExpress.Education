@@ -4,7 +4,7 @@ using WebExpress.WebResource;
 
 namespace Education.WebPage
 {
-    [ID("FormularItemTextBox")]
+    [Id("FormularItemTextBox")]
     [Title("education:page.control.formular.item.textbox.name")]
     [Segment("formulartextbox", "education:page.control.formular.item.textbox.name")]
     [Path("/Control")]
@@ -49,7 +49,6 @@ namespace Education.WebPage
                 new ControlFormular(new ControlFormularItemInputTextBox("placeholder") { Placeholder = "Geben Sie hier einen Wert an!" })
                 {
                     //Layout = TypeLayoutFormular.Inline,
-                    EnableCancelButton = false
                 }
             );
 
@@ -61,7 +60,6 @@ namespace Education.WebPage
                 new ControlFormular(new ControlFormularItemInputTextBox("minlength") { MinLength = 3 })
                 {
                     //Layout = TypeLayoutFormular.Inline,
-                    EnableCancelButton = false
                 }
             );
 
@@ -73,7 +71,6 @@ namespace Education.WebPage
                 new ControlFormular(new ControlFormularItemInputTextBox("maxlength") { MaxLength = 3 })
                 {
                     //Layout = TypeLayoutFormular.Inline,
-                    EnableCancelButton = false
                 }
             );
 
@@ -85,7 +82,6 @@ namespace Education.WebPage
                 new ControlFormular(new ControlFormularItemInputTextBox("pattern") { Pattern = "[A-Za-z]{3}" })
                 {
                     //Layout = TypeLayoutFormular.Inline,
-                    EnableCancelButton = false
                 }
             );
         }

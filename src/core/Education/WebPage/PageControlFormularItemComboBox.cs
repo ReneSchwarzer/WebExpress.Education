@@ -4,7 +4,7 @@ using WebExpress.WebResource;
 
 namespace Education.WebPage
 {
-    [ID("FormularItemComboBox")]
+    [Id("FormularItemComboBox")]
     [Title("education:page.control.formular.item.combobox.name")]
     [Segment("formularcombobox", "education:page.control.formular.item.combobox.name")]
     [Path("/Control")]

@@ -4,7 +4,7 @@ using WebExpress.WebResource;
 
 namespace Education.WebPage
 {
-    [ID("TagCloud")]
+    [Id("TagCloud")]
     [Title("education:page.control.tagcloud.name")]
     [Segment("tagcloud", "education:page.control.tagcloud.name")]
     [Path("/Control")]

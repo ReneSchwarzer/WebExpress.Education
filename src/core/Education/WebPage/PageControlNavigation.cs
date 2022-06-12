@@ -6,7 +6,7 @@ using WebExpress.WebResource;
 
 namespace Education.WebPage
 {
-    [ID("Navigation")]
+    [Id("Navigation")]
     [Title("education:page.control.navigation.name")]
     [Segment("navigation", "education:page.control.navigation.name")]
     [Path("/Control")]

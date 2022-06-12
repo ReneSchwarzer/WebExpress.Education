@@ -4,7 +4,7 @@ using WebExpress.WebResource;
 
 namespace Education.WebPage
 {
-    [ID("ModalFormular")]
+    [Id("ModalFormular")]
     [Title("education:page.control.modalformular.name")]
     [Segment("modalformular", "education:page.control.modalformular.name")]
     [Path("/Control")]
@@ -60,7 +60,7 @@ namespace Education.WebPage
             {
                 Text = "Klicke zum öffnen des Formulars",
                 BackgroundColor = new PropertyColorButton(TypeColorButton.Primary),
-                Modal = Modal
+                Modal = new PropertyModal(TypeModal.Modal, Modal)
             });
 
             // Eigenschaften

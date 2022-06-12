@@ -4,7 +4,7 @@ using WebExpress.WebResource;
 
 namespace Education.WebPage
 {
-    [ID("Formular")]
+    [Id("Formular")]
     [Title("education:page.control.formular.name")]
     [Segment("formular", "education:page.control.formular.name")]
     [Path("/Control")]
@@ -78,7 +78,6 @@ namespace Education.WebPage
                 {
                     Name = "Formular",
                     Border = new PropertyBorder(true),
-                    EnableCancelButton = false,
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two),
                     Padding = new PropertySpacingPadding(PropertySpacing.Space.Two)
                 }
@@ -93,7 +92,6 @@ namespace Education.WebPage
                 {
                     Name = "Formular",
                     Border = new PropertyBorder(true),
-                    EnableCancelButton = true,
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two),
                     Padding = new PropertySpacingPadding(PropertySpacing.Space.Two)
                 },
@@ -101,7 +99,6 @@ namespace Education.WebPage
                 {
                     Name = "Formular",
                     Border = new PropertyBorder(true),
-                    EnableCancelButton = false,
                     Margin = new PropertySpacingMargin(PropertySpacing.Space.None, PropertySpacing.Space.Two),
                     Padding = new PropertySpacingPadding(PropertySpacing.Space.Two)
                 }

@@ -4,7 +4,7 @@ using WebExpress.WebResource;
 
 namespace Education.WebPage
 {
-    [ID("FormularItemGroupColumnHorizontal")]
+    [Id("FormularItemGroupColumnHorizontal")]
     [Title("education:page.control.formular.item.groupcolumnhorizontal.name")]
     [Segment("formulargroupcolumnhorizontal", "education:page.control.formular.item.groupcolumnhorizontal.name")]
     [Path("/Control")]

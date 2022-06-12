@@ -4,7 +4,7 @@ using WebExpress.WebResource;
 
 namespace Education.WebPage
 {
-    [ID("Toolbar")]
+    [Id("Toolbar")]
     [Title("education:page.control.toolbar.name")]
     [Segment("toolbar", "education:page.control.toolbar.name")]
     [Path("/Control")]

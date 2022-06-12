@@ -4,7 +4,7 @@ using WebExpress.WebResource;
 
 namespace Education.WebPage
 {
-    [ID("FormularItemGroupMix")]
+    [Id("FormularItemGroupMix")]
     [Title("education:page.control.formular.item.groupmix.name")]
     [Segment("formulargroupmix", "education:page.control.formular.item.groupmix.name")]
     [Path("/Control")]

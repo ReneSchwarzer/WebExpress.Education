@@ -4,7 +4,7 @@ using WebExpress.WebResource;
 
 namespace Education.WebPage
 {
-    [ID("Flexbox")]
+    [Id("Flexbox")]
     [Title("education:page.control.flexbox.name")]
     [Segment("flexbox", "education:page.control.flexbox.name")]
     [Path("/Control")]

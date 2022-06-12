@@ -4,7 +4,7 @@ using WebExpress.WebResource;
 
 namespace Education.WebPage
 {
-    [ID("FormularInline")]
+    [Id("FormularInline")]
     [Title("education:page.control.formularinline.name")]
     [Segment("formularinline", "education:page.control.formularinline.name")]
     [Path("/Control")]

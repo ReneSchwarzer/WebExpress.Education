@@ -5,7 +5,7 @@ using WebExpress.WebResource;
 
 namespace Education.WebPage
 {
-    [ID("FormularItemInputDatepicker")]
+    [Id("FormularItemInputDatepicker")]
     [Title("education:page.control.formular.item.datepicker.name")]
     [Segment("formulardatepicker", "education:page.control.formular.item.datepicker.name")]
     [Path("/Control")]

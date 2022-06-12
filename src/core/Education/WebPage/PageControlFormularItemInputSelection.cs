@@ -4,7 +4,7 @@ using WebExpress.WebResource;
 
 namespace Education.WebPage
 {
-    [ID("FormularItemSelect")]
+    [Id("FormularItemSelect")]
     [Title("education:page.control.formular.item.selection.name")]
     [Segment("formularselection", "education:page.control.formular.item.selection.name")]
     [Path("/Control")]
@@ -29,7 +29,6 @@ namespace Education.WebPage
         )
         {
             Label = "Grüße",
-            HasEmptyValue = true,
             Icon = new PropertyIcon(TypeIcon.Font),
             Help = "Das ist der zugehörige Hilfetext."
         };
@@ -85,12 +84,10 @@ namespace Education.WebPage
                 ) 
                 {
                     Label = "Grüße",
-                    HasEmptyValue = false,
                     Placeholder = "Geben Sie hier einen Wert an!" 
 
                 })
                 {
-                    EnableCancelButton = false
                 }
             );
         }

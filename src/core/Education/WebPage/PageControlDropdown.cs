@@ -4,7 +4,7 @@ using WebExpress.WebResource;
 
 namespace Education.WebPage
 {
-    [ID("Dropdown")]
+    [Id("Dropdown")]
     [Title("education:page.control.dropdown.name")]
     [Segment("dropdown", "education:page.control.dropdown.name")]
     [Path("/Control")]
