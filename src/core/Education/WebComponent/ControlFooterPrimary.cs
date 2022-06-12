@@ -10,7 +10,7 @@ using WebExpress.WebPage;
 namespace Education.WebComponent
 {
     [Section(Section.FooterPrimary)]
-    [Application("education")]
+    [Module("education")]
     public sealed class ControlFooterPrimary : ComponentControlText
     {
         /// <summary>

@@ -13,7 +13,7 @@ using WebExpress.WebResource;
 namespace Education.WebComponent
 {
     [Section(Section.SidebarPrimary)]
-    [Application("education")]
+    [Module("education")]
     [Context("control")]
     public sealed class ControlSidebarControls : ControlNavigation, IComponent
     {

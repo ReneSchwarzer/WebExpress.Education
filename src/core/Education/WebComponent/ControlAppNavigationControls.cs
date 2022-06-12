@@ -10,7 +10,7 @@ using WebExpress.WebPage;
 namespace Education.WebComponent
 {
     [Section(Section.AppNavigationPrimary)]
-    [Application("education")]
+    [Module("education")]
     public sealed class ControlAppNavigationControls : ComponentControlNavigationItemLink
     {
         /// <summary>
